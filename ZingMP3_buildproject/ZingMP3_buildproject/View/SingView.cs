@@ -113,7 +113,7 @@ namespace ZingMP3_buildproject.View
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-           
+            this.Close();
         }
 
         private void btnActive_Click(object sender, EventArgs e)

@@ -80,6 +80,9 @@ namespace ZingMP3_buildproject.View
                 if (user != null)
                 {
                     MessageBox.Show("Đăng nhâp thành công", "Login", MessageBoxButtons.OK);
+                    SingView singView = new SingView();
+                    singView.Show();
+                    this.Close();
                 }
                 else
                 {
