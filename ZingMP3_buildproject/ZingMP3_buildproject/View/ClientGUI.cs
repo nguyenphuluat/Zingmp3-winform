@@ -219,7 +219,7 @@ namespace ZingMP3_buildproject.View
                 grbSeacrh8.Visible = true;
             }
         }
-        
+
         public void hienTrend(int i1, int i2, int i3, int i4)
         {
             if (i1 == 1)
@@ -297,8 +297,8 @@ namespace ZingMP3_buildproject.View
                     //player.Play();
                     string RelativePath = singObject.getSing_path_mp3();
                     string AbsolutePath = Path.GetFullPath(Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location), RelativePath));
-                    MediaZing.URL = AbsolutePath; 
-                            
+                    MediaZing.URL = AbsolutePath;
+
                     pb.Image = Image.FromFile(@"..\..\..\..\Img\Pause.png");
                     running = true;
                     singObject.setSing_listened(singObject.getSing_listened() + 1);
@@ -500,7 +500,6 @@ namespace ZingMP3_buildproject.View
 
         private void ClientGUI_Load(object sender, EventArgs e)
         {
-            Play.Visible = true;
             grbBaiHatNoiBat.Visible = true;
             grbBaiHatPhuHopTimKiem.Visible = false;
             anNenLabel();
@@ -566,7 +565,7 @@ namespace ZingMP3_buildproject.View
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             btnSearch_Click(sender, e);
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -576,7 +575,7 @@ namespace ZingMP3_buildproject.View
                 hienTaiPage++;
                 btnSearch_Click(sender, e);
                 txtTrang.Text = Convert.ToString(hienTaiPage);
-            } 
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -706,15 +705,15 @@ namespace ZingMP3_buildproject.View
             {
                 //singObjects[i] = new SingObject();
                 //singObjects[i] = singControl.getSing(id);
-                
+
                 //if (singObjects[i]!=null && singObjects[i].getSing_dowloaded() == true)
                 //{
                 a[d] = s[i].getSing_name() + " ----- " + s[i].getSing_singer();
                 d++;
-                
+
                 //}
                 //id++;
-                
+
 
             }
             grbBaiHatPhuHopTimKiem.Text = "Cá nhân";
@@ -823,7 +822,7 @@ namespace ZingMP3_buildproject.View
             {
                 singObjects[i] = new SingObject();
                 singObjects[i] = singControl.getSing(id);
-                if (singObjects[i]!=null && singObjects[i].getSing_focus() == true)
+                if (singObjects[i] != null && singObjects[i].getSing_focus() == true)
                 {
                     a[d] = singObjects[i].getSing_name() + " ----- " + singObjects[i].getSing_name();
                     d++;
@@ -836,7 +835,7 @@ namespace ZingMP3_buildproject.View
             //anTheLoai(0);
         }
 
-        
+
 
         private void imgCaSiVietNam_Click(object sender, EventArgs e)
         {
@@ -847,7 +846,7 @@ namespace ZingMP3_buildproject.View
             //SingObject[] singObjects = new SingObject[count];
             string[] a = new string[singObjects.Count];
             int d = 0;
-            
+
             for (int i = 0; i < singObjects.Count; i++)
             {
                 if (singObjects[i].getSing_national() == true)
@@ -855,7 +854,7 @@ namespace ZingMP3_buildproject.View
                     a[d] = singObjects[i].getSing_name() + " ----- " + singObjects[i].getSing_singer();
                     d++;
                 }
-               
+
             }
             grbBaiHatPhuHopTimKiem.Text = "Trong nước";
             phanTrang(d, a);
@@ -872,7 +871,7 @@ namespace ZingMP3_buildproject.View
 
         private void MediaZing_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
         {
-            
+
             // Test the current state of the player and display a message for each state.
             switch (e.newState)
             {
@@ -978,6 +977,8 @@ namespace ZingMP3_buildproject.View
             LoginView LoginView = new LoginView();
             LoginView.Show();
         }
+
+
 
     }
 }
