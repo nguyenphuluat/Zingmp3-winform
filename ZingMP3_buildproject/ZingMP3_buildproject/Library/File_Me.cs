@@ -28,10 +28,18 @@ namespace ZingMP3_buildproject.Library
 
             // To copy a folder's contents to a new location:
             // Create a new target folder, if necessary.
-            if (!System.IO.Directory.Exists(directoryPath))
+            try
             {
-                System.IO.Directory.CreateDirectory(directoryPath);
+                if (!System.IO.Directory.Exists(directoryPath))
+                {
+                    System.IO.Directory.CreateDirectory(directoryPath);
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
 
             // To copy a file to another location and 
             //overwrite the destination file if it already exists.

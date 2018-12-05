@@ -67,7 +67,7 @@ namespace ZingMP3_buildproject.View
                 file_name = temp[temp.Length - 1];
                 file_name = file_name.Substring(0, file_name.Length - 4);
 
-                file_mp3 = @"D:\Csharp\ZingMp3\Path_mp3\" + file_name + ".mp3";
+                file_mp3 = @"C:\Csharp\ZingMp3\Path_mp3\" + file_name + ".mp3";
                 //Copy file
                 file_mp3 = Library.File_Me.CoppyFile(file_mp3_temp, file_mp3);
                 if (!file_mp3.Equals(""))

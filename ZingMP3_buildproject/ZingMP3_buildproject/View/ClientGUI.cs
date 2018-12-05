@@ -973,8 +973,11 @@ namespace ZingMP3_buildproject.View
             hideDownload(1);
         }
 
-
-
+        private void dangNhap_Click(object sender, EventArgs e)
+        {
+            LoginView LoginView = new LoginView();
+            LoginView.Show();
+        }
 
     }
 }

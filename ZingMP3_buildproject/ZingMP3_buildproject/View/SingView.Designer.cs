@@ -244,7 +244,7 @@ namespace ZingMP3_buildproject.View
             this.btnCategoryManagerment.TabIndex = 0;
             this.btnCategoryManagerment.Text = "Quản lý thế loại";
             this.btnCategoryManagerment.UseVisualStyleBackColor = true;
-            this.btnCategoryManagerment.Click += new System.EventHandler(this.btnCategoryManagerment_Click);
+            //this.btnCategoryManagerment.Click += new System.EventHandler(this.btnCategoryManagerment_Click);
             // 
             // btnSingManagerment
             // 

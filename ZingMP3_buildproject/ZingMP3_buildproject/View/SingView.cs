@@ -105,7 +105,7 @@ namespace ZingMP3_buildproject.View
                 row.Cells[8].Value = Image.FromFile(@"..\..\..\..\Img\Run.png");
                 row.Cells[9].Value = Image.FromFile(@"..\..\..\..\Img\Edit.png");
                 row.Cells[10].Value = Image.FromFile(@"..\..\..\..\Img\Del.png");
-
+                
                 dtgSing.Rows.Add(row);
 
             }
@@ -113,7 +113,7 @@ namespace ZingMP3_buildproject.View
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-           
+            this.Close();
         }
 
         private void btnActive_Click(object sender, EventArgs e)
@@ -223,14 +223,14 @@ namespace ZingMP3_buildproject.View
             }
         }
 
-        private void btnCategoryManagerment_Click(object sender, EventArgs e)
-        {
-            CategoryModel cm = new CategoryModel();
-            DataTable dt = cm.getCategorys();
+        //private void btnCategoryManagerment_Click(object sender, EventArgs e)
+        //{
+        //    CategoryModel cm = new CategoryModel();
+        //    DataTable dt = cm.getCategorys();
             
-            dtgSing.DataSource = dt;
+        //    dtgSing.DataSource = dt;
 
-        }
+        //}
 
         private void txtSearch_Leave(object sender, EventArgs e)
         {
