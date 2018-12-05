@@ -93,34 +93,5 @@ namespace ZingMP3_buildproject.Model
 
             return dt;
         }
-        //luat lấy datatable theo tên bài hát
-        public DataTable getSingName(string name)
-        {
-            String sql = "SELECT * FROM tblsing LEFT JOIN tblcategory ON sing_category_id = category_id "
-                + "WHERE sing_name = N'" + name + "'";
-            DataTable dt = new DataTable();
-            dt = Connection.getTable(sql);
-
-            return dt;
-        }
-        //luat tim kiếm gần đúng theo tên bài hát
-        public DataTable getSingLikeName(string name)
-        {
-            String sql = "SELECT * FROM tblsing LEFT JOIN tblcategory ON sing_category_id = category_id "
-                + "WHERE sing_name like N'%" + name + "%'";
-            DataTable dt = new DataTable();
-            dt = Connection.getTable(sql);
-
-            return dt;
-        }
-        //Luat lấy tất cả các bài hát ra
-        public DataTable getSingAll()
-        {
-            String sql = "SELECT * FROM tblsing LEFT JOIN tblcategory ON sing_category_id = category_id ";
-            DataTable dt = new DataTable();
-            dt = Connection.getTable(sql);
-
-            return dt;
-        }
     }
 }

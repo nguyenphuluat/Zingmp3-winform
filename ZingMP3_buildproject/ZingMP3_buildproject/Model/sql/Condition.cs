@@ -21,6 +21,12 @@ namespace ZingMP3_buildproject.Model.sql
                 {
                     tmp += "sing_focus = '" + similar.getSing_focus() + "' ";
                 }
+                if (similar.getSing_content() == "sing_search")
+                {
+                    tmp += " sing_name like '%" + similar.getSing_name() + "%' OR sing_singer like '%" + similar.getSing_name() + "%' OR sing_author like '%" + similar.getSing_name()
+                + "%' OR sing_content like '%" + similar.getSing_name() + "%' OR category_name like '%" + similar.getSing_name() + "%'";
+                }
+                
             }
             return tmp;
         }

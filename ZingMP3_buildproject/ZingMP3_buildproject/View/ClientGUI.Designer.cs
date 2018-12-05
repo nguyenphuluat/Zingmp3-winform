@@ -29,17 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientGUI));
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.danhMucYeuThich = new System.Windows.Forms.Label();
-            this.trangChu = new System.Windows.Forms.Label();
-            this.caNhan = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.PictureBox();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.Icon = new System.Windows.Forms.PictureBox();
-            this.Play = new System.Windows.Forms.GroupBox();
             this.MediaZing = new AxWMPLib.AxWindowsMediaPlayer();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.imgTheGioiVPop = new System.Windows.Forms.PictureBox();
@@ -61,12 +50,6 @@
             this.title = new System.Windows.Forms.Label();
             this.labelBaiHatNoiBat = new System.Windows.Forms.Panel();
             this.txtTrang = new System.Windows.Forms.Label();
-            this.grbSeacrh8 = new System.Windows.Forms.Panel();
-            this.like8 = new System.Windows.Forms.PictureBox();
-            this.singsearch8 = new System.Windows.Forms.Label();
-            this.delete8 = new System.Windows.Forms.PictureBox();
-            this.playImg8 = new System.Windows.Forms.PictureBox();
-            this.download8 = new System.Windows.Forms.PictureBox();
             this.btnPrePage = new System.Windows.Forms.Button();
             this.btnNextPage = new System.Windows.Forms.Button();
             this.grbSeacrh4 = new System.Windows.Forms.Panel();
@@ -75,24 +58,12 @@
             this.delete4 = new System.Windows.Forms.PictureBox();
             this.playImg4 = new System.Windows.Forms.PictureBox();
             this.download4 = new System.Windows.Forms.PictureBox();
-            this.grbSeacrh6 = new System.Windows.Forms.Panel();
-            this.like6 = new System.Windows.Forms.PictureBox();
-            this.singsearch6 = new System.Windows.Forms.Label();
-            this.delete6 = new System.Windows.Forms.PictureBox();
-            this.playImg6 = new System.Windows.Forms.PictureBox();
-            this.download6 = new System.Windows.Forms.PictureBox();
             this.grbSeacrh2 = new System.Windows.Forms.Panel();
             this.like2 = new System.Windows.Forms.PictureBox();
             this.singsearch2 = new System.Windows.Forms.Label();
             this.delete2 = new System.Windows.Forms.PictureBox();
             this.playImg2 = new System.Windows.Forms.PictureBox();
             this.download2 = new System.Windows.Forms.PictureBox();
-            this.grbSeacrh7 = new System.Windows.Forms.Panel();
-            this.like7 = new System.Windows.Forms.PictureBox();
-            this.singsearch7 = new System.Windows.Forms.Label();
-            this.delete7 = new System.Windows.Forms.PictureBox();
-            this.playImg7 = new System.Windows.Forms.PictureBox();
-            this.download7 = new System.Windows.Forms.PictureBox();
             this.grbSeacrh3 = new System.Windows.Forms.Panel();
             this.like3 = new System.Windows.Forms.PictureBox();
             this.singsearch3 = new System.Windows.Forms.Label();
@@ -111,11 +82,17 @@
             this.delete1 = new System.Windows.Forms.PictureBox();
             this.playImg1 = new System.Windows.Forms.PictureBox();
             this.download1 = new System.Windows.Forms.PictureBox();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Icon)).BeginInit();
-            this.Play.SuspendLayout();
+            this.hearder = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.trangChu = new System.Windows.Forms.Label();
+            this.danhMucYeuThich = new System.Windows.Forms.Label();
+            this.caNhan = new System.Windows.Forms.Label();
+            this.dangNhap = new System.Windows.Forms.Label();
+            this.Icon = new System.Windows.Forms.PictureBox();
+            this.btnSearch = new System.Windows.Forms.PictureBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtSingContent = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).BeginInit();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgTheGioiVPop)).BeginInit();
@@ -131,31 +108,16 @@
             this.panelTrend3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playpictureBox3)).BeginInit();
             this.labelBaiHatNoiBat.SuspendLayout();
-            this.grbSeacrh8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.like8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.delete8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playImg8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.download8)).BeginInit();
             this.grbSeacrh4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.download4)).BeginInit();
-            this.grbSeacrh6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.like6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.delete6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playImg6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.download6)).BeginInit();
             this.grbSeacrh2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.download2)).BeginInit();
-            this.grbSeacrh7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.like7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.delete7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playImg7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.download7)).BeginInit();
             this.grbSeacrh3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete3)).BeginInit();
@@ -171,141 +133,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.delete1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.download1)).BeginInit();
+            this.hearder.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox2.BackgroundImage")));
-            this.groupBox2.Controls.Add(this.panel1);
-            this.groupBox2.Controls.Add(this.danhMucYeuThich);
-            this.groupBox2.Controls.Add(this.trangChu);
-            this.groupBox2.Controls.Add(this.caNhan);
-            this.groupBox2.Location = new System.Drawing.Point(1, 46);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1147, 27);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(650, 27);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(99, 41);
-            this.panel1.TabIndex = 4;
-            // 
-            // danhMucYeuThich
-            // 
-            this.danhMucYeuThich.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.danhMucYeuThich.AutoSize = true;
-            this.danhMucYeuThich.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.danhMucYeuThich.ForeColor = System.Drawing.Color.Red;
-            this.danhMucYeuThich.Location = new System.Drawing.Point(583, 4);
-            this.danhMucYeuThich.Name = "danhMucYeuThich";
-            this.danhMucYeuThich.Size = new System.Drawing.Size(167, 20);
-            this.danhMucYeuThich.TabIndex = 0;
-            this.danhMucYeuThich.Text = "| Danh mục yêu thích |";
-            this.danhMucYeuThich.Click += new System.EventHandler(this.danhMucYeuThich_Click);
-            // 
-            // trangChu
-            // 
-            this.trangChu.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.trangChu.AutoSize = true;
-            this.trangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.trangChu.ForeColor = System.Drawing.Color.Red;
-            this.trangChu.Location = new System.Drawing.Point(356, 4);
-            this.trangChu.Name = "trangChu";
-            this.trangChu.Size = new System.Drawing.Size(80, 20);
-            this.trangChu.TabIndex = 0;
-            this.trangChu.Text = "Trang chủ";
-            this.trangChu.Click += new System.EventHandler(this.trangChu_Click);
-            // 
-            // caNhan
-            // 
-            this.caNhan.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.caNhan.AutoSize = true;
-            this.caNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.caNhan.ForeColor = System.Drawing.Color.Red;
-            this.caNhan.Location = new System.Drawing.Point(465, 4);
-            this.caNhan.Name = "caNhan";
-            this.caNhan.Size = new System.Drawing.Size(87, 20);
-            this.caNhan.TabIndex = 0;
-            this.caNhan.Text = "| Cá nhân |";
-            this.caNhan.Click += new System.EventHandler(this.caNhan_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.AutoSize = true;
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnSearch);
-            this.groupBox1.Controls.Add(this.txtSearch);
-            this.groupBox1.Controls.Add(this.Icon);
-            this.groupBox1.Location = new System.Drawing.Point(1, 1);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1147, 64);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(1050, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "đăng nhập";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSearch.Image = global::ZingMP3_buildproject.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(812, 20);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(18, 19);
-            this.btnSearch.TabIndex = 2;
-            this.btnSearch.TabStop = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(267, 20);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(564, 20);
-            this.txtSearch.TabIndex = 1;
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            // 
-            // Icon
-            // 
-            this.Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Icon.Image = ((System.Drawing.Image)(resources.GetObject("Icon.Image")));
-            this.Icon.Location = new System.Drawing.Point(181, 0);
-            this.Icon.Name = "Icon";
-            this.Icon.Size = new System.Drawing.Size(53, 45);
-            this.Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Icon.TabIndex = 0;
-            this.Icon.TabStop = false;
-            // 
-            // Play
-            // 
-            this.Play.BackColor = System.Drawing.Color.Transparent;
-            this.Play.Controls.Add(this.MediaZing);
-            this.Play.Location = new System.Drawing.Point(733, 403);
-            this.Play.Name = "Play";
-            this.Play.Size = new System.Drawing.Size(399, 209);
-            this.Play.TabIndex = 5;
-            this.Play.TabStop = false;
-            this.Play.Text = "play";
             // 
             // MediaZing
             // 
             this.MediaZing.Enabled = true;
-            this.MediaZing.Location = new System.Drawing.Point(6, 19);
+            this.MediaZing.Location = new System.Drawing.Point(24, 424);
             this.MediaZing.Name = "MediaZing";
             this.MediaZing.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MediaZing.OcxState")));
-            this.MediaZing.Size = new System.Drawing.Size(387, 177);
+            this.MediaZing.Size = new System.Drawing.Size(706, 212);
             this.MediaZing.TabIndex = 0;
             this.MediaZing.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.MediaZing_PlayStateChange);
             // 
@@ -519,98 +360,30 @@
             // 
             this.labelBaiHatNoiBat.BackColor = System.Drawing.Color.Transparent;
             this.labelBaiHatNoiBat.Controls.Add(this.txtTrang);
-            this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh8);
             this.labelBaiHatNoiBat.Controls.Add(this.btnPrePage);
             this.labelBaiHatNoiBat.Controls.Add(this.btnNextPage);
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh4);
-            this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh6);
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh2);
-            this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh7);
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh3);
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh5);
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh1);
             this.labelBaiHatNoiBat.Location = new System.Drawing.Point(24, 96);
             this.labelBaiHatNoiBat.Name = "labelBaiHatNoiBat";
-            this.labelBaiHatNoiBat.Size = new System.Drawing.Size(709, 498);
+            this.labelBaiHatNoiBat.Size = new System.Drawing.Size(706, 322);
             this.labelBaiHatNoiBat.TabIndex = 12;
             // 
             // txtTrang
             // 
             this.txtTrang.AutoSize = true;
-            this.txtTrang.Location = new System.Drawing.Point(329, 468);
+            this.txtTrang.Location = new System.Drawing.Point(347, 295);
             this.txtTrang.Name = "txtTrang";
             this.txtTrang.Size = new System.Drawing.Size(13, 13);
             this.txtTrang.TabIndex = 4;
             this.txtTrang.Text = "1";
             // 
-            // grbSeacrh8
-            // 
-            this.grbSeacrh8.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__2____Sao_chép;
-            this.grbSeacrh8.Controls.Add(this.like8);
-            this.grbSeacrh8.Controls.Add(this.singsearch8);
-            this.grbSeacrh8.Controls.Add(this.delete8);
-            this.grbSeacrh8.Controls.Add(this.playImg8);
-            this.grbSeacrh8.Controls.Add(this.download8);
-            this.grbSeacrh8.Location = new System.Drawing.Point(4, 396);
-            this.grbSeacrh8.Name = "grbSeacrh8";
-            this.grbSeacrh8.Size = new System.Drawing.Size(702, 50);
-            this.grbSeacrh8.TabIndex = 7;
-            // 
-            // like8
-            // 
-            this.like8.Image = ((System.Drawing.Image)(resources.GetObject("like8.Image")));
-            this.like8.Location = new System.Drawing.Point(594, 20);
-            this.like8.Name = "like8";
-            this.like8.Size = new System.Drawing.Size(16, 16);
-            this.like8.TabIndex = 4;
-            this.like8.TabStop = false;
-            this.like8.Click += new System.EventHandler(this.like8_Click_1);
-            // 
-            // singsearch8
-            // 
-            this.singsearch8.AutoSize = true;
-            this.singsearch8.BackColor = System.Drawing.Color.Transparent;
-            this.singsearch8.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.singsearch8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.singsearch8.Location = new System.Drawing.Point(12, 5);
-            this.singsearch8.Name = "singsearch8";
-            this.singsearch8.Size = new System.Drawing.Size(21, 31);
-            this.singsearch8.TabIndex = 0;
-            this.singsearch8.Text = ".";
-            // 
-            // delete8
-            // 
-            this.delete8.Image = ((System.Drawing.Image)(resources.GetObject("delete8.Image")));
-            this.delete8.Location = new System.Drawing.Point(666, 20);
-            this.delete8.Name = "delete8";
-            this.delete8.Size = new System.Drawing.Size(16, 16);
-            this.delete8.TabIndex = 3;
-            this.delete8.TabStop = false;
-            this.delete8.Click += new System.EventHandler(this.delete8_Click_1);
-            // 
-            // playImg8
-            // 
-            this.playImg8.Image = ((System.Drawing.Image)(resources.GetObject("playImg8.Image")));
-            this.playImg8.Location = new System.Drawing.Point(642, 20);
-            this.playImg8.Name = "playImg8";
-            this.playImg8.Size = new System.Drawing.Size(16, 16);
-            this.playImg8.TabIndex = 1;
-            this.playImg8.TabStop = false;
-            this.playImg8.Click += new System.EventHandler(this.playImg8_Click_1);
-            // 
-            // download8
-            // 
-            this.download8.Image = ((System.Drawing.Image)(resources.GetObject("download8.Image")));
-            this.download8.Location = new System.Drawing.Point(618, 20);
-            this.download8.Name = "download8";
-            this.download8.Size = new System.Drawing.Size(16, 16);
-            this.download8.TabIndex = 2;
-            this.download8.TabStop = false;
-            this.download8.Click += new System.EventHandler(this.download8_Click_1);
-            // 
             // btnPrePage
             // 
-            this.btnPrePage.Location = new System.Drawing.Point(226, 463);
+            this.btnPrePage.Location = new System.Drawing.Point(244, 290);
             this.btnPrePage.Name = "btnPrePage";
             this.btnPrePage.Size = new System.Drawing.Size(75, 23);
             this.btnPrePage.TabIndex = 1;
@@ -620,7 +393,7 @@
             // 
             // btnNextPage
             // 
-            this.btnNextPage.Location = new System.Drawing.Point(370, 463);
+            this.btnNextPage.Location = new System.Drawing.Point(388, 290);
             this.btnNextPage.Name = "btnNextPage";
             this.btnNextPage.Size = new System.Drawing.Size(75, 23);
             this.btnNextPage.TabIndex = 1;
@@ -693,71 +466,6 @@
             this.download4.TabStop = false;
             this.download4.Click += new System.EventHandler(this.download4_Click_1);
             // 
-            // grbSeacrh6
-            // 
-            this.grbSeacrh6.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__2____Sao_chép;
-            this.grbSeacrh6.Controls.Add(this.like6);
-            this.grbSeacrh6.Controls.Add(this.singsearch6);
-            this.grbSeacrh6.Controls.Add(this.delete6);
-            this.grbSeacrh6.Controls.Add(this.playImg6);
-            this.grbSeacrh6.Controls.Add(this.download6);
-            this.grbSeacrh6.Location = new System.Drawing.Point(4, 284);
-            this.grbSeacrh6.Name = "grbSeacrh6";
-            this.grbSeacrh6.Size = new System.Drawing.Size(702, 50);
-            this.grbSeacrh6.TabIndex = 5;
-            // 
-            // like6
-            // 
-            this.like6.Image = ((System.Drawing.Image)(resources.GetObject("like6.Image")));
-            this.like6.Location = new System.Drawing.Point(594, 25);
-            this.like6.Name = "like6";
-            this.like6.Size = new System.Drawing.Size(16, 16);
-            this.like6.TabIndex = 4;
-            this.like6.TabStop = false;
-            this.like6.Click += new System.EventHandler(this.like6_Click_1);
-            // 
-            // singsearch6
-            // 
-            this.singsearch6.AutoSize = true;
-            this.singsearch6.BackColor = System.Drawing.Color.Transparent;
-            this.singsearch6.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.singsearch6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.singsearch6.Location = new System.Drawing.Point(12, 5);
-            this.singsearch6.Name = "singsearch6";
-            this.singsearch6.Size = new System.Drawing.Size(21, 31);
-            this.singsearch6.TabIndex = 0;
-            this.singsearch6.Text = ".";
-            // 
-            // delete6
-            // 
-            this.delete6.Image = ((System.Drawing.Image)(resources.GetObject("delete6.Image")));
-            this.delete6.Location = new System.Drawing.Point(660, 25);
-            this.delete6.Name = "delete6";
-            this.delete6.Size = new System.Drawing.Size(16, 16);
-            this.delete6.TabIndex = 3;
-            this.delete6.TabStop = false;
-            this.delete6.Click += new System.EventHandler(this.delete6_Click_1);
-            // 
-            // playImg6
-            // 
-            this.playImg6.Image = ((System.Drawing.Image)(resources.GetObject("playImg6.Image")));
-            this.playImg6.Location = new System.Drawing.Point(638, 25);
-            this.playImg6.Name = "playImg6";
-            this.playImg6.Size = new System.Drawing.Size(16, 16);
-            this.playImg6.TabIndex = 1;
-            this.playImg6.TabStop = false;
-            this.playImg6.Click += new System.EventHandler(this.playImg6_Click_1);
-            // 
-            // download6
-            // 
-            this.download6.Image = ((System.Drawing.Image)(resources.GetObject("download6.Image")));
-            this.download6.Location = new System.Drawing.Point(616, 25);
-            this.download6.Name = "download6";
-            this.download6.Size = new System.Drawing.Size(16, 16);
-            this.download6.TabIndex = 2;
-            this.download6.TabStop = false;
-            this.download6.Click += new System.EventHandler(this.download6_Click_1);
-            // 
             // grbSeacrh2
             // 
             this.grbSeacrh2.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__2____Sao_chép;
@@ -779,7 +487,6 @@
             this.like2.Size = new System.Drawing.Size(16, 16);
             this.like2.TabIndex = 4;
             this.like2.TabStop = false;
-            this.like2.Click += new System.EventHandler(this.like2_Click_1);
             // 
             // singsearch2
             // 
@@ -822,71 +529,6 @@
             this.download2.TabIndex = 2;
             this.download2.TabStop = false;
             this.download2.Click += new System.EventHandler(this.download2_Click_1);
-            // 
-            // grbSeacrh7
-            // 
-            this.grbSeacrh7.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__2____Sao_chép;
-            this.grbSeacrh7.Controls.Add(this.like7);
-            this.grbSeacrh7.Controls.Add(this.singsearch7);
-            this.grbSeacrh7.Controls.Add(this.delete7);
-            this.grbSeacrh7.Controls.Add(this.playImg7);
-            this.grbSeacrh7.Controls.Add(this.download7);
-            this.grbSeacrh7.Location = new System.Drawing.Point(4, 340);
-            this.grbSeacrh7.Name = "grbSeacrh7";
-            this.grbSeacrh7.Size = new System.Drawing.Size(702, 50);
-            this.grbSeacrh7.TabIndex = 6;
-            // 
-            // like7
-            // 
-            this.like7.Image = ((System.Drawing.Image)(resources.GetObject("like7.Image")));
-            this.like7.Location = new System.Drawing.Point(594, 20);
-            this.like7.Name = "like7";
-            this.like7.Size = new System.Drawing.Size(16, 16);
-            this.like7.TabIndex = 4;
-            this.like7.TabStop = false;
-            this.like7.Click += new System.EventHandler(this.like7_Click_1);
-            // 
-            // singsearch7
-            // 
-            this.singsearch7.AutoSize = true;
-            this.singsearch7.BackColor = System.Drawing.Color.Transparent;
-            this.singsearch7.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.singsearch7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.singsearch7.Location = new System.Drawing.Point(12, 5);
-            this.singsearch7.Name = "singsearch7";
-            this.singsearch7.Size = new System.Drawing.Size(21, 31);
-            this.singsearch7.TabIndex = 0;
-            this.singsearch7.Text = ".";
-            // 
-            // delete7
-            // 
-            this.delete7.Image = ((System.Drawing.Image)(resources.GetObject("delete7.Image")));
-            this.delete7.Location = new System.Drawing.Point(660, 20);
-            this.delete7.Name = "delete7";
-            this.delete7.Size = new System.Drawing.Size(16, 16);
-            this.delete7.TabIndex = 3;
-            this.delete7.TabStop = false;
-            this.delete7.Click += new System.EventHandler(this.delete7_Click_1);
-            // 
-            // playImg7
-            // 
-            this.playImg7.Image = ((System.Drawing.Image)(resources.GetObject("playImg7.Image")));
-            this.playImg7.Location = new System.Drawing.Point(638, 20);
-            this.playImg7.Name = "playImg7";
-            this.playImg7.Size = new System.Drawing.Size(16, 16);
-            this.playImg7.TabIndex = 1;
-            this.playImg7.TabStop = false;
-            this.playImg7.Click += new System.EventHandler(this.playImg7_Click_1);
-            // 
-            // download7
-            // 
-            this.download7.Image = ((System.Drawing.Image)(resources.GetObject("download7.Image")));
-            this.download7.Location = new System.Drawing.Point(616, 20);
-            this.download7.Name = "download7";
-            this.download7.Size = new System.Drawing.Size(16, 16);
-            this.download7.TabIndex = 2;
-            this.download7.TabStop = false;
-            this.download7.Click += new System.EventHandler(this.download7_Click_1);
             // 
             // grbSeacrh3
             // 
@@ -1083,31 +725,153 @@
             this.download1.TabStop = false;
             this.download1.Click += new System.EventHandler(this.download1_Click_1);
             // 
+            // hearder
+            // 
+            this.hearder.BackColor = System.Drawing.Color.Transparent;
+            this.hearder.Controls.Add(this.panel3);
+            this.hearder.Controls.Add(this.dangNhap);
+            this.hearder.Controls.Add(this.Icon);
+            this.hearder.Controls.Add(this.btnSearch);
+            this.hearder.Controls.Add(this.txtSearch);
+            this.hearder.Location = new System.Drawing.Point(-1, -1);
+            this.hearder.Name = "hearder";
+            this.hearder.Size = new System.Drawing.Size(1147, 64);
+            this.hearder.TabIndex = 13;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__5_;
+            this.panel3.Controls.Add(this.trangChu);
+            this.panel3.Controls.Add(this.danhMucYeuThich);
+            this.panel3.Controls.Add(this.caNhan);
+            this.panel3.Location = new System.Drawing.Point(3, 37);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1147, 27);
+            this.panel3.TabIndex = 5;
+            // 
+            // trangChu
+            // 
+            this.trangChu.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.trangChu.AutoSize = true;
+            this.trangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.trangChu.ForeColor = System.Drawing.Color.Red;
+            this.trangChu.Location = new System.Drawing.Point(351, 7);
+            this.trangChu.Name = "trangChu";
+            this.trangChu.Size = new System.Drawing.Size(106, 24);
+            this.trangChu.TabIndex = 0;
+            this.trangChu.Text = "Trang chủ";
+            this.trangChu.Click += new System.EventHandler(this.trangChu_Click);
+            // 
+            // danhMucYeuThich
+            // 
+            this.danhMucYeuThich.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.danhMucYeuThich.AutoSize = true;
+            this.danhMucYeuThich.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.danhMucYeuThich.ForeColor = System.Drawing.Color.Red;
+            this.danhMucYeuThich.Location = new System.Drawing.Point(593, 7);
+            this.danhMucYeuThich.Name = "danhMucYeuThich";
+            this.danhMucYeuThich.Size = new System.Drawing.Size(202, 24);
+            this.danhMucYeuThich.TabIndex = 0;
+            this.danhMucYeuThich.Text = "Danh mục yêu thích ";
+            this.danhMucYeuThich.Click += new System.EventHandler(this.danhMucYeuThich_Click_1);
+            // 
+            // caNhan
+            // 
+            this.caNhan.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.caNhan.AutoSize = true;
+            this.caNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.caNhan.ForeColor = System.Drawing.Color.Red;
+            this.caNhan.Location = new System.Drawing.Point(475, 7);
+            this.caNhan.Name = "caNhan";
+            this.caNhan.Size = new System.Drawing.Size(100, 24);
+            this.caNhan.TabIndex = 0;
+            this.caNhan.Text = " Cá nhân ";
+            this.caNhan.Click += new System.EventHandler(this.caNhan_Click_1);
+            // 
+            // dangNhap
+            // 
+            this.dangNhap.AutoSize = true;
+            this.dangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.dangNhap.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.dangNhap.Location = new System.Drawing.Point(1032, 14);
+            this.dangNhap.Name = "dangNhap";
+            this.dangNhap.Size = new System.Drawing.Size(85, 20);
+            this.dangNhap.TabIndex = 4;
+            this.dangNhap.Text = "đăng nhập";
+            this.dangNhap.Click += new System.EventHandler(this.dangNhap_Click_1);
+            // 
+            // Icon
+            // 
+            this.Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Icon.Image = ((System.Drawing.Image)(resources.GetObject("Icon.Image")));
+            this.Icon.Location = new System.Drawing.Point(177, -1);
+            this.Icon.Name = "Icon";
+            this.Icon.Size = new System.Drawing.Size(53, 45);
+            this.Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Icon.TabIndex = 0;
+            this.Icon.TabStop = false;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSearch.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.search;
+            this.btnSearch.Location = new System.Drawing.Point(821, 14);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(18, 19);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(275, 14);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(564, 20);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged_1);
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.AutoScrollMinSize = new System.Drawing.Size(10, 10);
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.txtSingContent);
+            this.panel1.Location = new System.Drawing.Point(737, 424);
+            this.panel1.Name = "panel1";
+            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.panel1.Size = new System.Drawing.Size(409, 212);
+            this.panel1.TabIndex = 14;
+            // 
+            // txtSingContent
+            // 
+            this.txtSingContent.AutoSize = true;
+            this.txtSingContent.Location = new System.Drawing.Point(160, 0);
+            this.txtSingContent.Name = "txtSingContent";
+            this.txtSingContent.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtSingContent.Size = new System.Drawing.Size(10, 13);
+            this.txtSingContent.TabIndex = 0;
+            this.txtSingContent.Text = ".";
+            this.txtSingContent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ClientGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__6_;
             this.ClientSize = new System.Drawing.Size(1147, 639);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.hearder);
+            this.Controls.Add(this.MediaZing);
             this.Controls.Add(this.labelBaiHatNoiBat);
             this.Controls.Add(this.title);
             this.Controls.Add(this.grbBaiHatNoiBat);
-            this.Controls.Add(this.Play);
             this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.MaximumSize = new System.Drawing.Size(1163, 678);
             this.MinimumSize = new System.Drawing.Size(1163, 678);
             this.Name = "ClientGUI";
             this.Text = "ClientGUI";
             this.Load += new System.EventHandler(this.ClientGUI_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Icon)).EndInit();
-            this.Play.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).EndInit();
             this.groupBox8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgTheGioiVPop)).EndInit();
@@ -1128,36 +892,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.playpictureBox3)).EndInit();
             this.labelBaiHatNoiBat.ResumeLayout(false);
             this.labelBaiHatNoiBat.PerformLayout();
-            this.grbSeacrh8.ResumeLayout(false);
-            this.grbSeacrh8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.like8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.delete8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playImg8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.download8)).EndInit();
             this.grbSeacrh4.ResumeLayout(false);
             this.grbSeacrh4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.download4)).EndInit();
-            this.grbSeacrh6.ResumeLayout(false);
-            this.grbSeacrh6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.like6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.delete6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playImg6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.download6)).EndInit();
             this.grbSeacrh2.ResumeLayout(false);
             this.grbSeacrh2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.download2)).EndInit();
-            this.grbSeacrh7.ResumeLayout(false);
-            this.grbSeacrh7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.like7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.delete7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playImg7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.download7)).EndInit();
             this.grbSeacrh3.ResumeLayout(false);
             this.grbSeacrh3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like3)).EndInit();
@@ -1176,6 +922,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.delete1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.download1)).EndInit();
+            this.hearder.ResumeLayout(false);
+            this.hearder.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1183,17 +937,6 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label danhMucYeuThich;
-        private System.Windows.Forms.Label trangChu;
-        private System.Windows.Forms.Label caNhan;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox btnSearch;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.PictureBox Icon;
-        private System.Windows.Forms.GroupBox Play;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.PictureBox imgTheGioiVPop;
         private System.Windows.Forms.PictureBox ImgNhacHot;
@@ -1215,12 +958,6 @@
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.Panel labelBaiHatNoiBat;
         private System.Windows.Forms.Label txtTrang;
-        private System.Windows.Forms.Panel grbSeacrh8;
-        private System.Windows.Forms.PictureBox like8;
-        private System.Windows.Forms.Label singsearch8;
-        private System.Windows.Forms.PictureBox delete8;
-        private System.Windows.Forms.PictureBox playImg8;
-        private System.Windows.Forms.PictureBox download8;
         private System.Windows.Forms.Button btnPrePage;
         private System.Windows.Forms.Button btnNextPage;
         private System.Windows.Forms.Panel grbSeacrh4;
@@ -1229,24 +966,12 @@
         private System.Windows.Forms.PictureBox delete4;
         private System.Windows.Forms.PictureBox playImg4;
         private System.Windows.Forms.PictureBox download4;
-        private System.Windows.Forms.Panel grbSeacrh6;
-        private System.Windows.Forms.PictureBox like6;
-        private System.Windows.Forms.Label singsearch6;
-        private System.Windows.Forms.PictureBox delete6;
-        private System.Windows.Forms.PictureBox playImg6;
-        private System.Windows.Forms.PictureBox download6;
         private System.Windows.Forms.Panel grbSeacrh2;
         private System.Windows.Forms.PictureBox like2;
         private System.Windows.Forms.Label singsearch2;
         private System.Windows.Forms.PictureBox delete2;
         private System.Windows.Forms.PictureBox playImg2;
         private System.Windows.Forms.PictureBox download2;
-        private System.Windows.Forms.Panel grbSeacrh7;
-        private System.Windows.Forms.PictureBox like7;
-        private System.Windows.Forms.Label singsearch7;
-        private System.Windows.Forms.PictureBox delete7;
-        private System.Windows.Forms.PictureBox playImg7;
-        private System.Windows.Forms.PictureBox download7;
         private System.Windows.Forms.Panel grbSeacrh3;
         private System.Windows.Forms.PictureBox like3;
         private System.Windows.Forms.Label singsearch3;
@@ -1265,6 +990,17 @@
         private System.Windows.Forms.PictureBox delete1;
         private System.Windows.Forms.PictureBox playImg1;
         private System.Windows.Forms.PictureBox download1;
+        private System.Windows.Forms.Panel hearder;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label trangChu;
+        private System.Windows.Forms.Label danhMucYeuThich;
+        private System.Windows.Forms.Label caNhan;
+        private System.Windows.Forms.Label dangNhap;
+        private System.Windows.Forms.PictureBox Icon;
+        private System.Windows.Forms.PictureBox btnSearch;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label txtSingContent;
 
     }
 }

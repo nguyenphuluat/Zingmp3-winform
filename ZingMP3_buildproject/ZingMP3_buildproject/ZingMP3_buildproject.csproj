@@ -210,6 +210,9 @@
   <ItemGroup>
     <None Include="Resources\Mau-Gradient-hop-ly-va-khong-hop-ly - Sao chép %282%29 - Sao chép.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mau-Gradient-hop-ly-va-khong-hop-ly - Sao chép %285%29.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
