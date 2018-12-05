@@ -33,7 +33,6 @@ C:\Users\onglu\Downloads\github\Zingmp3-winform\ZingMP3_buildproject\ZingMP3_bui
 C:\Users\onglu\Downloads\github\Zingmp3-winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\ZingMP3_buildproject.pdb
 C:\Users\onglu\Downloads\github\Zingmp3-winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\Interop.WMPLib.dll
 C:\Users\onglu\Downloads\github\Zingmp3-winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\AxInterop.WMPLib.dll
-C:\Users\onglu\Downloads\github\Zingmp3-winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.csprojResolveAssemblyReference.cache
 C:\Users\onglu\Downloads\github\Zingmp3-winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.Properties.Resources.resources
 C:\Users\onglu\Downloads\github\Zingmp3-winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.AddAllSing.resources
 C:\Users\onglu\Downloads\github\Zingmp3-winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.ClientGUI.resources

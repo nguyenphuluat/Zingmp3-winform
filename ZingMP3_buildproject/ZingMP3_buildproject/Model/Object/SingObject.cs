@@ -21,7 +21,6 @@ namespace ZingMP3_buildproject.Model.Object
         private bool sing_dowloaded;
         private bool sing_national;
 
-
         public int getSing_id()
         {
             return this.sing_id;

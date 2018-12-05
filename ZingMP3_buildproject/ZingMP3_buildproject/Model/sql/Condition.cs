@@ -13,9 +13,14 @@ namespace ZingMP3_buildproject.Model.sql
 
             if (similar != null)
             {
-                
-                
-                tmp += "sing_dowloaded = '"+similar.getSing_dowloaded()+"' ";
+                if (similar.getSing_content() == "sing_dowloaded")
+                {
+                    tmp += "sing_dowloaded = '" + similar.getSing_dowloaded() + "' ";
+                }
+                if (similar.getSing_content() == "sing_focus")
+                {
+                    tmp += "sing_focus = '" + similar.getSing_focus() + "' ";
+                }
             }
             return tmp;
         }

@@ -113,6 +113,16 @@ namespace ZingMP3_buildproject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__2____Sao_chép {
+            get {
+                object obj = ResourceManager.GetObject("Mau-Gradient-hop-ly-va-khong-hop-ly - Sao chép (2) - Sao chép", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__6_ {
             get {
                 object obj = ResourceManager.GetObject("Mau-Gradient-hop-ly-va-khong-hop-ly - Sao chép (6)", resourceCulture);
