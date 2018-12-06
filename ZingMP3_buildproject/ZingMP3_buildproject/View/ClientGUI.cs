@@ -35,73 +35,83 @@ namespace ZingMP3_buildproject.View
             hideDownload(1);
             hideDelete(0);
         }
-        public void phanTrang(int count, string[] s)
+        public void phanTrang(int count, string[] q)
         {
             tongPage = count / 5;
             tongPage++;
             lePage = count % 5;
 
+            if (lePage == 0)
+            {
+                if (hienTaiPage == tongPage)
+                {
+                    hienTaiPage--;
+                }
+                tongPage--;
+            }
+
             if (count > 0)
             {
-                loadSearch(tongPage, lePage, hienTaiPage, s);
+                loadSearch(tongPage, lePage, hienTaiPage, q);
             }
             else
             {
                 hienGrSearch(0, 0, 0, 0, 0);
             }
         }
-        public void loadSearch(int tongPage, int lePage, int hienTaiPage, string[] s)
+        public void loadSearch(int tongPage, int lePage, int hienTaiPage, string[] q)
         {
             if (lePage == 0)
             {
-                layString(1, 1, 1, 1, 1, s);
                 hienGrSearch(1, 1, 1, 1, 1);
+                layString(1, 1, 1, 1, 1, q);
+                
             }
             else
             {
                 if (hienTaiPage < tongPage)
                 {
-                    layString(1, 1, 1, 1, 1, s);
                     hienGrSearch(1, 1, 1, 1, 1);
+                    layString(1, 1, 1, 1, 1, q);
                 }
                 else
                 {
 
                     if (lePage == 1)
                     {
-                        layString(1, 0, 0, 0, 0, s);
                         hienGrSearch(1, 0, 0, 0, 0);
+                        layString(1, 0, 0, 0, 0, q);
 
                     }
                     if (lePage == 2)
                     {
-                        layString(1, 1, 0, 0, 0, s);
                         hienGrSearch(1, 1, 0, 0, 0);
+                        layString(1, 1, 0, 0, 0, q);
                     }
                     if (lePage == 3)
                     {
-                        layString(1, 1, 1, 0, 0, s);
                         hienGrSearch(1, 1, 1, 0, 0);
+                        layString(1, 1, 1, 0, 0, q);
                     }
                     if (lePage == 4)
                     {
-                        layString(1, 1, 1, 1, 0, s);
                         hienGrSearch(1, 1, 1, 1, 0);
+                        layString(1, 1, 1, 1, 0, q);
                     }
                     if (lePage == 5)
                     {
-                        layString(1, 1, 1, 1, 1, s);
                         hienGrSearch(1, 1, 1, 1, 1);
+                        layString(1, 1, 1, 1, 1, q);
                     }
                     if (lePage == 6)
                     {
-                        layString(1, 1, 1, 1, 1, s);
                         hienGrSearch(1, 1, 1, 1, 1);
+                        layString(1, 1, 1, 1, 1, q);
                     }
                     if (lePage == 7)
                     {
-                        layString(1, 1, 1, 1, 1, s);
                         hienGrSearch(1, 1, 1, 1, 1);
+                        layString(1, 1, 1, 1, 1, q);
                     }
                 }
             }
@@ -131,27 +141,27 @@ namespace ZingMP3_buildproject.View
 
             }
         }
-        public void layString(int i1, int i2, int i3, int i4, int i5, String[] s)
+        public void layString(int i1, int i2, int i3, int i4, int i5, String[] q)
         {
             if (i1 == 1)
             {
-                singsearch1.Text = s[(5 * hienTaiPage) - 5];
+                singsearch1.Text = q[(5 * hienTaiPage) - 5];
             }
             if (i2 == 1)
             {
-                singsearch2.Text = s[(5 * hienTaiPage) - 4];
+                singsearch2.Text = q[(5 * hienTaiPage) - 4];
             }
             if (i3 == 1)
             {
-                singsearch3.Text = s[(5* hienTaiPage) - 3];
+                singsearch3.Text = q[(5* hienTaiPage) - 3];
             }
             if (i4 == 1)
             {
-                singsearch4.Text = s[(5 * hienTaiPage) - 2];
+                singsearch4.Text = q[(5 * hienTaiPage) - 2];
             }
             if (i5 == 1)
             {
-                singsearch5.Text = s[(5 * hienTaiPage) - 1];
+                singsearch5.Text = q[(5 * hienTaiPage) - 1];
             }
            
         }
@@ -331,18 +341,7 @@ namespace ZingMP3_buildproject.View
             hideDelete(1);
             hideDownload(0);
         }
-        public int getIdMin()
-        {
-            SingObject singObject = new SingObject();
-            for (int i = 0; ; i++)
-            {
-                singObject = singControl.getSing(i);
-                if (singObject != null)
-                {
-                    return i;
-                }
-            }
-        }
+        
         private void xuLyXoa(string name)
         {
             SingObject singObject = new SingObject();
@@ -369,6 +368,11 @@ namespace ZingMP3_buildproject.View
             singControl.editSing(singObject);
 
             hienThiHeart();
+
+            if (title.Text == "Yêu thích")
+            {
+                danhMucYeuThich_Click_1(new object(), new EventArgs());
+            }
         }
         private void hienThiYeuDanhMucYeuThich()
         {
@@ -505,17 +509,10 @@ namespace ZingMP3_buildproject.View
             }
         }
 
-        
-
-
-
         private void imgCaSiVietNam_Click(object sender, EventArgs e)
         {
             xuLyHienThiCaNhan();
             List<SingObject> singObjects = singControl.getSings(null, 100);
-            //singControl.singSearch("", s);
-            //int count = Convert.ToInt32(s[99]);
-            //SingObject[] singObjects = new SingObject[count];
             string[] a = new string[singObjects.Count];
             int d = 0;
 
@@ -529,6 +526,8 @@ namespace ZingMP3_buildproject.View
 
             }
             title.Text = "Trong nước";
+            hienTaiPage = 1;
+            txtTrang.Text = hienTaiPage.ToString();
             phanTrang(d, a);
             hienThiHeart();
             //anTheLoai(0);
@@ -620,26 +619,24 @@ namespace ZingMP3_buildproject.View
         private void imgTheGioiVPop_Click(object sender, EventArgs e)
         {
             xuLyHienThiCaNhan();
-            List<SingObject> singObjects = singControl.getSings(null, 100);
-            //singControl.singSearch("", s);
-            //int count = Convert.ToInt32(s[99]);
-            //SingObject[] singObjects = new SingObject[count];
-            string[] a = new string[singObjects.Count];
+            List<SingObject> singObjects1 = singControl.getSings(null, 100);
+            string[] a = new string[singObjects1.Count];
             int d = 0;
 
-            for (int i = 0; i < singObjects.Count; i++)
+            for (int i = 0; i < singObjects1.Count; i++)
             {
-                if (singObjects[i].getSing_national() == false)
+                if (singObjects1[i].getSing_national() == false)
                 {
-                    a[d] = singObjects[i].getSing_name() + " ----- " + singObjects[i].getSing_singer();
+                    a[d] = singObjects1[i].getSing_name() + " ----- " + singObjects1[i].getSing_singer();
                     d++;
                 }
 
             }
             title.Text = "Quốc tế";
+            hienTaiPage = 1;
+            txtTrang.Text = hienTaiPage.ToString();
             phanTrang(d, a);
             hienThiHeart();
-            //anTheLoai(0);
             hideDelete(0);
             hideDownload(1);
         }
@@ -653,7 +650,10 @@ namespace ZingMP3_buildproject.View
         {
             xuLyChonHeart(xuLyTenBaiHat(singsearch1.Text));
         }
-
+        private void like2_Click(object sender, EventArgs e)
+        {
+            xuLyChonHeart(xuLyTenBaiHat(singsearch2.Text));
+        }
         private void like3_Click_1(object sender, EventArgs e)
         {
             xuLyChonHeart(xuLyTenBaiHat(singsearch3.Text));
@@ -879,9 +879,13 @@ namespace ZingMP3_buildproject.View
                 a[d] = objects[i].getSing_name() + " ----- " + objects[i].getSing_singer();
                 d++;
             }
+            if (title.Text != "Yêu thích")
+            {
+                hienTaiPage = 1;
+            }
             title.Text = "Yêu thích";
             this.s = a;
-            hienTaiPage = 1;
+            
             txtTrang.Text = hienTaiPage.ToString();
             phanTrang(d, a);
             hienThiHeart();
@@ -890,7 +894,9 @@ namespace ZingMP3_buildproject.View
         private void dangNhap_Click_1(object sender, EventArgs e)
         {
             LoginView LoginView = new LoginView();
-            LoginView.Show();
+            LoginView.ShowDialog();
         }
+
+        
     }
 }

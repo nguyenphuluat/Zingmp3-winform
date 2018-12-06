@@ -487,6 +487,7 @@
             this.like2.Size = new System.Drawing.Size(16, 16);
             this.like2.TabIndex = 4;
             this.like2.TabStop = false;
+            this.like2.Click += new System.EventHandler(this.like2_Click);
             // 
             // singsearch2
             // 
