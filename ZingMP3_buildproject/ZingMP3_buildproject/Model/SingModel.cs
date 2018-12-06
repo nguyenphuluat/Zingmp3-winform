@@ -58,7 +58,7 @@ namespace ZingMP3_buildproject.Model
         public DataTable getSing(string sing_name)
         {
             String sql = "SELECT * FROM tblsing LEFT JOIN tblcategory ON sing_category_id = category_id "
-                + "WHERE sing_name = '" + sing_name + "'";
+                + "WHERE sing_name = N'" + sing_name + "'";
             DataTable dt = new DataTable();
             dt = Connection.getTable(sql);
 

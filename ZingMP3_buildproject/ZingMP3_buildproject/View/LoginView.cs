@@ -65,7 +65,7 @@ namespace ZingMP3_buildproject.View
 
         private void Login_Load(object sender, EventArgs e)
         {
-            txtUserName.Focus();
+            //txtUserName.Focus();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -79,10 +79,10 @@ namespace ZingMP3_buildproject.View
                 UserObject user = lc.Login(user_name, user_pass);
                 if (user != null)
                 {
-                    MessageBox.Show("Đăng nhâp thành công", "Login", MessageBoxButtons.OK);
                     SingView SingView = new SingView();
                     SingView.Show();
                     this.Close();
+                    
                 }
                 else
                 {

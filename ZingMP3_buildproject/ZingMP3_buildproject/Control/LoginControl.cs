@@ -17,7 +17,6 @@ namespace ZingMP3_buildproject.Control
             DataTableReader dt = um.getUser(user_name, user_pass).CreateDataReader();
             if (dt != null)
             {
-                
                 if (dt.Read())
                 {
                     item = new UserObject();
@@ -29,8 +28,6 @@ namespace ZingMP3_buildproject.Control
                     item.setUser_phone(dt.GetString(5));
 
                 }
-                
-               
             }
                 
             return item;

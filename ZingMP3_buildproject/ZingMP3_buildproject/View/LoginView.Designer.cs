@@ -103,7 +103,6 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(260, 30);
             this.txtUserName.TabIndex = 1;
-            this.txtUserName.TabStop = false;
             this.txtUserName.Text = "user name";
             this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
             this.txtUserName.Leave += new System.EventHandler(this.txtUserName_Leave);
@@ -136,10 +135,10 @@
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(261, 47);
             this.btnLogin.TabIndex = 3;
-            this.btnLogin.TabStop = false;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.Enter += new System.EventHandler(this.btnLogin_Click);
             // 
             // tableLayoutPanel4
             // 

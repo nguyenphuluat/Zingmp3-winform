@@ -14,6 +14,7 @@ namespace ZingMP3_buildproject.View
 {
     public partial class ClientGUI : Form
     {
+        
         SingControl singControl = new SingControl();
         int tongPage, hienTaiPage = 1, lePage, i = 0;
         Boolean running = false;

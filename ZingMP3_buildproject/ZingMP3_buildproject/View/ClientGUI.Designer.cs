@@ -159,7 +159,7 @@
             this.groupBox8.Controls.Add(this.ImgNhacHot);
             this.groupBox8.Controls.Add(this.imgCaSiVietNam);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox8.Location = new System.Drawing.Point(831, 86);
+            this.groupBox8.Location = new System.Drawing.Point(831, 92);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(298, 261);
             this.groupBox8.TabIndex = 8;
@@ -209,7 +209,7 @@
             this.grbBaiHatNoiBat.Controls.Add(this.panelTrend1);
             this.grbBaiHatNoiBat.Controls.Add(this.panelTrend2);
             this.grbBaiHatNoiBat.Controls.Add(this.panelTrend3);
-            this.grbBaiHatNoiBat.Location = new System.Drawing.Point(24, 96);
+            this.grbBaiHatNoiBat.Location = new System.Drawing.Point(24, 79);
             this.grbBaiHatNoiBat.Name = "grbBaiHatNoiBat";
             this.grbBaiHatNoiBat.Size = new System.Drawing.Size(772, 243);
             this.grbBaiHatNoiBat.TabIndex = 10;
@@ -367,7 +367,7 @@
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh3);
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh5);
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh1);
-            this.labelBaiHatNoiBat.Location = new System.Drawing.Point(24, 96);
+            this.labelBaiHatNoiBat.Location = new System.Drawing.Point(24, 88);
             this.labelBaiHatNoiBat.Name = "labelBaiHatNoiBat";
             this.labelBaiHatNoiBat.Size = new System.Drawing.Size(706, 322);
             this.labelBaiHatNoiBat.TabIndex = 12;
@@ -756,7 +756,7 @@
             this.trangChu.AutoSize = true;
             this.trangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.trangChu.ForeColor = System.Drawing.Color.Red;
-            this.trangChu.Location = new System.Drawing.Point(351, 7);
+            this.trangChu.Location = new System.Drawing.Point(351, 0);
             this.trangChu.Name = "trangChu";
             this.trangChu.Size = new System.Drawing.Size(106, 24);
             this.trangChu.TabIndex = 0;
@@ -769,7 +769,7 @@
             this.danhMucYeuThich.AutoSize = true;
             this.danhMucYeuThich.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.danhMucYeuThich.ForeColor = System.Drawing.Color.Red;
-            this.danhMucYeuThich.Location = new System.Drawing.Point(593, 7);
+            this.danhMucYeuThich.Location = new System.Drawing.Point(593, 0);
             this.danhMucYeuThich.Name = "danhMucYeuThich";
             this.danhMucYeuThich.Size = new System.Drawing.Size(202, 24);
             this.danhMucYeuThich.TabIndex = 0;
@@ -782,7 +782,7 @@
             this.caNhan.AutoSize = true;
             this.caNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.caNhan.ForeColor = System.Drawing.Color.Red;
-            this.caNhan.Location = new System.Drawing.Point(475, 7);
+            this.caNhan.Location = new System.Drawing.Point(475, 0);
             this.caNhan.Name = "caNhan";
             this.caNhan.Size = new System.Drawing.Size(100, 24);
             this.caNhan.TabIndex = 0;
@@ -816,7 +816,7 @@
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSearch.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(821, 14);
+            this.btnSearch.Location = new System.Drawing.Point(811, 10);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(18, 19);
             this.btnSearch.TabIndex = 2;
@@ -825,7 +825,7 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(275, 14);
+            this.txtSearch.Location = new System.Drawing.Point(265, 10);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(564, 20);
             this.txtSearch.TabIndex = 1;
