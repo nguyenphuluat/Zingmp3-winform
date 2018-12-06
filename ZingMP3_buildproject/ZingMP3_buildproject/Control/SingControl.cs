@@ -132,7 +132,7 @@ namespace ZingMP3_buildproject.Control
                 {
                     item.setCategory_name("");
                 }
-
+                
                 items.Add(item);
                 
             }
@@ -184,7 +184,7 @@ namespace ZingMP3_buildproject.Control
         public void singTrend(string[] s, string[] a)
         {
             DataTable dataTable = new DataTable();
-            dataTable = sm.getSingAll();
+            dataTable = sm.getSings("");
 
             int i = 0;
             foreach (DataRow row in dataTable.Rows)
@@ -195,53 +195,6 @@ namespace ZingMP3_buildproject.Control
                 i++;
             }
             s[99] = i.ToString();
-        }
-
-        //luat search theo tên tìm kiếm gần đúng
-        public void singSearch(string name, string[] s)
-        {
-            DataTable dataTable = new DataTable();
-            dataTable = sm.getSingLikeName(name);
-            int i = 0;
-            foreach (DataRow row in dataTable.Rows)
-            {
-                s[i] = dataTable.Rows[i][2].ToString() + " ----- " + dataTable.Rows[i][4].ToString();
-                i++;
-            }
-            //giá trị cuối lưu số lượng bài hát tìm kiếm được
-            s[99] = i.ToString();
-        }
-
-        //luật hàm tìm kiếm theo tên chuẩn và trả lại một obj sing
-        public SingObject getSingName(string name)
-        {
-            SingObject item = null;
-
-            DataTableReader dt = sm.getSingName(name).CreateDataReader();
-
-            if (dt.Read())
-            {
-                item = new SingObject();
-                item.setSing_id(dt.GetInt32(0));
-                item.setSing_category_id(dt.GetInt32(1));
-                item.setSing_name(dt.GetString(2));
-                item.setSing_author(dt.GetString(3));
-                item.setSing_singer(dt.GetString(4));
-                item.setSing_listened(dt.GetInt32(5));
-                item.setSing_created_date(dt.GetString(6));
-                item.setSing_focus(dt.GetBoolean(7));
-                item.setSing_content(dt.GetString(8));
-                item.setSing_path_mp3(dt.GetString(9));
-                item.setSing_time(dt.GetInt32(10));
-                item.setSing_dowloaded(dt.GetBoolean(11));
-                item.setSing_national(dt.GetBoolean(12));
-            }
-            return item;
-        }
-        //luat hàm edit lai bai hat (tăng lượt nghe , chuyển vào yêu thích và xe đã tải hay chưa )
-        public void editSingControl(SingObject sing)
-        {
-            sm.editSing(sing);
         }
     }
 }
