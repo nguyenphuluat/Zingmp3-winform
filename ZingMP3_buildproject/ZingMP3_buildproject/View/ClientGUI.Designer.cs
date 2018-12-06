@@ -88,7 +88,7 @@
             this.danhMucYeuThich = new System.Windows.Forms.Label();
             this.caNhan = new System.Windows.Forms.Label();
             this.dangNhap = new System.Windows.Forms.Label();
-            this.Icon = new System.Windows.Forms.PictureBox();
+            this.icon = new System.Windows.Forms.PictureBox();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -135,7 +135,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.download1)).BeginInit();
             this.hearder.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -731,7 +731,7 @@
             this.hearder.BackColor = System.Drawing.Color.Transparent;
             this.hearder.Controls.Add(this.panel3);
             this.hearder.Controls.Add(this.dangNhap);
-            this.hearder.Controls.Add(this.Icon);
+            this.hearder.Controls.Add(this.icon);
             this.hearder.Controls.Add(this.btnSearch);
             this.hearder.Controls.Add(this.txtSearch);
             this.hearder.Location = new System.Drawing.Point(-1, -1);
@@ -801,16 +801,16 @@
             this.dangNhap.Text = "đăng nhập";
             this.dangNhap.Click += new System.EventHandler(this.dangNhap_Click_1);
             // 
-            // Icon
+            // icon
             // 
-            this.Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Icon.Image = ((System.Drawing.Image)(resources.GetObject("Icon.Image")));
-            this.Icon.Location = new System.Drawing.Point(177, -1);
-            this.Icon.Name = "Icon";
-            this.Icon.Size = new System.Drawing.Size(53, 45);
-            this.Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Icon.TabIndex = 0;
-            this.Icon.TabStop = false;
+            this.icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.icon.Image = ((System.Drawing.Image)(resources.GetObject("icon.Image")));
+            this.icon.Location = new System.Drawing.Point(177, -1);
+            this.icon.Name = "icon";
+            this.icon.Size = new System.Drawing.Size(53, 45);
+            this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.icon.TabIndex = 0;
+            this.icon.TabStop = false;
             // 
             // btnSearch
             // 
@@ -868,6 +868,7 @@
             this.Controls.Add(this.title);
             this.Controls.Add(this.grbBaiHatNoiBat);
             this.Controls.Add(this.groupBox8);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1163, 678);
             this.MinimumSize = new System.Drawing.Size(1163, 678);
             this.Name = "ClientGUI";
@@ -927,7 +928,7 @@
             this.hearder.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -997,7 +998,7 @@
         private System.Windows.Forms.Label danhMucYeuThich;
         private System.Windows.Forms.Label caNhan;
         private System.Windows.Forms.Label dangNhap;
-        private System.Windows.Forms.PictureBox Icon;
+        private System.Windows.Forms.PictureBox icon;
         private System.Windows.Forms.PictureBox btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Panel panel1;

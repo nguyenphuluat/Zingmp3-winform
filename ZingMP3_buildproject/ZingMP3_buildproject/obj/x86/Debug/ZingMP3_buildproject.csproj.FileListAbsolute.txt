@@ -57,3 +57,21 @@ C:\Users\onglu\Downloads\github\Zingmp3-winform\ZingMP3_buildproject\ZingMP3_bui
 C:\Users\onglu\Downloads\github\Zingmp3-winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.SingView.resources
 C:\Users\onglu\Downloads\github\Zingmp3-winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.csproj.GenerateResource.Cache
 >>>>>>> 1d043a83d20a64581116b9267e001f7eeb9fe787
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\ZingMP3_buildproject.exe.config
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\Interop.WMPLib.dll
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\AxInterop.WMPLib.dll
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.csproj.ResolveComReference.cache
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.exe
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.pdb
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\ZingMP3_buildproject.exe
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\ZingMP3_buildproject.pdb
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\Interop.WMPLib.dll
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\AxInterop.WMPLib.dll
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.Properties.Resources.resources
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.AddAllSing.resources
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.ClientGUI.resources
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.Index.resources
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.LoginView.resources
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.SingAE.resources
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.SingView.resources
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.csproj.GenerateResource.Cache
