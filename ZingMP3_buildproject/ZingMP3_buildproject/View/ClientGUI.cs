@@ -559,7 +559,7 @@ namespace ZingMP3_buildproject.View
                     }
                 }
             }
-            /*labelSearch1.Visible = false;
+            labelSearch1.Visible = false;
             labelSearch2.Visible = false;
             labelSearch3.Visible = false;
             labelSearch4.Visible = false;
@@ -568,7 +568,7 @@ namespace ZingMP3_buildproject.View
             labelTrend1.Visible = false;
             labelTrend2.Visible = false;
             labelTrend3.Visible = false;
-            labelTrend4.Visible = false;*/
+            labelTrend4.Visible = false;
         }
 
         private void imgCaSiVietNam_Click(object sender, EventArgs e)
@@ -893,7 +893,7 @@ namespace ZingMP3_buildproject.View
                 d++;
                 id[i] = objects[i].getSing_id();
             }
-            title.Text = "Cá nhân";
+            title.Text = "Bài hát phù hợp tìm kiếm";
             this.s = a;
             hienTaiPage = 1;
 
