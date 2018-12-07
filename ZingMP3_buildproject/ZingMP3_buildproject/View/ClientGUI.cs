@@ -271,7 +271,7 @@ namespace ZingMP3_buildproject.View
 
         public string xuLyTenBaiHat(string s)
         {
-            string[] a = s.Split('-');
+            string[] a = s.Split('*');
             a[0] = a[0].Substring(0, a[0].Length - 1);
             return a[0];
         }
@@ -279,7 +279,6 @@ namespace ZingMP3_buildproject.View
         {
             SingObject singObject = new SingObject();
             singObject = singControl.getSing(name);
-            MessageBox.Show(singObject.getSing_path_mp3());
             try
             {
                 //System.Media.SoundPlayer player = new System.Media.SoundPlayer();
@@ -457,12 +456,21 @@ namespace ZingMP3_buildproject.View
 
             s = new string[100];
             String[] a = new string[100];
+            /*
+            singControl.singTrend(s, a);*/
+            List<SingObject> SingObjects=new List<SingObject>();
+            SingObjects = singControl.getSings(null,100);
 
-            singControl.singTrend(s, a);
+            String[] s1 = new string[SingObjects.Count];
+            String[] a1 = new string[SingObjects.Count];
 
-            String[] s1 = new string[Convert.ToInt32(s[99])];
-            String[] a1 = new string[Convert.ToInt32(s[99])];
-            for (int i = 0; i < Convert.ToInt32(s[99]); i++)
+            for (int i = 0; i < SingObjects.Count; i++)
+            {
+                s[i] = SingObjects[i].getSing_name() + " *----* "+ SingObjects[i].getSing_singer();
+                a[i] = SingObjects[i].getSing_listened().ToString();
+            }
+
+            for (int i = 0; i < SingObjects.Count; i++)
             {
                 s1[i] = s[i];
                 a1[i] = a[i];
@@ -470,7 +478,7 @@ namespace ZingMP3_buildproject.View
 
             trend(s1, a1);
 
-            if (Convert.ToInt32(s[99]) >= 4)
+            if (SingObjects.Count >= 4)
             {
                 singtrend1.Text = s1[0];
                 singtrend2.Text = s1[1];
@@ -481,7 +489,7 @@ namespace ZingMP3_buildproject.View
             }
             else
             {
-                if (Convert.ToInt32(s[99]) == 3)
+                if (SingObjects.Count == 3)
                 {
                     singtrend1.Text = s1[0];
                     singtrend2.Text = s1[1];
@@ -490,7 +498,7 @@ namespace ZingMP3_buildproject.View
                 }
                 else
                 {
-                    if (Convert.ToInt32(s[99]) == 2)
+                    if (SingObjects.Count == 2)
                     {
                         singtrend1.Text = s1[0];
                         singtrend2.Text = s1[1];
@@ -498,7 +506,7 @@ namespace ZingMP3_buildproject.View
                     }
                     else
                     {
-                        if (Convert.ToInt32(s[99]) == 1)
+                        if (SingObjects.Count == 1)
                         {
                             singtrend1.Text = s1[0];
                             hienTrend(1, 0, 0, 0);
@@ -523,7 +531,7 @@ namespace ZingMP3_buildproject.View
             {
                 if (singObjects[i].getSing_national() == true)
                 {
-                    a[d] = singObjects[i].getSing_name() + " ----- " + singObjects[i].getSing_singer();
+                    a[d] = singObjects[i].getSing_name() + " *-----* " + singObjects[i].getSing_singer();
                     d++;
                 }
 
@@ -632,7 +640,7 @@ namespace ZingMP3_buildproject.View
             {
                 if (singObjects1[i].getSing_national() == false)
                 {
-                    a[d] = singObjects1[i].getSing_name() + " ----- " + singObjects1[i].getSing_singer();
+                    a[d] = singObjects1[i].getSing_name() + " *-----* " + singObjects1[i].getSing_singer();
                     d++;
                 }
 
@@ -824,7 +832,7 @@ namespace ZingMP3_buildproject.View
 
             for (int i = 0; i < objects.Count; i++)
             {
-                a[d] = objects[i].getSing_name() + " ----- " + objects[i].getSing_singer();
+                a[d] = objects[i].getSing_name() + " *-----* " + objects[i].getSing_singer();
                 d++;
             }
             title.Text = "Cá nhân";
@@ -863,7 +871,7 @@ namespace ZingMP3_buildproject.View
 
             for (int i = 0; i < objects.Count; i++)
             {
-                a[d] = objects[i].getSing_name() + " ----- " + objects[i].getSing_singer();
+                a[d] = objects[i].getSing_name() + " *-----* " + objects[i].getSing_singer();
                 d++;
             }
             title.Text = "Cá nhân";
@@ -890,7 +898,7 @@ namespace ZingMP3_buildproject.View
 
             for (int i = 0; i < objects.Count; i++)
             {
-                a[d] = objects[i].getSing_name() + " ----- " + objects[i].getSing_singer();
+                a[d] = objects[i].getSing_name() + " *-----* " + objects[i].getSing_singer();
                 d++;
             }
             if (title.Text != "Yêu thích")

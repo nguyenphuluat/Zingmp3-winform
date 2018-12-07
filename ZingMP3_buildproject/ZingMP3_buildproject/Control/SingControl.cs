@@ -179,22 +179,5 @@ namespace ZingMP3_buildproject.Control
 
             return items;
         }
-
-        //LUẬT lấy các bài hát theo thứ tự lượt nghe giảm dần
-        public void singTrend(string[] s, string[] a)
-        {
-            DataTable dataTable = new DataTable();
-            dataTable = sm.getSings("");
-
-            int i = 0;
-            foreach (DataRow row in dataTable.Rows)
-            {
-                //làm xong cái nghe thì thêm một cái mảng lượt nghe rồi sắp xếp lại tên
-                s[i] = dataTable.Rows[i][2].ToString() + " ---- " + dataTable.Rows[i][4].ToString();
-                a[i] = dataTable.Rows[i][5].ToString();
-                i++;
-            }
-            s[99] = i.ToString();
-        }
     }
 }
