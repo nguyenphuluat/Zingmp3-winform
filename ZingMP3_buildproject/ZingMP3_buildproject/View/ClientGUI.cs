@@ -15,11 +15,12 @@ namespace ZingMP3_buildproject.View
     public partial class ClientGUI : Form
     {
         SingControl singControl = new SingControl();
-        int tongPage, hienTaiPage = 1, lePage, i = 0,trangDangPhat;
+        int tongPage, hienTaiPage = 1, lePage, i = 0, trangDangPhat;
         Boolean running = false;
         string name = "";
         PictureBox PictureBox = new PictureBox();
-        string[] s = new string[100];
+        string[] s;
+        int[] id;
 
 
 
@@ -148,22 +149,27 @@ namespace ZingMP3_buildproject.View
             if (i1 == 1)
             {
                 singsearch1.Text = q[(5 * hienTaiPage) - 5];
+                labelSearch1.Text = id[0].ToString();
             }
             if (i2 == 1)
             {
                 singsearch2.Text = q[(5 * hienTaiPage) - 4];
+                labelSearch2.Text = id[1].ToString();
             }
             if (i3 == 1)
             {
                 singsearch3.Text = q[(5 * hienTaiPage) - 3];
+                labelSearch3.Text = id[2].ToString();
             }
             if (i4 == 1)
             {
                 singsearch4.Text = q[(5 * hienTaiPage) - 2];
+                labelSearch4.Text = id[3].ToString();
             }
             if (i5 == 1)
             {
                 singsearch5.Text = q[(5 * hienTaiPage) - 1];
+                labelSearch5.Text = id[4].ToString();
             }
 
         }
@@ -249,21 +255,24 @@ namespace ZingMP3_buildproject.View
                 panelTrend4.Visible = false;
             }
         }
-        public void trend(string[] s, string[] a)
+        public void trend(string[] s, int[] a ,int [] id)
         {
             for (int i = 0; i < a.Length; i++)
             {
-                string max = a[i];
+                int max = a[i];
                 for (int j = i + 1; j < a.Length; j++)
                 {
-                    if (Convert.ToInt32(max) < Convert.ToInt32(a[j]))
+                    if (max < a[j])
                     {
                         string tem = s[i];
                         s[i] = s[j];
                         s[j] = tem;
-                        String tem2 = a[i];
+                        int tem2 = a[i];
                         a[i] = a[j];
                         a[j] = tem2;
+                        int tem3 = id[i];
+                        id[i] = id[j];
+                        id[j] = tem3;
                     }
                 }
             }
@@ -275,10 +284,11 @@ namespace ZingMP3_buildproject.View
             a[0] = a[0].Substring(0, a[0].Length - 1);
             return a[0];
         }
-        private void playMusic(string name, PictureBox pb)
+        private void playMusic(string name, PictureBox pb,Label la)
         {
             SingObject singObject = new SingObject();
-            singObject = singControl.getSing(name);
+            //singObject = singControl.getSing(name);
+            singObject = singControl.getSing(Convert.ToInt32(la.Text));
             try
             {
                 //System.Media.SoundPlayer player = new System.Media.SoundPlayer();
@@ -307,7 +317,7 @@ namespace ZingMP3_buildproject.View
                         PictureBox.Image = Image.FromFile(@"..\..\..\..\Img\Run.png");
                         running = false;
 
-                        playMusic(name, pb);
+                        playMusic(name, pb,la);
                     }
                     else
                     {
@@ -453,37 +463,34 @@ namespace ZingMP3_buildproject.View
         {
             grbBaiHatNoiBat.Visible = true;
             labelBaiHatNoiBat.Visible = false;
-
-            s = new string[100];
-            String[] a = new string[100];
-            /*
-            singControl.singTrend(s, a);*/
             List<SingObject> SingObjects=new List<SingObject>();
             SingObjects = singControl.getSings(null,100);
 
-            String[] s1 = new string[SingObjects.Count];
-            String[] a1 = new string[SingObjects.Count];
+            s= new string[SingObjects.Count];
+            int[] a = new int [SingObjects.Count];
+            id = new int [SingObjects.Count];
 
             for (int i = 0; i < SingObjects.Count; i++)
             {
                 s[i] = SingObjects[i].getSing_name() + " *----* "+ SingObjects[i].getSing_singer();
-                a[i] = SingObjects[i].getSing_listened().ToString();
+                a[i] = SingObjects[i].getSing_listened();
+                id[i] = SingObjects[i].getSing_id();
             }
 
-            for (int i = 0; i < SingObjects.Count; i++)
-            {
-                s1[i] = s[i];
-                a1[i] = a[i];
-            }
 
-            trend(s1, a1);
+            trend(s, a, id);
 
             if (SingObjects.Count >= 4)
             {
-                singtrend1.Text = s1[0];
-                singtrend2.Text = s1[1];
-                singtrend3.Text = s1[2];
-                singtrend4.Text = s1[3];
+                singtrend1.Text = s[0];
+                singtrend2.Text = s[1];
+                singtrend3.Text = s[2];
+                singtrend4.Text = s[3];
+
+                labelTrend1.Text = id[1].ToString();
+                labelTrend2.Text = id[2].ToString();
+                labelTrend3.Text = id[3].ToString();
+                labelTrend4.Text = id[4].ToString();
 
                 hienTrend(1, 1, 1, 1);
             }
@@ -491,24 +498,36 @@ namespace ZingMP3_buildproject.View
             {
                 if (SingObjects.Count == 3)
                 {
-                    singtrend1.Text = s1[0];
-                    singtrend2.Text = s1[1];
-                    singtrend3.Text = s1[2];
+                    singtrend1.Text = s[0];
+                    singtrend2.Text = s[1];
+                    singtrend3.Text = s[2];
+
+                    labelTrend1.Text = id[0].ToString();
+                    labelTrend2.Text = id[1].ToString();
+                    labelTrend3.Text = id[2].ToString();
+
                     hienTrend(1, 1, 1, 0);
                 }
                 else
                 {
                     if (SingObjects.Count == 2)
                     {
-                        singtrend1.Text = s1[0];
-                        singtrend2.Text = s1[1];
+                        singtrend1.Text = s[0];
+                        singtrend2.Text = s[1];
+
+                        labelTrend1.Text = id[0].ToString();
+                        labelTrend2.Text = id[1].ToString();
+
                         hienTrend(1, 1, 0, 0);
                     }
                     else
                     {
                         if (SingObjects.Count == 1)
                         {
-                            singtrend1.Text = s1[0];
+                            singtrend1.Text = s[0];
+
+                            labelTrend1.Text = id[0].ToString();
+
                             hienTrend(1, 0, 0, 0);
                         }
                         else
@@ -526,13 +545,14 @@ namespace ZingMP3_buildproject.View
             List<SingObject> singObjects = singControl.getSings(null, 100);
             string[] a = new string[singObjects.Count];
             int d = 0;
-
+            id = new int[singObjects.Count];
             for (int i = 0; i < singObjects.Count; i++)
             {
                 if (singObjects[i].getSing_national() == true)
                 {
                     a[d] = singObjects[i].getSing_name() + " *-----* " + singObjects[i].getSing_singer();
                     d++;
+                    id[i] = singObjects[i].getSing_id();
                 }
 
             }
@@ -635,13 +655,14 @@ namespace ZingMP3_buildproject.View
             List<SingObject> singObjects1 = singControl.getSings(null, 100);
             string[] a = new string[singObjects1.Count];
             int d = 0;
-
+            id = new int[singObjects1.Count];
             for (int i = 0; i < singObjects1.Count; i++)
             {
                 if (singObjects1[i].getSing_national() == false)
                 {
                     a[d] = singObjects1[i].getSing_name() + " *-----* " + singObjects1[i].getSing_singer();
                     d++;
+                    id[i] = singObjects1[i].getSing_id();
                 }
 
             }
@@ -713,22 +734,22 @@ namespace ZingMP3_buildproject.View
         //4 nút phát nhạc ở phần nhạc hot
         private void playpictureBox1_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singtrend1.Text), playpictureBox1);
+            playMusic(xuLyTenBaiHat(singtrend1.Text), playpictureBox1,labelTrend1);
         }
 
         private void playpictureBox2_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singtrend2.Text), playpictureBox2);
+            playMusic(xuLyTenBaiHat(singtrend2.Text), playpictureBox2,labelTrend2);
         }
 
         private void playpictureBox3_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singtrend3.Text), playpictureBox3);
+            playMusic(xuLyTenBaiHat(singtrend3.Text), playpictureBox3, labelTrend3);
         }
 
         private void playpictureBox4_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singtrend4.Text), playpictureBox4);
+            playMusic(xuLyTenBaiHat(singtrend4.Text), playpictureBox4, labelTrend4);
         }
         //8 nút download khi click
         private void download5_Click_1(object sender, EventArgs e)
@@ -761,28 +782,28 @@ namespace ZingMP3_buildproject.View
         //5 nút play lúc tìm kiếm cá nhân yêu thích
         private void playImg1_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singsearch1.Text), playImg1);
+            playMusic(xuLyTenBaiHat(singsearch1.Text), playImg1,labelSearch1);
         }
 
         private void playImg2_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singsearch2.Text), playImg2);
+            playMusic(xuLyTenBaiHat(singsearch2.Text), playImg2,labelSearch2);
         }
 
         private void playImg3_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singsearch3.Text), playImg3);
+            playMusic(xuLyTenBaiHat(singsearch3.Text), playImg3, labelSearch3);
 
         }
 
         private void playImg4_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singsearch4.Text), playImg4);
+            playMusic(xuLyTenBaiHat(singsearch4.Text), playImg4, labelSearch4);
         }
 
         private void playImg5_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singsearch5.Text), playImg5);
+            playMusic(xuLyTenBaiHat(singsearch5.Text), playImg5, labelSearch5);
         }
 
 
@@ -829,11 +850,12 @@ namespace ZingMP3_buildproject.View
             objects = singControl.getSings(item, 100);
             string[] a = new string[objects.Count];
             int d = 0;
-
+            id = new int[objects.Count];
             for (int i = 0; i < objects.Count; i++)
             {
                 a[d] = objects[i].getSing_name() + " *-----* " + objects[i].getSing_singer();
                 d++;
+                id[i] = objects[i].getSing_id();
             }
             title.Text = "Cá nhân";
             this.s = a;
@@ -868,10 +890,11 @@ namespace ZingMP3_buildproject.View
             objects = singControl.getSings(item, 100);
             string[] a = new string[objects.Count];
             int d = 0;
-
+            id = new int[objects.Count];
             for (int i = 0; i < objects.Count; i++)
             {
                 a[d] = objects[i].getSing_name() + " *-----* " + objects[i].getSing_singer();
+                id[i] = objects[i].getSing_id();
                 d++;
             }
             title.Text = "Cá nhân";
@@ -895,11 +918,12 @@ namespace ZingMP3_buildproject.View
             objects = singControl.getSings(item, 100);
             string[] a = new string[objects.Count];
             int d = 0;
-
+            id = new int[objects.Count];
             for (int i = 0; i < objects.Count; i++)
             {
                 a[d] = objects[i].getSing_name() + " *-----* " + objects[i].getSing_singer();
                 d++;
+                id[i] = objects[i].getSing_id();
             }
             if (title.Text != "Yêu thích")
             {
