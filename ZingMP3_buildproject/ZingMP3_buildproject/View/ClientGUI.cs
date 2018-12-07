@@ -15,7 +15,7 @@ namespace ZingMP3_buildproject.View
     public partial class ClientGUI : Form
     {
         SingControl singControl = new SingControl();
-        int tongPage, hienTaiPage = 1, lePage, i = 0;
+        int tongPage, hienTaiPage = 1, lePage, i = 0,trangDangPhat;
         Boolean running = false;
         string name = "";
         PictureBox PictureBox = new PictureBox();
@@ -279,6 +279,7 @@ namespace ZingMP3_buildproject.View
         {
             SingObject singObject = new SingObject();
             singObject = singControl.getSing(name);
+            MessageBox.Show(singObject.getSing_path_mp3());
             try
             {
                 //System.Media.SoundPlayer player = new System.Media.SoundPlayer();

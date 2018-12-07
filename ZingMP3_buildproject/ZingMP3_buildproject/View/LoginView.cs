@@ -80,7 +80,7 @@ namespace ZingMP3_buildproject.View
                 if (user != null)
                 {
                     SingView SingView = new SingView();
-                    SingView.Show();
+                    SingView.ShowDialog();
                     this.Close();
                     
                 }

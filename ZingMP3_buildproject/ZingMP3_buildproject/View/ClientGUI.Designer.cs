@@ -49,6 +49,10 @@
             this.singtrend3 = new System.Windows.Forms.Label();
             this.title = new System.Windows.Forms.Label();
             this.labelBaiHatNoiBat = new System.Windows.Forms.Panel();
+            this.labelTrang4 = new System.Windows.Forms.Label();
+            this.labelTrang5 = new System.Windows.Forms.Label();
+            this.labelTrang2 = new System.Windows.Forms.Label();
+            this.labelTrang1 = new System.Windows.Forms.Label();
             this.labelTrang3 = new System.Windows.Forms.Label();
             this.btnPrePage = new System.Windows.Forms.Button();
             this.btnNextPage = new System.Windows.Forms.Button();
@@ -88,15 +92,11 @@
             this.danhMucYeuThich = new System.Windows.Forms.Label();
             this.caNhan = new System.Windows.Forms.Label();
             this.dangNhap = new System.Windows.Forms.Label();
-            this.Icon = new System.Windows.Forms.PictureBox();
+            this.myIcon = new System.Windows.Forms.PictureBox();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtSingContent = new System.Windows.Forms.Label();
-            this.labelTrang1 = new System.Windows.Forms.Label();
-            this.labelTrang2 = new System.Windows.Forms.Label();
-            this.labelTrang5 = new System.Windows.Forms.Label();
-            this.labelTrang4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).BeginInit();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgTheGioiVPop)).BeginInit();
@@ -139,7 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.download1)).BeginInit();
             this.hearder.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -379,6 +379,42 @@
             this.labelBaiHatNoiBat.Name = "labelBaiHatNoiBat";
             this.labelBaiHatNoiBat.Size = new System.Drawing.Size(706, 322);
             this.labelBaiHatNoiBat.TabIndex = 12;
+            // 
+            // labelTrang4
+            // 
+            this.labelTrang4.AutoSize = true;
+            this.labelTrang4.Location = new System.Drawing.Point(382, 295);
+            this.labelTrang4.Name = "labelTrang4";
+            this.labelTrang4.Size = new System.Drawing.Size(13, 13);
+            this.labelTrang4.TabIndex = 5;
+            this.labelTrang4.Text = "4";
+            // 
+            // labelTrang5
+            // 
+            this.labelTrang5.AutoSize = true;
+            this.labelTrang5.Location = new System.Drawing.Point(417, 295);
+            this.labelTrang5.Name = "labelTrang5";
+            this.labelTrang5.Size = new System.Drawing.Size(13, 13);
+            this.labelTrang5.TabIndex = 5;
+            this.labelTrang5.Text = "5";
+            // 
+            // labelTrang2
+            // 
+            this.labelTrang2.AutoSize = true;
+            this.labelTrang2.Location = new System.Drawing.Point(312, 295);
+            this.labelTrang2.Name = "labelTrang2";
+            this.labelTrang2.Size = new System.Drawing.Size(13, 13);
+            this.labelTrang2.TabIndex = 5;
+            this.labelTrang2.Text = "2";
+            // 
+            // labelTrang1
+            // 
+            this.labelTrang1.AutoSize = true;
+            this.labelTrang1.Location = new System.Drawing.Point(277, 295);
+            this.labelTrang1.Name = "labelTrang1";
+            this.labelTrang1.Size = new System.Drawing.Size(13, 13);
+            this.labelTrang1.TabIndex = 5;
+            this.labelTrang1.Text = "1";
             // 
             // labelTrang3
             // 
@@ -739,7 +775,7 @@
             this.hearder.BackColor = System.Drawing.Color.Transparent;
             this.hearder.Controls.Add(this.panel3);
             this.hearder.Controls.Add(this.dangNhap);
-            this.hearder.Controls.Add(this.Icon);
+            this.hearder.Controls.Add(this.myIcon);
             this.hearder.Controls.Add(this.btnSearch);
             this.hearder.Controls.Add(this.txtSearch);
             this.hearder.Location = new System.Drawing.Point(-1, -1);
@@ -813,16 +849,16 @@
             this.dangNhap.Text = "đăng nhập";
             this.dangNhap.Click += new System.EventHandler(this.dangNhap_Click_1);
             // 
-            // Icon
+            // myIcon
             // 
-            this.Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Icon.Image = ((System.Drawing.Image)(resources.GetObject("Icon.Image")));
-            this.Icon.Location = new System.Drawing.Point(177, -1);
-            this.Icon.Name = "Icon";
-            this.Icon.Size = new System.Drawing.Size(53, 45);
-            this.Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Icon.TabIndex = 0;
-            this.Icon.TabStop = false;
+            this.myIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.myIcon.Image = ((System.Drawing.Image)(resources.GetObject("myIcon.Image")));
+            this.myIcon.Location = new System.Drawing.Point(177, -1);
+            this.myIcon.Name = "myIcon";
+            this.myIcon.Size = new System.Drawing.Size(53, 45);
+            this.myIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.myIcon.TabIndex = 0;
+            this.myIcon.TabStop = false;
             // 
             // btnSearch
             // 
@@ -866,42 +902,6 @@
             this.txtSingContent.TabIndex = 0;
             this.txtSingContent.Text = ".";
             this.txtSingContent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // labelTrang1
-            // 
-            this.labelTrang1.AutoSize = true;
-            this.labelTrang1.Location = new System.Drawing.Point(277, 295);
-            this.labelTrang1.Name = "labelTrang1";
-            this.labelTrang1.Size = new System.Drawing.Size(13, 13);
-            this.labelTrang1.TabIndex = 5;
-            this.labelTrang1.Text = "1";
-            // 
-            // labelTrang2
-            // 
-            this.labelTrang2.AutoSize = true;
-            this.labelTrang2.Location = new System.Drawing.Point(312, 295);
-            this.labelTrang2.Name = "labelTrang2";
-            this.labelTrang2.Size = new System.Drawing.Size(13, 13);
-            this.labelTrang2.TabIndex = 5;
-            this.labelTrang2.Text = "2";
-            // 
-            // labelTrang5
-            // 
-            this.labelTrang5.AutoSize = true;
-            this.labelTrang5.Location = new System.Drawing.Point(417, 295);
-            this.labelTrang5.Name = "labelTrang5";
-            this.labelTrang5.Size = new System.Drawing.Size(13, 13);
-            this.labelTrang5.TabIndex = 5;
-            this.labelTrang5.Text = "5";
-            // 
-            // labelTrang4
-            // 
-            this.labelTrang4.AutoSize = true;
-            this.labelTrang4.Location = new System.Drawing.Point(382, 295);
-            this.labelTrang4.Name = "labelTrang4";
-            this.labelTrang4.Size = new System.Drawing.Size(13, 13);
-            this.labelTrang4.TabIndex = 5;
-            this.labelTrang4.Text = "4";
             // 
             // ClientGUI
             // 
@@ -967,7 +967,7 @@
             this.hearder.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.myIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1036,7 +1036,7 @@
         private System.Windows.Forms.Label danhMucYeuThich;
         private System.Windows.Forms.Label caNhan;
         private System.Windows.Forms.Label dangNhap;
-        private System.Windows.Forms.PictureBox Icon;
+        private System.Windows.Forms.PictureBox myIcon;
         private System.Windows.Forms.PictureBox btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Panel panel1;
