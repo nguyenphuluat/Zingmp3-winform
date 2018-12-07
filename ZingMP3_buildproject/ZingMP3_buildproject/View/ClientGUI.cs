@@ -509,10 +509,10 @@ namespace ZingMP3_buildproject.View
                 singtrend3.Text = s[2];
                 singtrend4.Text = s[3];
 
-                labelTrend1.Text = id[1].ToString();
-                labelTrend2.Text = id[2].ToString();
-                labelTrend3.Text = id[3].ToString();
-                labelTrend4.Text = id[4].ToString();
+                labelTrend1.Text = id[0].ToString();
+                labelTrend2.Text = id[1].ToString();
+                labelTrend3.Text = id[2].ToString();
+                labelTrend4.Text = id[3].ToString();
 
                 hienTrend(1, 1, 1, 1);
             }
@@ -559,7 +559,7 @@ namespace ZingMP3_buildproject.View
                     }
                 }
             }
-            labelSearch1.Visible = false;
+            /*labelSearch1.Visible = false;
             labelSearch2.Visible = false;
             labelSearch3.Visible = false;
             labelSearch4.Visible = false;
@@ -568,7 +568,7 @@ namespace ZingMP3_buildproject.View
             labelTrend1.Visible = false;
             labelTrend2.Visible = false;
             labelTrend3.Visible = false;
-            labelTrend4.Visible = false;
+            labelTrend4.Visible = false;*/
         }
 
         private void imgCaSiVietNam_Click(object sender, EventArgs e)
