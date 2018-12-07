@@ -101,10 +101,11 @@
             this.labelTrend2 = new System.Windows.Forms.Label();
             this.labelTrend3 = new System.Windows.Forms.Label();
             this.labelTrend4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelSearch1 = new System.Windows.Forms.Label();
+            this.labelSearch2 = new System.Windows.Forms.Label();
+            this.labelSearch3 = new System.Windows.Forms.Label();
+            this.labelSearch5 = new System.Windows.Forms.Label();
+            this.labelSearch4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).BeginInit();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgTheGioiVPop)).BeginInit();
@@ -460,6 +461,7 @@
             // grbSeacrh4
             // 
             this.grbSeacrh4.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__2____Sao_chép;
+            this.grbSeacrh4.Controls.Add(this.labelSearch4);
             this.grbSeacrh4.Controls.Add(this.like4);
             this.grbSeacrh4.Controls.Add(this.singsearch4);
             this.grbSeacrh4.Controls.Add(this.delete4);
@@ -525,7 +527,7 @@
             // grbSeacrh2
             // 
             this.grbSeacrh2.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__2____Sao_chép;
-            this.grbSeacrh2.Controls.Add(this.label6);
+            this.grbSeacrh2.Controls.Add(this.labelSearch2);
             this.grbSeacrh2.Controls.Add(this.like2);
             this.grbSeacrh2.Controls.Add(this.singsearch2);
             this.grbSeacrh2.Controls.Add(this.delete2);
@@ -591,7 +593,7 @@
             // grbSeacrh3
             // 
             this.grbSeacrh3.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__2____Sao_chép;
-            this.grbSeacrh3.Controls.Add(this.label7);
+            this.grbSeacrh3.Controls.Add(this.labelSearch3);
             this.grbSeacrh3.Controls.Add(this.like3);
             this.grbSeacrh3.Controls.Add(this.singsearch3);
             this.grbSeacrh3.Controls.Add(this.delete3);
@@ -657,7 +659,7 @@
             // grbSeacrh5
             // 
             this.grbSeacrh5.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__2____Sao_chép;
-            this.grbSeacrh5.Controls.Add(this.label8);
+            this.grbSeacrh5.Controls.Add(this.labelSearch5);
             this.grbSeacrh5.Controls.Add(this.like5);
             this.grbSeacrh5.Controls.Add(this.singsearch5);
             this.grbSeacrh5.Controls.Add(this.delete5);
@@ -723,7 +725,7 @@
             // grbSeacrh1
             // 
             this.grbSeacrh1.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.Mau_Gradient_hop_ly_va_khong_hop_ly___Sao_chép__2____Sao_chép;
-            this.grbSeacrh1.Controls.Add(this.label5);
+            this.grbSeacrh1.Controls.Add(this.labelSearch1);
             this.grbSeacrh1.Controls.Add(this.like1);
             this.grbSeacrh1.Controls.Add(this.singsearch1);
             this.grbSeacrh1.Controls.Add(this.delete1);
@@ -955,41 +957,50 @@
             this.labelTrend4.TabIndex = 2;
             this.labelTrend4.Text = ".";
             // 
-            // label5
+            // labelSearch1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(682, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(10, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = ".";
+            this.labelSearch1.AutoSize = true;
+            this.labelSearch1.Location = new System.Drawing.Point(682, 23);
+            this.labelSearch1.Name = "labelSearch1";
+            this.labelSearch1.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch1.TabIndex = 2;
+            this.labelSearch1.Text = ".";
             // 
-            // label6
+            // labelSearch2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(682, 23);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(10, 13);
-            this.label6.TabIndex = 2;
-            this.label6.Text = ".";
+            this.labelSearch2.AutoSize = true;
+            this.labelSearch2.Location = new System.Drawing.Point(682, 23);
+            this.labelSearch2.Name = "labelSearch2";
+            this.labelSearch2.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch2.TabIndex = 2;
+            this.labelSearch2.Text = ".";
             // 
-            // label7
+            // labelSearch3
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(682, 22);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(10, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = ".";
+            this.labelSearch3.AutoSize = true;
+            this.labelSearch3.Location = new System.Drawing.Point(682, 22);
+            this.labelSearch3.Name = "labelSearch3";
+            this.labelSearch3.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch3.TabIndex = 2;
+            this.labelSearch3.Text = ".";
             // 
-            // label8
+            // labelSearch5
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(682, 23);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(10, 13);
-            this.label8.TabIndex = 2;
-            this.label8.Text = ".";
+            this.labelSearch5.AutoSize = true;
+            this.labelSearch5.Location = new System.Drawing.Point(682, 23);
+            this.labelSearch5.Name = "labelSearch5";
+            this.labelSearch5.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch5.TabIndex = 2;
+            this.labelSearch5.Text = ".";
+            // 
+            // labelSearch4
+            // 
+            this.labelSearch4.AutoSize = true;
+            this.labelSearch4.Location = new System.Drawing.Point(682, 24);
+            this.labelSearch4.Name = "labelSearch4";
+            this.labelSearch4.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch4.TabIndex = 2;
+            this.labelSearch4.Text = ".";
             // 
             // ClientGUI
             // 
@@ -1031,6 +1042,7 @@
             this.labelBaiHatNoiBat.ResumeLayout(false);
             this.labelBaiHatNoiBat.PerformLayout();
             this.grbSeacrh4.ResumeLayout(false);
+            this.grbSeacrh4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg4)).EndInit();
@@ -1145,10 +1157,11 @@
         private System.Windows.Forms.Label labelTrend1;
         private System.Windows.Forms.Label labelTrend2;
         private System.Windows.Forms.Label labelTrend3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelSearch2;
+        private System.Windows.Forms.Label labelSearch3;
+        private System.Windows.Forms.Label labelSearch5;
+        private System.Windows.Forms.Label labelSearch1;
+        private System.Windows.Forms.Label labelSearch4;
 
     }
 }
