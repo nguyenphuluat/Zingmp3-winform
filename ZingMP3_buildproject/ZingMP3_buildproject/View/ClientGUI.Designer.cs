@@ -49,7 +49,7 @@
             this.singtrend3 = new System.Windows.Forms.Label();
             this.title = new System.Windows.Forms.Label();
             this.labelBaiHatNoiBat = new System.Windows.Forms.Panel();
-            this.txtTrang = new System.Windows.Forms.Label();
+            this.labelTrang3 = new System.Windows.Forms.Label();
             this.btnPrePage = new System.Windows.Forms.Button();
             this.btnNextPage = new System.Windows.Forms.Button();
             this.grbSeacrh4 = new System.Windows.Forms.Panel();
@@ -88,11 +88,15 @@
             this.danhMucYeuThich = new System.Windows.Forms.Label();
             this.caNhan = new System.Windows.Forms.Label();
             this.dangNhap = new System.Windows.Forms.Label();
-            this.icon = new System.Windows.Forms.PictureBox();
+            this.Icon = new System.Windows.Forms.PictureBox();
             this.btnSearch = new System.Windows.Forms.PictureBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtSingContent = new System.Windows.Forms.Label();
+            this.labelTrang1 = new System.Windows.Forms.Label();
+            this.labelTrang2 = new System.Windows.Forms.Label();
+            this.labelTrang5 = new System.Windows.Forms.Label();
+            this.labelTrang4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).BeginInit();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgTheGioiVPop)).BeginInit();
@@ -135,7 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.download1)).BeginInit();
             this.hearder.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.icon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -159,7 +163,7 @@
             this.groupBox8.Controls.Add(this.ImgNhacHot);
             this.groupBox8.Controls.Add(this.imgCaSiVietNam);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox8.Location = new System.Drawing.Point(831, 92);
+            this.groupBox8.Location = new System.Drawing.Point(831, 86);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(298, 261);
             this.groupBox8.TabIndex = 8;
@@ -209,7 +213,7 @@
             this.grbBaiHatNoiBat.Controls.Add(this.panelTrend1);
             this.grbBaiHatNoiBat.Controls.Add(this.panelTrend2);
             this.grbBaiHatNoiBat.Controls.Add(this.panelTrend3);
-            this.grbBaiHatNoiBat.Location = new System.Drawing.Point(24, 79);
+            this.grbBaiHatNoiBat.Location = new System.Drawing.Point(24, 96);
             this.grbBaiHatNoiBat.Name = "grbBaiHatNoiBat";
             this.grbBaiHatNoiBat.Size = new System.Drawing.Size(772, 243);
             this.grbBaiHatNoiBat.TabIndex = 10;
@@ -237,13 +241,13 @@
             // 
             // singtrend4
             // 
-            this.singtrend4.AutoSize = true;
+            this.singtrend4.AutoEllipsis = true;
             this.singtrend4.BackColor = System.Drawing.Color.Transparent;
             this.singtrend4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.singtrend4.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.singtrend4.Location = new System.Drawing.Point(16, 16);
             this.singtrend4.Name = "singtrend4";
-            this.singtrend4.Size = new System.Drawing.Size(22, 31);
+            this.singtrend4.Size = new System.Drawing.Size(697, 31);
             this.singtrend4.TabIndex = 1;
             this.singtrend4.Text = ".";
             // 
@@ -270,13 +274,13 @@
             // 
             // singtrend1
             // 
-            this.singtrend1.AutoSize = true;
+            this.singtrend1.AutoEllipsis = true;
             this.singtrend1.BackColor = System.Drawing.Color.Transparent;
             this.singtrend1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.singtrend1.ForeColor = System.Drawing.Color.White;
             this.singtrend1.Location = new System.Drawing.Point(16, 16);
             this.singtrend1.Name = "singtrend1";
-            this.singtrend1.Size = new System.Drawing.Size(22, 31);
+            this.singtrend1.Size = new System.Drawing.Size(697, 31);
             this.singtrend1.TabIndex = 1;
             this.singtrend1.Text = ",";
             // 
@@ -303,13 +307,13 @@
             // 
             // singtrend2
             // 
-            this.singtrend2.AutoSize = true;
+            this.singtrend2.AutoEllipsis = true;
             this.singtrend2.BackColor = System.Drawing.Color.Transparent;
             this.singtrend2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.singtrend2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.singtrend2.Location = new System.Drawing.Point(16, 16);
             this.singtrend2.Name = "singtrend2";
-            this.singtrend2.Size = new System.Drawing.Size(22, 31);
+            this.singtrend2.Size = new System.Drawing.Size(697, 31);
             this.singtrend2.TabIndex = 1;
             this.singtrend2.Text = ".";
             // 
@@ -336,13 +340,13 @@
             // 
             // singtrend3
             // 
-            this.singtrend3.AutoSize = true;
+            this.singtrend3.AutoEllipsis = true;
             this.singtrend3.BackColor = System.Drawing.Color.Transparent;
             this.singtrend3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.singtrend3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.singtrend3.Location = new System.Drawing.Point(16, 16);
             this.singtrend3.Name = "singtrend3";
-            this.singtrend3.Size = new System.Drawing.Size(22, 31);
+            this.singtrend3.Size = new System.Drawing.Size(697, 31);
             this.singtrend3.TabIndex = 1;
             this.singtrend3.Text = ".";
             // 
@@ -354,12 +358,16 @@
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(74, 13);
             this.title.TabIndex = 1;
-            this.title.Text = "bai hát nổi bật";
+            this.title.Text = "bài hát nổi bật";
             // 
             // labelBaiHatNoiBat
             // 
             this.labelBaiHatNoiBat.BackColor = System.Drawing.Color.Transparent;
-            this.labelBaiHatNoiBat.Controls.Add(this.txtTrang);
+            this.labelBaiHatNoiBat.Controls.Add(this.labelTrang4);
+            this.labelBaiHatNoiBat.Controls.Add(this.labelTrang5);
+            this.labelBaiHatNoiBat.Controls.Add(this.labelTrang2);
+            this.labelBaiHatNoiBat.Controls.Add(this.labelTrang1);
+            this.labelBaiHatNoiBat.Controls.Add(this.labelTrang3);
             this.labelBaiHatNoiBat.Controls.Add(this.btnPrePage);
             this.labelBaiHatNoiBat.Controls.Add(this.btnNextPage);
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh4);
@@ -367,23 +375,23 @@
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh3);
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh5);
             this.labelBaiHatNoiBat.Controls.Add(this.grbSeacrh1);
-            this.labelBaiHatNoiBat.Location = new System.Drawing.Point(24, 88);
+            this.labelBaiHatNoiBat.Location = new System.Drawing.Point(24, 96);
             this.labelBaiHatNoiBat.Name = "labelBaiHatNoiBat";
             this.labelBaiHatNoiBat.Size = new System.Drawing.Size(706, 322);
             this.labelBaiHatNoiBat.TabIndex = 12;
             // 
-            // txtTrang
+            // labelTrang3
             // 
-            this.txtTrang.AutoSize = true;
-            this.txtTrang.Location = new System.Drawing.Point(347, 295);
-            this.txtTrang.Name = "txtTrang";
-            this.txtTrang.Size = new System.Drawing.Size(13, 13);
-            this.txtTrang.TabIndex = 4;
-            this.txtTrang.Text = "1";
+            this.labelTrang3.AutoSize = true;
+            this.labelTrang3.Location = new System.Drawing.Point(347, 295);
+            this.labelTrang3.Name = "labelTrang3";
+            this.labelTrang3.Size = new System.Drawing.Size(13, 13);
+            this.labelTrang3.TabIndex = 4;
+            this.labelTrang3.Text = "3";
             // 
             // btnPrePage
             // 
-            this.btnPrePage.Location = new System.Drawing.Point(244, 290);
+            this.btnPrePage.Location = new System.Drawing.Point(180, 290);
             this.btnPrePage.Name = "btnPrePage";
             this.btnPrePage.Size = new System.Drawing.Size(75, 23);
             this.btnPrePage.TabIndex = 1;
@@ -393,7 +401,7 @@
             // 
             // btnNextPage
             // 
-            this.btnNextPage.Location = new System.Drawing.Point(388, 290);
+            this.btnNextPage.Location = new System.Drawing.Point(452, 290);
             this.btnNextPage.Name = "btnNextPage";
             this.btnNextPage.Size = new System.Drawing.Size(75, 23);
             this.btnNextPage.TabIndex = 1;
@@ -426,13 +434,13 @@
             // 
             // singsearch4
             // 
-            this.singsearch4.AutoSize = true;
+            this.singsearch4.AutoEllipsis = true;
             this.singsearch4.BackColor = System.Drawing.Color.Transparent;
             this.singsearch4.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.singsearch4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.singsearch4.Location = new System.Drawing.Point(12, 5);
             this.singsearch4.Name = "singsearch4";
-            this.singsearch4.Size = new System.Drawing.Size(21, 31);
+            this.singsearch4.Size = new System.Drawing.Size(576, 31);
             this.singsearch4.TabIndex = 0;
             this.singsearch4.Text = ".";
             // 
@@ -491,13 +499,13 @@
             // 
             // singsearch2
             // 
-            this.singsearch2.AutoSize = true;
+            this.singsearch2.AutoEllipsis = true;
             this.singsearch2.BackColor = System.Drawing.Color.Transparent;
             this.singsearch2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.singsearch2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.singsearch2.Location = new System.Drawing.Point(12, 5);
             this.singsearch2.Name = "singsearch2";
-            this.singsearch2.Size = new System.Drawing.Size(21, 31);
+            this.singsearch2.Size = new System.Drawing.Size(576, 31);
             this.singsearch2.TabIndex = 0;
             this.singsearch2.Text = ".";
             // 
@@ -556,13 +564,13 @@
             // 
             // singsearch3
             // 
-            this.singsearch3.AutoSize = true;
+            this.singsearch3.AutoEllipsis = true;
             this.singsearch3.BackColor = System.Drawing.Color.Transparent;
             this.singsearch3.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.singsearch3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.singsearch3.Location = new System.Drawing.Point(12, 5);
             this.singsearch3.Name = "singsearch3";
-            this.singsearch3.Size = new System.Drawing.Size(21, 31);
+            this.singsearch3.Size = new System.Drawing.Size(576, 31);
             this.singsearch3.TabIndex = 0;
             this.singsearch3.Text = ".";
             // 
@@ -621,13 +629,13 @@
             // 
             // singsearch5
             // 
-            this.singsearch5.AutoSize = true;
+            this.singsearch5.AutoEllipsis = true;
             this.singsearch5.BackColor = System.Drawing.Color.Transparent;
             this.singsearch5.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.singsearch5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.singsearch5.Location = new System.Drawing.Point(12, 5);
             this.singsearch5.Name = "singsearch5";
-            this.singsearch5.Size = new System.Drawing.Size(21, 31);
+            this.singsearch5.Size = new System.Drawing.Size(576, 31);
             this.singsearch5.TabIndex = 0;
             this.singsearch5.Text = ".";
             // 
@@ -686,13 +694,13 @@
             // 
             // singsearch1
             // 
-            this.singsearch1.AutoSize = true;
+            this.singsearch1.AutoEllipsis = true;
             this.singsearch1.BackColor = System.Drawing.Color.Transparent;
             this.singsearch1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.singsearch1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.singsearch1.Location = new System.Drawing.Point(11, 5);
             this.singsearch1.Name = "singsearch1";
-            this.singsearch1.Size = new System.Drawing.Size(22, 31);
+            this.singsearch1.Size = new System.Drawing.Size(577, 31);
             this.singsearch1.TabIndex = 0;
             this.singsearch1.Text = ".";
             // 
@@ -731,7 +739,7 @@
             this.hearder.BackColor = System.Drawing.Color.Transparent;
             this.hearder.Controls.Add(this.panel3);
             this.hearder.Controls.Add(this.dangNhap);
-            this.hearder.Controls.Add(this.icon);
+            this.hearder.Controls.Add(this.Icon);
             this.hearder.Controls.Add(this.btnSearch);
             this.hearder.Controls.Add(this.txtSearch);
             this.hearder.Location = new System.Drawing.Point(-1, -1);
@@ -754,11 +762,12 @@
             // 
             this.trangChu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.trangChu.AutoSize = true;
+            this.trangChu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.trangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.trangChu.ForeColor = System.Drawing.Color.Red;
-            this.trangChu.Location = new System.Drawing.Point(351, 0);
+            this.trangChu.Location = new System.Drawing.Point(351, 1);
             this.trangChu.Name = "trangChu";
-            this.trangChu.Size = new System.Drawing.Size(106, 24);
+            this.trangChu.Size = new System.Drawing.Size(108, 26);
             this.trangChu.TabIndex = 0;
             this.trangChu.Text = "Trang chủ";
             this.trangChu.Click += new System.EventHandler(this.trangChu_Click);
@@ -767,11 +776,12 @@
             // 
             this.danhMucYeuThich.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.danhMucYeuThich.AutoSize = true;
+            this.danhMucYeuThich.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.danhMucYeuThich.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.danhMucYeuThich.ForeColor = System.Drawing.Color.Red;
-            this.danhMucYeuThich.Location = new System.Drawing.Point(593, 0);
+            this.danhMucYeuThich.Location = new System.Drawing.Point(593, 1);
             this.danhMucYeuThich.Name = "danhMucYeuThich";
-            this.danhMucYeuThich.Size = new System.Drawing.Size(202, 24);
+            this.danhMucYeuThich.Size = new System.Drawing.Size(204, 26);
             this.danhMucYeuThich.TabIndex = 0;
             this.danhMucYeuThich.Text = "Danh mục yêu thích ";
             this.danhMucYeuThich.Click += new System.EventHandler(this.danhMucYeuThich_Click_1);
@@ -780,11 +790,12 @@
             // 
             this.caNhan.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.caNhan.AutoSize = true;
+            this.caNhan.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.caNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.caNhan.ForeColor = System.Drawing.Color.Red;
-            this.caNhan.Location = new System.Drawing.Point(475, 0);
+            this.caNhan.Location = new System.Drawing.Point(475, 1);
             this.caNhan.Name = "caNhan";
-            this.caNhan.Size = new System.Drawing.Size(100, 24);
+            this.caNhan.Size = new System.Drawing.Size(102, 26);
             this.caNhan.TabIndex = 0;
             this.caNhan.Text = " Cá nhân ";
             this.caNhan.Click += new System.EventHandler(this.caNhan_Click_1);
@@ -792,31 +803,32 @@
             // dangNhap
             // 
             this.dangNhap.AutoSize = true;
+            this.dangNhap.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.dangNhap.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.dangNhap.Location = new System.Drawing.Point(1032, 14);
             this.dangNhap.Name = "dangNhap";
-            this.dangNhap.Size = new System.Drawing.Size(85, 20);
+            this.dangNhap.Size = new System.Drawing.Size(87, 22);
             this.dangNhap.TabIndex = 4;
             this.dangNhap.Text = "đăng nhập";
             this.dangNhap.Click += new System.EventHandler(this.dangNhap_Click_1);
             // 
-            // icon
+            // Icon
             // 
-            this.icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.icon.Image = ((System.Drawing.Image)(resources.GetObject("icon.Image")));
-            this.icon.Location = new System.Drawing.Point(177, -1);
-            this.icon.Name = "icon";
-            this.icon.Size = new System.Drawing.Size(53, 45);
-            this.icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.icon.TabIndex = 0;
-            this.icon.TabStop = false;
+            this.Icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Icon.Image = ((System.Drawing.Image)(resources.GetObject("Icon.Image")));
+            this.Icon.Location = new System.Drawing.Point(177, -1);
+            this.Icon.Name = "Icon";
+            this.Icon.Size = new System.Drawing.Size(53, 45);
+            this.Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Icon.TabIndex = 0;
+            this.Icon.TabStop = false;
             // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSearch.BackgroundImage = global::ZingMP3_buildproject.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(811, 10);
+            this.btnSearch.Location = new System.Drawing.Point(821, 14);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(18, 19);
             this.btnSearch.TabIndex = 2;
@@ -825,7 +837,7 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(265, 10);
+            this.txtSearch.Location = new System.Drawing.Point(275, 14);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(564, 20);
             this.txtSearch.TabIndex = 1;
@@ -833,9 +845,11 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoScroll = true;
             this.panel1.AutoScrollMinSize = new System.Drawing.Size(10, 10);
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.txtSingContent);
             this.panel1.Location = new System.Drawing.Point(737, 424);
             this.panel1.Name = "panel1";
@@ -845,14 +859,49 @@
             // 
             // txtSingContent
             // 
-            this.txtSingContent.AutoSize = true;
-            this.txtSingContent.Location = new System.Drawing.Point(160, 0);
+            this.txtSingContent.Location = new System.Drawing.Point(3, 0);
             this.txtSingContent.Name = "txtSingContent";
             this.txtSingContent.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtSingContent.Size = new System.Drawing.Size(10, 13);
+            this.txtSingContent.Size = new System.Drawing.Size(381, 2000);
             this.txtSingContent.TabIndex = 0;
             this.txtSingContent.Text = ".";
-            this.txtSingContent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSingContent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // labelTrang1
+            // 
+            this.labelTrang1.AutoSize = true;
+            this.labelTrang1.Location = new System.Drawing.Point(277, 295);
+            this.labelTrang1.Name = "labelTrang1";
+            this.labelTrang1.Size = new System.Drawing.Size(13, 13);
+            this.labelTrang1.TabIndex = 5;
+            this.labelTrang1.Text = "1";
+            // 
+            // labelTrang2
+            // 
+            this.labelTrang2.AutoSize = true;
+            this.labelTrang2.Location = new System.Drawing.Point(312, 295);
+            this.labelTrang2.Name = "labelTrang2";
+            this.labelTrang2.Size = new System.Drawing.Size(13, 13);
+            this.labelTrang2.TabIndex = 5;
+            this.labelTrang2.Text = "2";
+            // 
+            // labelTrang5
+            // 
+            this.labelTrang5.AutoSize = true;
+            this.labelTrang5.Location = new System.Drawing.Point(417, 295);
+            this.labelTrang5.Name = "labelTrang5";
+            this.labelTrang5.Size = new System.Drawing.Size(13, 13);
+            this.labelTrang5.TabIndex = 5;
+            this.labelTrang5.Text = "5";
+            // 
+            // labelTrang4
+            // 
+            this.labelTrang4.AutoSize = true;
+            this.labelTrang4.Location = new System.Drawing.Point(382, 295);
+            this.labelTrang4.Name = "labelTrang4";
+            this.labelTrang4.Size = new System.Drawing.Size(13, 13);
+            this.labelTrang4.TabIndex = 5;
+            this.labelTrang4.Text = "4";
             // 
             // ClientGUI
             // 
@@ -868,7 +917,6 @@
             this.Controls.Add(this.title);
             this.Controls.Add(this.grbBaiHatNoiBat);
             this.Controls.Add(this.groupBox8);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1163, 678);
             this.MinimumSize = new System.Drawing.Size(1163, 678);
             this.Name = "ClientGUI";
@@ -881,45 +929,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgCaSiVietNam)).EndInit();
             this.grbBaiHatNoiBat.ResumeLayout(false);
             this.panelTrend4.ResumeLayout(false);
-            this.panelTrend4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playpictureBox4)).EndInit();
             this.panelTrend1.ResumeLayout(false);
-            this.panelTrend1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playpictureBox1)).EndInit();
             this.panelTrend2.ResumeLayout(false);
-            this.panelTrend2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playpictureBox2)).EndInit();
             this.panelTrend3.ResumeLayout(false);
-            this.panelTrend3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.playpictureBox3)).EndInit();
             this.labelBaiHatNoiBat.ResumeLayout(false);
             this.labelBaiHatNoiBat.PerformLayout();
             this.grbSeacrh4.ResumeLayout(false);
-            this.grbSeacrh4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.download4)).EndInit();
             this.grbSeacrh2.ResumeLayout(false);
-            this.grbSeacrh2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.download2)).EndInit();
             this.grbSeacrh3.ResumeLayout(false);
-            this.grbSeacrh3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.download3)).EndInit();
             this.grbSeacrh5.ResumeLayout(false);
-            this.grbSeacrh5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.download5)).EndInit();
             this.grbSeacrh1.ResumeLayout(false);
-            this.grbSeacrh1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.like1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.delete1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playImg1)).EndInit();
@@ -928,10 +967,9 @@
             this.hearder.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.icon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -959,7 +997,7 @@
         private System.Windows.Forms.Label singtrend3;
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.Panel labelBaiHatNoiBat;
-        private System.Windows.Forms.Label txtTrang;
+        private System.Windows.Forms.Label labelTrang3;
         private System.Windows.Forms.Button btnPrePage;
         private System.Windows.Forms.Button btnNextPage;
         private System.Windows.Forms.Panel grbSeacrh4;
@@ -998,11 +1036,15 @@
         private System.Windows.Forms.Label danhMucYeuThich;
         private System.Windows.Forms.Label caNhan;
         private System.Windows.Forms.Label dangNhap;
-        private System.Windows.Forms.PictureBox icon;
+        private System.Windows.Forms.PictureBox Icon;
         private System.Windows.Forms.PictureBox btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label txtSingContent;
+        private System.Windows.Forms.Label labelTrang4;
+        private System.Windows.Forms.Label labelTrang5;
+        private System.Windows.Forms.Label labelTrang2;
+        private System.Windows.Forms.Label labelTrang1;
 
     }
 }

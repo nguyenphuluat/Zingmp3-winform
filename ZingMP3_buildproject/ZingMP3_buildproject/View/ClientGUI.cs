@@ -14,7 +14,6 @@ namespace ZingMP3_buildproject.View
 {
     public partial class ClientGUI : Form
     {
-        
         SingControl singControl = new SingControl();
         int tongPage, hienTaiPage = 1, lePage, i = 0;
         Boolean running = false;
@@ -23,12 +22,13 @@ namespace ZingMP3_buildproject.View
         string[] s = new string[100];
 
 
+
         public ClientGUI()
         {
             InitializeComponent();
         }
 
-        
+
         private void xuKyHienThiSearch()
         {
             grbBaiHatNoiBat.Visible = false;
@@ -66,7 +66,7 @@ namespace ZingMP3_buildproject.View
             {
                 hienGrSearch(1, 1, 1, 1, 1);
                 layString(1, 1, 1, 1, 1, q);
-                
+
             }
             else
             {
@@ -122,11 +122,12 @@ namespace ZingMP3_buildproject.View
             xuLyTaiRoi(singName);
         }
 
-        public void xuLyTaiRoi(string []singName)
+        public void xuLyTaiRoi(string[] singName)
         {
             PictureBox[] pb = { download1, download2, download3, download4, download5 };
             SingObject SingObject = new SingObject();
-            for(int i=0;i<singName.Length;i++){
+            for (int i = 0; i < singName.Length; i++)
+            {
                 SingObject = singControl.getSing(singName[i]);
                 if (SingObject != null)
                 {
@@ -154,7 +155,7 @@ namespace ZingMP3_buildproject.View
             }
             if (i3 == 1)
             {
-                singsearch3.Text = q[(5* hienTaiPage) - 3];
+                singsearch3.Text = q[(5 * hienTaiPage) - 3];
             }
             if (i4 == 1)
             {
@@ -164,7 +165,7 @@ namespace ZingMP3_buildproject.View
             {
                 singsearch5.Text = q[(5 * hienTaiPage) - 1];
             }
-           
+
         }
         public void hienGrSearch(int i, int i2, int i3, int i4, int i5)
         {
@@ -342,7 +343,7 @@ namespace ZingMP3_buildproject.View
             hideDelete(1);
             hideDownload(0);
         }
-        
+
         private void xuLyXoa(string name)
         {
             SingObject singObject = new SingObject();
@@ -381,8 +382,8 @@ namespace ZingMP3_buildproject.View
             hideDelete(0);
             hideDownload(1);
         }
-        
-       
+
+
         //hàm ẩn hiện các icon xóa tải yêu thích phát
         //hàm ẩn hiện xóa
         public void hideDelete(int i)
@@ -453,7 +454,7 @@ namespace ZingMP3_buildproject.View
             grbBaiHatNoiBat.Visible = true;
             labelBaiHatNoiBat.Visible = false;
 
-            s=new string[100];
+            s = new string[100];
             String[] a = new string[100];
 
             singControl.singTrend(s, a);
@@ -528,8 +529,10 @@ namespace ZingMP3_buildproject.View
             }
             title.Text = "Trong nước";
             hienTaiPage = 1;
-            txtTrang.Text = hienTaiPage.ToString();
+
+            //labelTrang3.Text = hienTaiPage.ToString();
             phanTrang(d, a);
+            hienThiTrang();
             hienThiHeart();
             //anTheLoai(0);
             hideDelete(0);
@@ -635,8 +638,10 @@ namespace ZingMP3_buildproject.View
             }
             title.Text = "Quốc tế";
             hienTaiPage = 1;
-            txtTrang.Text = hienTaiPage.ToString();
+
+            //labelTrang3.Text = hienTaiPage.ToString();
             phanTrang(d, a);
+            hienThiTrang();
             hienThiHeart();
             hideDelete(0);
             hideDownload(1);
@@ -645,7 +650,7 @@ namespace ZingMP3_buildproject.View
 
 
         //5 nút yêu thíc khi click
-        
+
 
         private void like1_Click_1(object sender, EventArgs e)
         {
@@ -670,7 +675,7 @@ namespace ZingMP3_buildproject.View
             xuLyChonHeart(xuLyTenBaiHat(singsearch5.Text));
         }
 
-        
+
 
         //nút next trang
         private void btnNextPage_Click(object sender, EventArgs e)
@@ -679,7 +684,8 @@ namespace ZingMP3_buildproject.View
             {
                 hienTaiPage++;
                 loadSearch(tongPage, lePage, hienTaiPage, s);
-                txtTrang.Text = Convert.ToString(hienTaiPage);
+                //labelTrang3.Text = Convert.ToString(hienTaiPage);
+                hienThiTrang();
                 hienThiHeart();
             }
         }
@@ -690,7 +696,8 @@ namespace ZingMP3_buildproject.View
             {
                 hienTaiPage--;
                 loadSearch(tongPage, lePage, hienTaiPage, s);
-                txtTrang.Text = Convert.ToString(hienTaiPage);
+                //labelTrang3.Text = Convert.ToString(hienTaiPage);
+                hienThiTrang();
                 hienThiHeart();
             }
         }
@@ -769,7 +776,7 @@ namespace ZingMP3_buildproject.View
             playMusic(xuLyTenBaiHat(singsearch5.Text), playImg5);
         }
 
-        
+
 
         //5 nút xóa
 
@@ -822,9 +829,12 @@ namespace ZingMP3_buildproject.View
             title.Text = "Cá nhân";
             this.s = a;
             hienTaiPage = 1;
-            txtTrang.Text = hienTaiPage.ToString();
+
+            //labelTrang3.Text = hienTaiPage.ToString();
 
             phanTrang(d, s);
+
+            hienThiTrang();
             hienThiHeart();
         }
 
@@ -858,8 +868,10 @@ namespace ZingMP3_buildproject.View
             title.Text = "Cá nhân";
             this.s = a;
             hienTaiPage = 1;
-            txtTrang.Text = hienTaiPage.ToString();
+
+            //labelTrang3.Text = hienTaiPage.ToString();
             phanTrang(d, s);
+            hienThiTrang();
             hienThiHeart();
         }
 
@@ -886,9 +898,10 @@ namespace ZingMP3_buildproject.View
             }
             title.Text = "Yêu thích";
             this.s = a;
-            
-            txtTrang.Text = hienTaiPage.ToString();
+
+            //labelTrang3.Text = hienTaiPage.ToString();
             phanTrang(d, a);
+            hienThiTrang();
             hienThiHeart();
         }
 
@@ -898,6 +911,196 @@ namespace ZingMP3_buildproject.View
             LoginView.ShowDialog();
         }
 
-        
+        public void hienThiTrang()
+        {
+            int[] page = new int[tongPage];
+
+            for (int i = 0; i < tongPage; i++)
+            {
+                page[i] = i + 1;
+            }
+
+            int viTri = kiemPageHienTai(page);
+
+            if (tongPage <= 5)
+            {
+                if (tongPage == 1)
+                {
+                    labelTrang1.Text = "";
+                    labelTrang2.Text = "";
+                    labelTrang3.Text = "1";
+                    labelTrang4.Text = "";
+                    labelTrang5.Text = "";
+                }
+                else
+                {
+                    if (tongPage == 2)
+                    {
+                        labelTrang1.Text = "";
+                        labelTrang2.Text = "1";
+                        labelTrang3.Text = "";
+                        labelTrang4.Text = "2";
+                        labelTrang5.Text = "";
+                    }
+                    else
+                    {
+                        if (tongPage == 3)
+                        {
+                            labelTrang1.Text = "";
+                            labelTrang2.Text = "1";
+                            labelTrang3.Text = "2";
+                            labelTrang4.Text = "3";
+                            labelTrang5.Text = "";
+                        }
+                        else
+                        {
+                            if (tongPage == 4)
+                            {
+                                labelTrang1.Text = "1";
+                                labelTrang2.Text = "2";
+                                labelTrang3.Text = "3";
+                                labelTrang4.Text = "4";
+                                labelTrang5.Text = "";
+                            }
+                            else
+                            {
+                                if (tongPage == 5)
+                                {
+                                    labelTrang1.Text = "1";
+                                    labelTrang2.Text = "2";
+                                    labelTrang3.Text = "3";
+                                    labelTrang4.Text = "4";
+                                    labelTrang5.Text = "5";
+                                }
+                                else
+                                {
+                                    if (tongPage == 0)
+                                    {
+                                        labelTrang1.Text = "";
+                                        labelTrang2.Text = "";
+                                        labelTrang3.Text = "0";
+                                        labelTrang4.Text = "";
+                                        labelTrang5.Text = "";
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                labelTrang5.Text = "...";
+                if (hienTaiPage <= 4)
+                {
+                    if (hienTaiPage == 1)
+                    {
+                        labelTrang1.Text = page[viTri].ToString();
+                        labelTrang2.Text = page[viTri + 1].ToString();
+                        labelTrang3.Text = page[viTri + 2].ToString();
+                        labelTrang4.Text = page[viTri + 3].ToString();
+                    }
+                    else
+                    {
+                        if (hienTaiPage == 2)
+                        {
+                            labelTrang1.Text = page[viTri - 1].ToString();
+                            labelTrang2.Text = page[viTri].ToString();
+                            labelTrang3.Text = page[viTri + 1].ToString();
+                            labelTrang4.Text = page[viTri + 2].ToString();
+                        }
+                        else
+                        {
+                            if (hienTaiPage == 3)
+                            {
+                                labelTrang1.Text = page[viTri - 2].ToString();
+                                labelTrang2.Text = page[viTri - 1].ToString();
+                                labelTrang3.Text = page[viTri].ToString();
+                                labelTrang4.Text = page[viTri + 1].ToString();
+                            }
+                            else
+                            {
+                                if (hienTaiPage == 4)
+                                {
+                                    labelTrang1.Text = page[viTri - 3].ToString();
+                                    labelTrang2.Text = page[viTri - 2].ToString();
+                                    labelTrang3.Text = page[viTri - 1].ToString();
+                                    labelTrang4.Text = page[viTri].ToString();
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    labelTrang1.Text = "...";
+
+                    if (viTri == tongPage - 4)
+                    {
+                        labelTrang2.Text = page[viTri].ToString();
+                        labelTrang3.Text = page[viTri + 1].ToString();
+                        labelTrang4.Text = page[viTri + 2].ToString();
+                        labelTrang5.Text = page[viTri + 3].ToString();
+                    }
+                    else
+                    {
+                        if (viTri == tongPage - 3)
+                        {
+                            labelTrang2.Text = page[viTri - 1].ToString();
+                            labelTrang3.Text = page[viTri].ToString();
+                            labelTrang4.Text = page[viTri + 1].ToString();
+                            labelTrang5.Text = page[viTri + 2].ToString();
+                        }
+                        else
+                        {
+                            if (viTri == tongPage - 2)
+                            {
+                                labelTrang2.Text = page[viTri - 2].ToString();
+                                labelTrang3.Text = page[viTri - 1].ToString();
+                                labelTrang4.Text = page[viTri].ToString();
+                                labelTrang5.Text = page[viTri + 1].ToString();
+                            }
+                            else
+                            {
+                                if (viTri == tongPage - 1)
+                                {
+                                    labelTrang2.Text = page[viTri - 3].ToString();
+                                    labelTrang3.Text = page[viTri - 2].ToString();
+                                    labelTrang4.Text = page[viTri - 1].ToString();
+                                    labelTrang5.Text = page[viTri].ToString();
+                                }
+                            }
+                        }
+
+
+
+
+                    }
+                }
+            }
+
+            Label[] labels = { labelTrang1, labelTrang2, labelTrang3, labelTrang4, labelTrang5 };
+
+            for (int i = 0; i < 5; i++)
+            {
+                labels[i].BorderStyle = BorderStyle.None;
+                if (hienTaiPage.ToString() == labels[i].Text)
+                {
+                    labels[i].BorderStyle = BorderStyle.Fixed3D;
+                }
+            }
+        }
+        public int kiemPageHienTai(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (hienTaiPage == a[i])
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
     }
 }
