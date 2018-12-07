@@ -17,7 +17,7 @@ namespace ZingMP3_buildproject.View
         SingControl singControl = new SingControl();
         int tongPage, hienTaiPage = 1, lePage, i = 0, trangDangPhat;
         Boolean running = false;
-        string name = "";
+        string name = "",nhan;
         PictureBox PictureBox = new PictureBox();
         string[] s;
         int[] id;
@@ -307,6 +307,9 @@ namespace ZingMP3_buildproject.View
                     this.PictureBox = pb;
 
                     txtSingContent.Text = singObject.getSing_content();
+
+                    trangDangPhat = hienTaiPage;
+                    nhan = title.Text;
                 }
                 else
                 {
@@ -328,12 +331,31 @@ namespace ZingMP3_buildproject.View
                     }
 
                 }
+
+                //xuLyHienThiPlay();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        public void xuLyHienThiPlay()
+        {
+            PictureBox[] pixbox = { playImg1, playImg2, playImg3, playImg4, playImg5 };
+            for (int i = 0; i < 5; i++)
+            {
+                if (this.PictureBox == pixbox[i] && hienTaiPage==trangDangPhat && title.Text==nhan)
+                {
+                    pixbox[i].Image = Image.FromFile(@"..\..\..\..\Img\Pause.png");
+                }
+                else 
+                {
+                    pixbox[i].Image = Image.FromFile(@"..\..\..\..\Img\Run.png");
+                }
+            }
+        }
+
         private void xuLyDownload(string name)
         {
             SingObject singObject = new SingObject();
@@ -537,6 +559,16 @@ namespace ZingMP3_buildproject.View
                     }
                 }
             }
+            labelSearch1.Visible = false;
+            labelSearch2.Visible = false;
+            labelSearch3.Visible = false;
+            labelSearch4.Visible = false;
+            labelSearch5.Visible = false;
+
+            labelTrend1.Visible = false;
+            labelTrend2.Visible = false;
+            labelTrend3.Visible = false;
+            labelTrend4.Visible = false;
         }
 
         private void imgCaSiVietNam_Click(object sender, EventArgs e)
@@ -566,6 +598,7 @@ namespace ZingMP3_buildproject.View
             //anTheLoai(0);
             hideDelete(0);
             hideDownload(1);
+            xuLyHienThiPlay();
         }
 
         private void ImgNhacHot_Click(object sender, EventArgs e)
@@ -675,6 +708,7 @@ namespace ZingMP3_buildproject.View
             hienThiHeart();
             hideDelete(0);
             hideDownload(1);
+            xuLyHienThiPlay();
         }
 
 
@@ -717,6 +751,7 @@ namespace ZingMP3_buildproject.View
                 //labelTrang3.Text = Convert.ToString(hienTaiPage);
                 hienThiTrang();
                 hienThiHeart();
+                xuLyHienThiPlay();
             }
         }
         //nút lùi trnag
@@ -729,6 +764,7 @@ namespace ZingMP3_buildproject.View
                 //labelTrang3.Text = Convert.ToString(hienTaiPage);
                 hienThiTrang();
                 hienThiHeart();
+                xuLyHienThiPlay();
             }
         }
         //4 nút phát nhạc ở phần nhạc hot
@@ -867,6 +903,7 @@ namespace ZingMP3_buildproject.View
 
             hienThiTrang();
             hienThiHeart();
+            xuLyHienThiPlay();
         }
 
         private void txtSearch_TextChanged_1(object sender, EventArgs e)
@@ -905,6 +942,7 @@ namespace ZingMP3_buildproject.View
             phanTrang(d, s);
             hienThiTrang();
             hienThiHeart();
+            xuLyHienThiPlay();
         }
 
         private void danhMucYeuThich_Click_1(object sender, EventArgs e)
@@ -936,6 +974,7 @@ namespace ZingMP3_buildproject.View
             phanTrang(d, a);
             hienThiTrang();
             hienThiHeart();
+            xuLyHienThiPlay();
         }
 
         private void dangNhap_Click_1(object sender, EventArgs e)
