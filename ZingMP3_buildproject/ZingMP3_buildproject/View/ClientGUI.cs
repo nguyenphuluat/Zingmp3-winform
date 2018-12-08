@@ -149,27 +149,27 @@ namespace ZingMP3_buildproject.View
             if (i1 == 1)
             {
                 singsearch1.Text = q[(5 * hienTaiPage) - 5];
-                labelSearch1.Text = id[0].ToString();
+                labelSearch1.Text = id[(5 * hienTaiPage)-5 ].ToString();
             }
             if (i2 == 1)
             {
                 singsearch2.Text = q[(5 * hienTaiPage) - 4];
-                labelSearch2.Text = id[1].ToString();
+                labelSearch2.Text = id[(5 * hienTaiPage) - 4].ToString();
             }
             if (i3 == 1)
             {
                 singsearch3.Text = q[(5 * hienTaiPage) - 3];
-                labelSearch3.Text = id[2].ToString();
+                labelSearch3.Text = id[(5 * hienTaiPage) - 3].ToString();
             }
             if (i4 == 1)
             {
                 singsearch4.Text = q[(5 * hienTaiPage) - 2];
-                labelSearch4.Text = id[3].ToString();
+                labelSearch4.Text = id[(5 * hienTaiPage) -2].ToString();
             }
             if (i5 == 1)
             {
                 singsearch5.Text = q[(5 * hienTaiPage) - 1];
-                labelSearch5.Text = id[4].ToString();
+                labelSearch5.Text = id[(5 * hienTaiPage) - 1].ToString();
             }
 
         }
@@ -289,6 +289,7 @@ namespace ZingMP3_buildproject.View
             SingObject singObject = new SingObject();
             //singObject = singControl.getSing(name);
             singObject = singControl.getSing(Convert.ToInt32(la.Text));
+            
             try
             {
                 //System.Media.SoundPlayer player = new System.Media.SoundPlayer();
@@ -509,10 +510,10 @@ namespace ZingMP3_buildproject.View
                 singtrend3.Text = s[2];
                 singtrend4.Text = s[3];
 
-                labelTrend1.Text = id[1].ToString();
-                labelTrend2.Text = id[2].ToString();
-                labelTrend3.Text = id[3].ToString();
-                labelTrend4.Text = id[4].ToString();
+                labelTrend1.Text = id[0].ToString();
+                labelTrend2.Text = id[1].ToString();
+                labelTrend3.Text = id[2].ToString();
+                labelTrend4.Text = id[3].ToString();
 
                 hienTrend(1, 1, 1, 1);
             }
@@ -590,7 +591,7 @@ namespace ZingMP3_buildproject.View
             }
             title.Text = "Trong nước";
             hienTaiPage = 1;
-
+            this.s = a;
             //labelTrang3.Text = hienTaiPage.ToString();
             phanTrang(d, a);
             hienThiTrang();
@@ -701,7 +702,7 @@ namespace ZingMP3_buildproject.View
             }
             title.Text = "Quốc tế";
             hienTaiPage = 1;
-
+            this.s = a;
             //labelTrang3.Text = hienTaiPage.ToString();
             phanTrang(d, a);
             hienThiTrang();
@@ -893,7 +894,7 @@ namespace ZingMP3_buildproject.View
                 d++;
                 id[i] = objects[i].getSing_id();
             }
-            title.Text = "Cá nhân";
+            title.Text = "Bài hát phù hợp tìm kiếm";
             this.s = a;
             hienTaiPage = 1;
 
