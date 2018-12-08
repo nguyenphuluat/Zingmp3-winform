@@ -70,6 +70,7 @@ namespace ZingMP3_buildproject.View
                 file_mp3 = @"C:\Csharp\ZingMp3\Path_mp3\" + file_name + ".mp3";
                 //Copy file
                 file_mp3 = Library.File_Me.CoppyFile(file_mp3_temp, file_mp3);
+
                 if (!file_mp3.Equals(""))
                 {
                     string[] files = file_mp3.Split('\\');

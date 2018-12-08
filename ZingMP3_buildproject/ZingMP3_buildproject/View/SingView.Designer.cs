@@ -30,7 +30,7 @@ namespace ZingMP3_buildproject.View
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SingView));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.wrapper = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -61,6 +61,9 @@ namespace ZingMP3_buildproject.View
             this.clRun = new System.Windows.Forms.DataGridViewImageColumn();
             this.clEdit = new System.Windows.Forms.DataGridViewImageColumn();
             this.clDel = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
+            this.lblCheckIn = new System.Windows.Forms.Label();
             this.wrapper.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -93,15 +96,19 @@ namespace ZingMP3_buildproject.View
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnCount = 6;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 428F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 321F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnActive, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnLogout, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnAddAll, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnLogout, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnEdit, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnDel, 4, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -168,10 +175,10 @@ namespace ZingMP3_buildproject.View
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(845, 4);
+            this.btnLogout.Location = new System.Drawing.Point(841, 4);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 3, 30, 3);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(101, 31);
+            this.btnLogout.Size = new System.Drawing.Size(105, 31);
             this.btnLogout.TabIndex = 1;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -186,7 +193,7 @@ namespace ZingMP3_buildproject.View
             this.btnAddAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddAll.ForeColor = System.Drawing.Color.White;
-            this.btnAddAll.Location = new System.Drawing.Point(398, 4);
+            this.btnAddAll.Location = new System.Drawing.Point(358, 4);
             this.btnAddAll.Name = "btnAddAll";
             this.btnAddAll.Size = new System.Drawing.Size(161, 30);
             this.btnAddAll.TabIndex = 2;
@@ -211,6 +218,7 @@ namespace ZingMP3_buildproject.View
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lblCheckIn);
             this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Controls.Add(this.MediaZing);
             this.panel2.Controls.Add(this.btnUserManagerment);
@@ -303,6 +311,7 @@ namespace ZingMP3_buildproject.View
             this.dtgCategory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgCategory.Location = new System.Drawing.Point(0, 0);
             this.dtgCategory.Name = "dtgCategory";
+            this.dtgCategory.ReadOnly = true;
             this.dtgCategory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgCategory.Size = new System.Drawing.Size(820, 401);
             this.dtgCategory.TabIndex = 4;
@@ -316,6 +325,7 @@ namespace ZingMP3_buildproject.View
             this.dtgUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgUser.Location = new System.Drawing.Point(0, 0);
             this.dtgUser.Name = "dtgUser";
+            this.dtgUser.ReadOnly = true;
             this.dtgUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgUser.Size = new System.Drawing.Size(820, 401);
             this.dtgUser.TabIndex = 3;
@@ -344,14 +354,14 @@ namespace ZingMP3_buildproject.View
             this.dtgSing.Location = new System.Drawing.Point(0, 0);
             this.dtgSing.Name = "dtgSing";
             this.dtgSing.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgSing.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgSing.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgSing.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgSing.Size = new System.Drawing.Size(820, 401);
             this.dtgSing.TabIndex = 2;
@@ -438,6 +448,51 @@ namespace ZingMP3_buildproject.View
             this.clDel.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.clDel.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
+            // btnEdit
+            // 
+            this.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnEdit.BackColor = System.Drawing.Color.Blue;
+            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(679, 4);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(74, 30);
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "Sửa";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Visible = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnDel.BackColor = System.Drawing.Color.IndianRed;
+            this.btnDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDel.FlatAppearance.BorderSize = 0;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.ForeColor = System.Drawing.Color.White;
+            this.btnDel.Location = new System.Drawing.Point(762, 4);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(67, 30);
+            this.btnDel.TabIndex = 2;
+            this.btnDel.Text = "Xóa";
+            this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.Visible = false;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // lblCheckIn
+            // 
+            this.lblCheckIn.AutoSize = true;
+            this.lblCheckIn.Location = new System.Drawing.Point(19, 360);
+            this.lblCheckIn.Name = "lblCheckIn";
+            this.lblCheckIn.Size = new System.Drawing.Size(0, 13);
+            this.lblCheckIn.TabIndex = 3;
+            this.lblCheckIn.Visible = false;
+            // 
             // SingView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -500,5 +555,8 @@ namespace ZingMP3_buildproject.View
         private System.Windows.Forms.DataGridViewImageColumn clDel;
         private System.Windows.Forms.DataGridView dtgUser;
         private System.Windows.Forms.DataGridView dtgCategory;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDel;
+        private System.Windows.Forms.Label lblCheckIn;
     }
 }

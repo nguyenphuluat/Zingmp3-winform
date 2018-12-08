@@ -34,3 +34,5 @@ D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debu
 D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.SingAE.resources
 D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.SingView.resources
 D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.csproj.GenerateResource.Cache
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.AddCategory.resources
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.AddUser.resources

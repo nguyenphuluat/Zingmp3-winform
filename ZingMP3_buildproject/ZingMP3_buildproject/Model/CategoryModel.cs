@@ -12,20 +12,21 @@ namespace ZingMP3_buildproject.Model
         public void addCategory(CategoryObject item)
         {
             string sql = "INSERT INTO tblcategory(category_name)"
-                 +" VALUES ('"+item.getCategory_name()+"');";
+                 +" VALUES (N'"+item.getCategory_name()+"');";
 
             Connection.ExcuteNonQuery(sql);
         }
         public void editCategory(CategoryObject item)
         {
-            string sql = "UPDATE tblcategory SET category_name = '"+item.getCategory_name()
-                +"' WHERE sing_id = '"+item.getCategory_id()+"';";
+            string sql = "UPDATE tblcategory SET category_name = N'"+item.getCategory_name()
+                +"' WHERE category_id = '"+item.getCategory_id()+"';";
 
             Connection.ExcuteNonQuery(sql);
         }
         public void delCategory(CategoryObject item)
         {
-            string sql = "DELETE FROM tblcategory WHERE category_id = '" + item.getCategory_id() + "';";
+            string sql = "DELETE tblcategory WHERE category_id = '" + item.getCategory_id() + "';";
+            Connection.ExcuteNonQuery(sql);
         }
 
 

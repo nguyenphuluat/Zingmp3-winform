@@ -36,6 +36,8 @@ namespace ZingMP3_buildproject.View
             dtgUser.Visible = false;
             dtgSing.Visible = true;
             btnAddAll.Visible = true;
+            btnEdit.Visible = false;
+            btnDel.Visible = false;
             btnActive.Text = "Thêm bài hát";
             rIndex = 0;
             running = false;
@@ -130,11 +132,13 @@ namespace ZingMP3_buildproject.View
             }
             else if (btnActive.Text.Equals("Thêm thể loại"))
             {
-                SingAE ae = new SingAE();
-                ae.ShowDialog();
+                AddCategory ac = new AddCategory();
+                ac.ShowDialog();
             }
             else if (btnActive.Text.Equals("Thêm người dùng"))
             {
+                AddUser au = new AddUser();
+                au.ShowDialog();
             }
 
         }
@@ -269,6 +273,10 @@ namespace ZingMP3_buildproject.View
             dtgUser.Visible = false;
             btnActive.Text = "Thêm thể loại";
             btnAddAll.Visible = false;
+            btnEdit.Visible = true;
+            btnDel.Visible = true;
+
+            lblCheckIn.Text = "category";
 
             dtgCategory.Columns[0].HeaderText = "Mã thể loại";
             dtgCategory.Columns[1].HeaderText = "Tên thể loại";
@@ -284,6 +292,10 @@ namespace ZingMP3_buildproject.View
             dtgCategory.Visible = false;
             btnActive.Text = "Thêm người dùng";
             btnAddAll.Visible = false;
+            btnEdit.Visible = true;
+            btnDel.Visible = true;
+
+            lblCheckIn.Text = "user";
 
             dtgUser.Columns[0].HeaderText = "User Id";
             dtgUser.Columns[1].HeaderText = "User Name";
@@ -291,7 +303,7 @@ namespace ZingMP3_buildproject.View
             
             dtgUser.Columns[3].HeaderText = "User Fullname";
             dtgUser.Columns[4].HeaderText = "User Address";
-            dtgUser.Columns[0].HeaderText = "User Phone";
+            dtgUser.Columns[5].HeaderText = "User Phone";
 
 
             
@@ -386,6 +398,87 @@ namespace ZingMP3_buildproject.View
                     }
                 }
 
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (lblCheckIn.Text.Equals("category"))
+            {
+                CategoryObject co = new CategoryObject();
+
+                int index = dtgCategory.CurrentCell.RowIndex;
+                DataGridViewRow row = (DataGridViewRow)dtgCategory.Rows[index];
+
+                co.setCategory_id(Int32.Parse(row.Cells[0].Value.ToString()));
+                co.setCategory_name(row.Cells[1].Value.ToString());
+                
+                AddCategory ae = new AddCategory(co);
+                ae.ShowDialog();
+            }
+            else if (lblCheckIn.Text.Equals("user"))
+            {
+                UserObject uo = new UserObject();
+
+                int index = dtgUser.CurrentCell.RowIndex;
+                DataGridViewRow row = (DataGridViewRow)dtgUser.Rows[index];
+
+                uo.setUser_id(Int32.Parse(row.Cells[0].Value.ToString()));
+                uo.setUser_name(row.Cells[1].Value.ToString());
+                uo.setUser_pass(row.Cells[2].Value.ToString());
+                uo.setUser_fullname(row.Cells[3].Value.ToString());
+                uo.setUser_address(row.Cells[4].Value.ToString());
+                uo.setUser_phone(row.Cells[5].Value.ToString());
+
+                AddUser au = new AddUser(uo);
+                
+                au.ShowDialog();
+            }
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (lblCheckIn.Text.Equals("category"))
+            {
+                CategoryObject co = new CategoryObject();
+
+                int index = dtgCategory.CurrentCell.RowIndex;
+                DataGridViewRow row = (DataGridViewRow)dtgCategory.Rows[index];
+
+
+                co.setCategory_id(Int32.Parse(row.Cells[0].Value.ToString()));
+
+                if (co.getCategory_id() != 13)
+                {
+                    CategoryControl cc = new CategoryControl();
+                    DialogResult rs = MessageBox.Show("Bạn có muốn xóa thể loại này", "Cảnh bảo", MessageBoxButtons.OKCancel);
+                    if (rs == DialogResult.OK)
+                    {
+                        cc.dellCategory(co);
+                        btnCategoryManagerment_Click(sender, e);
+                    }
+                    
+                }
+                
+            }
+            else if (lblCheckIn.Text.Equals("user"))
+            {
+                UserObject uo = new UserObject();
+
+                int index = dtgUser.CurrentCell.RowIndex;
+                DataGridViewRow row = (DataGridViewRow)dtgUser.Rows[index];
+
+
+                uo.setUser_id(Int32.Parse(row.Cells[0].Value.ToString()));
+
+                Control.UserControl uc = new Control.UserControl();
+                DialogResult rs = MessageBox.Show("Bạn có muốn xóa tài khoản này", "Cảnh bảo", MessageBoxButtons.OKCancel);
+                if (rs == DialogResult.OK)
+                {
+                    uc.dellUser(uo);
+                    btnUserManagerment_Click(sender, e);
+                }
+                
             }
         }
 
