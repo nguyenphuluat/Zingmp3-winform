@@ -30,21 +30,25 @@ namespace ZingMP3_buildproject.View
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SingView));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.wrapper = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblUserName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.btnActive = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnAddAll = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.MediaZing = new AxWMPLib.AxWindowsMediaPlayer();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnUserManagerment = new System.Windows.Forms.Button();
             this.btnCategoryManagerment = new System.Windows.Forms.Button();
             this.btnSingManagerment = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dtgCategory = new System.Windows.Forms.DataGridView();
+            this.dtgUser = new System.Windows.Forms.DataGridView();
             this.dtgSing = new System.Windows.Forms.DataGridView();
             this.clStt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,7 +61,6 @@ namespace ZingMP3_buildproject.View
             this.clRun = new System.Windows.Forms.DataGridViewImageColumn();
             this.clEdit = new System.Windows.Forms.DataGridViewImageColumn();
             this.clDel = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnAddAll = new System.Windows.Forms.Button();
             this.wrapper.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -65,6 +68,9 @@ namespace ZingMP3_buildproject.View
             this.tableLayoutPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCategory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSing)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,6 +141,23 @@ namespace ZingMP3_buildproject.View
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnActive
+            // 
+            this.btnActive.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(128)))));
+            this.btnActive.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnActive.FlatAppearance.BorderSize = 0;
+            this.btnActive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActive.ForeColor = System.Drawing.Color.White;
+            this.btnActive.Location = new System.Drawing.Point(203, 4);
+            this.btnActive.Name = "btnActive";
+            this.btnActive.Size = new System.Drawing.Size(132, 30);
+            this.btnActive.TabIndex = 2;
+            this.btnActive.Text = "button3";
+            this.btnActive.UseVisualStyleBackColor = false;
+            this.btnActive.Click += new System.EventHandler(this.btnActive_Click);
+            // 
             // btnLogout
             // 
             this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -154,22 +177,22 @@ namespace ZingMP3_buildproject.View
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnActive
+            // btnAddAll
             // 
-            this.btnActive.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(128)))));
-            this.btnActive.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnActive.FlatAppearance.BorderSize = 0;
-            this.btnActive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActive.ForeColor = System.Drawing.Color.White;
-            this.btnActive.Location = new System.Drawing.Point(203, 4);
-            this.btnActive.Name = "btnActive";
-            this.btnActive.Size = new System.Drawing.Size(132, 30);
-            this.btnActive.TabIndex = 2;
-            this.btnActive.Text = "button3";
-            this.btnActive.UseVisualStyleBackColor = false;
-            this.btnActive.Click += new System.EventHandler(this.btnActive_Click);
+            this.btnAddAll.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnAddAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(128)))));
+            this.btnAddAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAddAll.FlatAppearance.BorderSize = 0;
+            this.btnAddAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAll.ForeColor = System.Drawing.Color.White;
+            this.btnAddAll.Location = new System.Drawing.Point(398, 4);
+            this.btnAddAll.Name = "btnAddAll";
+            this.btnAddAll.Size = new System.Drawing.Size(161, 30);
+            this.btnAddAll.TabIndex = 2;
+            this.btnAddAll.Text = "Thêm danh sách bài hát";
+            this.btnAddAll.UseVisualStyleBackColor = false;
+            this.btnAddAll.Click += new System.EventHandler(this.btnAddAll_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -177,7 +200,7 @@ namespace ZingMP3_buildproject.View
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.dtgSing, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel3, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 50);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -190,7 +213,7 @@ namespace ZingMP3_buildproject.View
             // 
             this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Controls.Add(this.MediaZing);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnUserManagerment);
             this.panel2.Controls.Add(this.btnCategoryManagerment);
             this.panel2.Controls.Add(this.btnSingManagerment);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -221,17 +244,18 @@ namespace ZingMP3_buildproject.View
             this.MediaZing.TabIndex = 1;
             this.MediaZing.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.MediaZing_PlayStateChange);
             // 
-            // button2
+            // btnUserManagerment
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.Location = new System.Drawing.Point(-8, 65);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 35);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Quản lý tài khoản";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUserManagerment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUserManagerment.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserManagerment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUserManagerment.Location = new System.Drawing.Point(-8, 65);
+            this.btnUserManagerment.Name = "btnUserManagerment";
+            this.btnUserManagerment.Size = new System.Drawing.Size(159, 35);
+            this.btnUserManagerment.TabIndex = 0;
+            this.btnUserManagerment.Text = "Quản lý tài khoản";
+            this.btnUserManagerment.UseVisualStyleBackColor = true;
+            this.btnUserManagerment.Click += new System.EventHandler(this.btnUserManagerment_Click);
             // 
             // btnCategoryManagerment
             // 
@@ -244,7 +268,7 @@ namespace ZingMP3_buildproject.View
             this.btnCategoryManagerment.TabIndex = 0;
             this.btnCategoryManagerment.Text = "Quản lý thế loại";
             this.btnCategoryManagerment.UseVisualStyleBackColor = true;
-            //this.btnCategoryManagerment.Click += new System.EventHandler(this.btnCategoryManagerment_Click);
+            this.btnCategoryManagerment.Click += new System.EventHandler(this.btnCategoryManagerment_Click);
             // 
             // btnSingManagerment
             // 
@@ -258,6 +282,44 @@ namespace ZingMP3_buildproject.View
             this.btnSingManagerment.Text = "Quản lý bài hát";
             this.btnSingManagerment.UseVisualStyleBackColor = true;
             this.btnSingManagerment.Click += new System.EventHandler(this.btnSingManagerment_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dtgCategory);
+            this.panel3.Controls.Add(this.dtgUser);
+            this.panel3.Controls.Add(this.dtgSing);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(153, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(820, 401);
+            this.panel3.TabIndex = 1;
+            // 
+            // dtgCategory
+            // 
+            this.dtgCategory.AllowUserToAddRows = false;
+            this.dtgCategory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgCategory.BackgroundColor = System.Drawing.Color.White;
+            this.dtgCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgCategory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgCategory.Location = new System.Drawing.Point(0, 0);
+            this.dtgCategory.Name = "dtgCategory";
+            this.dtgCategory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgCategory.Size = new System.Drawing.Size(820, 401);
+            this.dtgCategory.TabIndex = 4;
+            // 
+            // dtgUser
+            // 
+            this.dtgUser.AllowUserToAddRows = false;
+            this.dtgUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgUser.BackgroundColor = System.Drawing.Color.White;
+            this.dtgUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgUser.Location = new System.Drawing.Point(0, 0);
+            this.dtgUser.Name = "dtgUser";
+            this.dtgUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgUser.Size = new System.Drawing.Size(820, 401);
+            this.dtgUser.TabIndex = 3;
+            this.dtgUser.Visible = false;
             // 
             // dtgSing
             // 
@@ -279,20 +341,20 @@ namespace ZingMP3_buildproject.View
             this.clDel});
             this.dtgSing.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgSing.EnableHeadersVisualStyles = false;
-            this.dtgSing.Location = new System.Drawing.Point(153, 3);
+            this.dtgSing.Location = new System.Drawing.Point(0, 0);
             this.dtgSing.Name = "dtgSing";
             this.dtgSing.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgSing.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgSing.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgSing.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgSing.Size = new System.Drawing.Size(820, 401);
-            this.dtgSing.TabIndex = 1;
+            this.dtgSing.TabIndex = 2;
             this.dtgSing.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgSing_CellContentClick);
             // 
             // clStt
@@ -376,23 +438,6 @@ namespace ZingMP3_buildproject.View
             this.clDel.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.clDel.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // btnAddAll
-            // 
-            this.btnAddAll.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnAddAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(128)))));
-            this.btnAddAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAddAll.FlatAppearance.BorderSize = 0;
-            this.btnAddAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddAll.ForeColor = System.Drawing.Color.White;
-            this.btnAddAll.Location = new System.Drawing.Point(398, 4);
-            this.btnAddAll.Name = "btnAddAll";
-            this.btnAddAll.Size = new System.Drawing.Size(161, 30);
-            this.btnAddAll.TabIndex = 2;
-            this.btnAddAll.Text = "Thêm danh sách bài hát";
-            this.btnAddAll.UseVisualStyleBackColor = false;
-            this.btnAddAll.Click += new System.EventHandler(this.btnAddAll_Click);
-            // 
             // SingView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -415,6 +460,9 @@ namespace ZingMP3_buildproject.View
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCategory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgSing)).EndInit();
             this.ResumeLayout(false);
 
@@ -432,10 +480,13 @@ namespace ZingMP3_buildproject.View
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnSingManagerment;
         private System.Windows.Forms.Button btnCategoryManagerment;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dtgSing;
+        private System.Windows.Forms.Button btnUserManagerment;
         private System.Windows.Forms.Button btnActive;
         private AxWMPLib.AxWindowsMediaPlayer MediaZing;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnAddAll;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView dtgSing;
         private System.Windows.Forms.DataGridViewTextBoxColumn clStt;
         private System.Windows.Forms.DataGridViewTextBoxColumn clId;
         private System.Windows.Forms.DataGridViewTextBoxColumn clSingName;
@@ -447,7 +498,7 @@ namespace ZingMP3_buildproject.View
         private System.Windows.Forms.DataGridViewImageColumn clRun;
         private System.Windows.Forms.DataGridViewImageColumn clEdit;
         private System.Windows.Forms.DataGridViewImageColumn clDel;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Button btnAddAll;
+        private System.Windows.Forms.DataGridView dtgUser;
+        private System.Windows.Forms.DataGridView dtgCategory;
     }
 }

@@ -36,15 +36,19 @@
             this.imgCaSiVietNam = new System.Windows.Forms.PictureBox();
             this.grbBaiHatNoiBat = new System.Windows.Forms.Panel();
             this.panelTrend4 = new System.Windows.Forms.Panel();
+            this.labelTrend4 = new System.Windows.Forms.Label();
             this.playpictureBox4 = new System.Windows.Forms.PictureBox();
             this.singtrend4 = new System.Windows.Forms.Label();
             this.panelTrend1 = new System.Windows.Forms.Panel();
+            this.labelTrend1 = new System.Windows.Forms.Label();
             this.playpictureBox1 = new System.Windows.Forms.PictureBox();
             this.singtrend1 = new System.Windows.Forms.Label();
             this.panelTrend2 = new System.Windows.Forms.Panel();
+            this.labelTrend2 = new System.Windows.Forms.Label();
             this.playpictureBox2 = new System.Windows.Forms.PictureBox();
             this.singtrend2 = new System.Windows.Forms.Label();
             this.panelTrend3 = new System.Windows.Forms.Panel();
+            this.labelTrend3 = new System.Windows.Forms.Label();
             this.playpictureBox3 = new System.Windows.Forms.PictureBox();
             this.singtrend3 = new System.Windows.Forms.Label();
             this.title = new System.Windows.Forms.Label();
@@ -57,30 +61,35 @@
             this.btnPrePage = new System.Windows.Forms.Button();
             this.btnNextPage = new System.Windows.Forms.Button();
             this.grbSeacrh4 = new System.Windows.Forms.Panel();
+            this.labelSearch4 = new System.Windows.Forms.Label();
             this.like4 = new System.Windows.Forms.PictureBox();
             this.singsearch4 = new System.Windows.Forms.Label();
             this.delete4 = new System.Windows.Forms.PictureBox();
             this.playImg4 = new System.Windows.Forms.PictureBox();
             this.download4 = new System.Windows.Forms.PictureBox();
             this.grbSeacrh2 = new System.Windows.Forms.Panel();
+            this.labelSearch2 = new System.Windows.Forms.Label();
             this.like2 = new System.Windows.Forms.PictureBox();
             this.singsearch2 = new System.Windows.Forms.Label();
             this.delete2 = new System.Windows.Forms.PictureBox();
             this.playImg2 = new System.Windows.Forms.PictureBox();
             this.download2 = new System.Windows.Forms.PictureBox();
             this.grbSeacrh3 = new System.Windows.Forms.Panel();
+            this.labelSearch3 = new System.Windows.Forms.Label();
             this.like3 = new System.Windows.Forms.PictureBox();
             this.singsearch3 = new System.Windows.Forms.Label();
             this.delete3 = new System.Windows.Forms.PictureBox();
             this.playImg3 = new System.Windows.Forms.PictureBox();
             this.download3 = new System.Windows.Forms.PictureBox();
             this.grbSeacrh5 = new System.Windows.Forms.Panel();
+            this.labelSearch5 = new System.Windows.Forms.Label();
             this.like5 = new System.Windows.Forms.PictureBox();
             this.singsearch5 = new System.Windows.Forms.Label();
             this.delete5 = new System.Windows.Forms.PictureBox();
             this.playImg5 = new System.Windows.Forms.PictureBox();
             this.download5 = new System.Windows.Forms.PictureBox();
             this.grbSeacrh1 = new System.Windows.Forms.Panel();
+            this.labelSearch1 = new System.Windows.Forms.Label();
             this.like1 = new System.Windows.Forms.PictureBox();
             this.singsearch1 = new System.Windows.Forms.Label();
             this.delete1 = new System.Windows.Forms.PictureBox();
@@ -97,15 +106,6 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtSingContent = new System.Windows.Forms.Label();
-            this.labelTrend1 = new System.Windows.Forms.Label();
-            this.labelTrend2 = new System.Windows.Forms.Label();
-            this.labelTrend3 = new System.Windows.Forms.Label();
-            this.labelTrend4 = new System.Windows.Forms.Label();
-            this.labelSearch1 = new System.Windows.Forms.Label();
-            this.labelSearch2 = new System.Windows.Forms.Label();
-            this.labelSearch3 = new System.Windows.Forms.Label();
-            this.labelSearch5 = new System.Windows.Forms.Label();
-            this.labelSearch4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).BeginInit();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgTheGioiVPop)).BeginInit();
@@ -156,7 +156,7 @@
             // MediaZing
             // 
             this.MediaZing.Enabled = true;
-            this.MediaZing.Location = new System.Drawing.Point(24, 424);
+            this.MediaZing.Location = new System.Drawing.Point(24, 419);
             this.MediaZing.Name = "MediaZing";
             this.MediaZing.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MediaZing.OcxState")));
             this.MediaZing.Size = new System.Drawing.Size(706, 212);
@@ -238,6 +238,15 @@
             this.panelTrend4.Size = new System.Drawing.Size(785, 50);
             this.panelTrend4.TabIndex = 0;
             // 
+            // labelTrend4
+            // 
+            this.labelTrend4.AutoSize = true;
+            this.labelTrend4.Location = new System.Drawing.Point(741, 20);
+            this.labelTrend4.Name = "labelTrend4";
+            this.labelTrend4.Size = new System.Drawing.Size(10, 13);
+            this.labelTrend4.TabIndex = 2;
+            this.labelTrend4.Text = ".";
+            // 
             // playpictureBox4
             // 
             this.playpictureBox4.BackColor = System.Drawing.Color.Transparent;
@@ -271,6 +280,15 @@
             this.panelTrend1.Name = "panelTrend1";
             this.panelTrend1.Size = new System.Drawing.Size(785, 50);
             this.panelTrend1.TabIndex = 0;
+            // 
+            // labelTrend1
+            // 
+            this.labelTrend1.AutoSize = true;
+            this.labelTrend1.Location = new System.Drawing.Point(742, 16);
+            this.labelTrend1.Name = "labelTrend1";
+            this.labelTrend1.Size = new System.Drawing.Size(10, 13);
+            this.labelTrend1.TabIndex = 2;
+            this.labelTrend1.Text = ".";
             // 
             // playpictureBox1
             // 
@@ -306,6 +324,15 @@
             this.panelTrend2.Size = new System.Drawing.Size(785, 50);
             this.panelTrend2.TabIndex = 0;
             // 
+            // labelTrend2
+            // 
+            this.labelTrend2.AutoSize = true;
+            this.labelTrend2.Location = new System.Drawing.Point(742, 20);
+            this.labelTrend2.Name = "labelTrend2";
+            this.labelTrend2.Size = new System.Drawing.Size(10, 13);
+            this.labelTrend2.TabIndex = 2;
+            this.labelTrend2.Text = ".";
+            // 
             // playpictureBox2
             // 
             this.playpictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -339,6 +366,15 @@
             this.panelTrend3.Name = "panelTrend3";
             this.panelTrend3.Size = new System.Drawing.Size(785, 50);
             this.panelTrend3.TabIndex = 0;
+            // 
+            // labelTrend3
+            // 
+            this.labelTrend3.AutoSize = true;
+            this.labelTrend3.Location = new System.Drawing.Point(741, 19);
+            this.labelTrend3.Name = "labelTrend3";
+            this.labelTrend3.Size = new System.Drawing.Size(10, 13);
+            this.labelTrend3.TabIndex = 2;
+            this.labelTrend3.Text = ".";
             // 
             // playpictureBox3
             // 
@@ -472,6 +508,15 @@
             this.grbSeacrh4.Size = new System.Drawing.Size(702, 50);
             this.grbSeacrh4.TabIndex = 3;
             // 
+            // labelSearch4
+            // 
+            this.labelSearch4.AutoSize = true;
+            this.labelSearch4.Location = new System.Drawing.Point(682, 24);
+            this.labelSearch4.Name = "labelSearch4";
+            this.labelSearch4.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch4.TabIndex = 2;
+            this.labelSearch4.Text = ".";
+            // 
             // like4
             // 
             this.like4.Image = ((System.Drawing.Image)(resources.GetObject("like4.Image")));
@@ -537,6 +582,15 @@
             this.grbSeacrh2.Name = "grbSeacrh2";
             this.grbSeacrh2.Size = new System.Drawing.Size(702, 50);
             this.grbSeacrh2.TabIndex = 1;
+            // 
+            // labelSearch2
+            // 
+            this.labelSearch2.AutoSize = true;
+            this.labelSearch2.Location = new System.Drawing.Point(682, 23);
+            this.labelSearch2.Name = "labelSearch2";
+            this.labelSearch2.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch2.TabIndex = 2;
+            this.labelSearch2.Text = ".";
             // 
             // like2
             // 
@@ -604,6 +658,15 @@
             this.grbSeacrh3.Size = new System.Drawing.Size(702, 50);
             this.grbSeacrh3.TabIndex = 2;
             // 
+            // labelSearch3
+            // 
+            this.labelSearch3.AutoSize = true;
+            this.labelSearch3.Location = new System.Drawing.Point(682, 22);
+            this.labelSearch3.Name = "labelSearch3";
+            this.labelSearch3.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch3.TabIndex = 2;
+            this.labelSearch3.Text = ".";
+            // 
             // like3
             // 
             this.like3.Image = ((System.Drawing.Image)(resources.GetObject("like3.Image")));
@@ -670,6 +733,15 @@
             this.grbSeacrh5.Size = new System.Drawing.Size(702, 50);
             this.grbSeacrh5.TabIndex = 4;
             // 
+            // labelSearch5
+            // 
+            this.labelSearch5.AutoSize = true;
+            this.labelSearch5.Location = new System.Drawing.Point(682, 23);
+            this.labelSearch5.Name = "labelSearch5";
+            this.labelSearch5.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch5.TabIndex = 2;
+            this.labelSearch5.Text = ".";
+            // 
             // like5
             // 
             this.like5.Image = ((System.Drawing.Image)(resources.GetObject("like5.Image")));
@@ -735,6 +807,15 @@
             this.grbSeacrh1.Name = "grbSeacrh1";
             this.grbSeacrh1.Size = new System.Drawing.Size(702, 50);
             this.grbSeacrh1.TabIndex = 0;
+            // 
+            // labelSearch1
+            // 
+            this.labelSearch1.AutoSize = true;
+            this.labelSearch1.Location = new System.Drawing.Point(682, 23);
+            this.labelSearch1.Name = "labelSearch1";
+            this.labelSearch1.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch1.TabIndex = 2;
+            this.labelSearch1.Text = ".";
             // 
             // like1
             // 
@@ -920,87 +1001,6 @@
             this.txtSingContent.TabIndex = 0;
             this.txtSingContent.Text = ".";
             this.txtSingContent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // labelTrend1
-            // 
-            this.labelTrend1.AutoSize = true;
-            this.labelTrend1.Location = new System.Drawing.Point(742, 16);
-            this.labelTrend1.Name = "labelTrend1";
-            this.labelTrend1.Size = new System.Drawing.Size(10, 13);
-            this.labelTrend1.TabIndex = 2;
-            this.labelTrend1.Text = ".";
-            // 
-            // labelTrend2
-            // 
-            this.labelTrend2.AutoSize = true;
-            this.labelTrend2.Location = new System.Drawing.Point(742, 20);
-            this.labelTrend2.Name = "labelTrend2";
-            this.labelTrend2.Size = new System.Drawing.Size(10, 13);
-            this.labelTrend2.TabIndex = 2;
-            this.labelTrend2.Text = ".";
-            // 
-            // labelTrend3
-            // 
-            this.labelTrend3.AutoSize = true;
-            this.labelTrend3.Location = new System.Drawing.Point(741, 19);
-            this.labelTrend3.Name = "labelTrend3";
-            this.labelTrend3.Size = new System.Drawing.Size(10, 13);
-            this.labelTrend3.TabIndex = 2;
-            this.labelTrend3.Text = ".";
-            // 
-            // labelTrend4
-            // 
-            this.labelTrend4.AutoSize = true;
-            this.labelTrend4.Location = new System.Drawing.Point(741, 20);
-            this.labelTrend4.Name = "labelTrend4";
-            this.labelTrend4.Size = new System.Drawing.Size(10, 13);
-            this.labelTrend4.TabIndex = 2;
-            this.labelTrend4.Text = ".";
-            // 
-            // labelSearch1
-            // 
-            this.labelSearch1.AutoSize = true;
-            this.labelSearch1.Location = new System.Drawing.Point(682, 23);
-            this.labelSearch1.Name = "labelSearch1";
-            this.labelSearch1.Size = new System.Drawing.Size(10, 13);
-            this.labelSearch1.TabIndex = 2;
-            this.labelSearch1.Text = ".";
-            // 
-            // labelSearch2
-            // 
-            this.labelSearch2.AutoSize = true;
-            this.labelSearch2.Location = new System.Drawing.Point(682, 23);
-            this.labelSearch2.Name = "labelSearch2";
-            this.labelSearch2.Size = new System.Drawing.Size(10, 13);
-            this.labelSearch2.TabIndex = 2;
-            this.labelSearch2.Text = ".";
-            // 
-            // labelSearch3
-            // 
-            this.labelSearch3.AutoSize = true;
-            this.labelSearch3.Location = new System.Drawing.Point(682, 22);
-            this.labelSearch3.Name = "labelSearch3";
-            this.labelSearch3.Size = new System.Drawing.Size(10, 13);
-            this.labelSearch3.TabIndex = 2;
-            this.labelSearch3.Text = ".";
-            // 
-            // labelSearch5
-            // 
-            this.labelSearch5.AutoSize = true;
-            this.labelSearch5.Location = new System.Drawing.Point(682, 23);
-            this.labelSearch5.Name = "labelSearch5";
-            this.labelSearch5.Size = new System.Drawing.Size(10, 13);
-            this.labelSearch5.TabIndex = 2;
-            this.labelSearch5.Text = ".";
-            // 
-            // labelSearch4
-            // 
-            this.labelSearch4.AutoSize = true;
-            this.labelSearch4.Location = new System.Drawing.Point(682, 24);
-            this.labelSearch4.Name = "labelSearch4";
-            this.labelSearch4.Size = new System.Drawing.Size(10, 13);
-            this.labelSearch4.TabIndex = 2;
-            this.labelSearch4.Text = ".";
             // 
             // ClientGUI
             // 

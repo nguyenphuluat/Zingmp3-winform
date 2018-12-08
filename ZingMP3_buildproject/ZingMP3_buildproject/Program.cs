@@ -21,7 +21,7 @@ namespace ZingMP3_buildproject
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new View.ClientGUI());
+            Application.Run(new View.SingView());
 
         }
     }
