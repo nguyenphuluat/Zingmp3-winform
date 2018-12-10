@@ -11,7 +11,7 @@ namespace ZingMP3_buildproject.Library
         public static string CoppyFile(string file_mp3_temp, string file_mp3)
         {
             //---------------Coppy file------------------
-            string[] temp = file_mp3_temp.Split('\\');
+            string[] temp;// = file_mp3_temp.Split('\\');
             string fileName = "";
             string sourcePath = file_mp3_temp;
             temp = file_mp3.Split('\\');

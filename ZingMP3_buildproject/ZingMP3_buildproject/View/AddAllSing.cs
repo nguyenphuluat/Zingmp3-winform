@@ -43,7 +43,7 @@ namespace ZingMP3_buildproject.View
             FileInfo info;
             String mes = "";
             SingObject so = new SingObject();
-            SingObject so_template = new SingObject();
+            SingObject so_template;
             SingControl sc = new SingControl();
             if (rdoTrongNuoc.Checked)
             {
@@ -69,6 +69,7 @@ namespace ZingMP3_buildproject.View
 
                 file_mp3 = @"C:\Csharp\ZingMp3\Path_mp3\" + file_name + ".mp3";
                 //Copy file
+                
                 file_mp3 = Library.File_Me.CoppyFile(file_mp3_temp, file_mp3);
 
                 if (!file_mp3.Equals(""))
@@ -83,6 +84,7 @@ namespace ZingMP3_buildproject.View
                 }
 
                 so.setSing_name(info.Name);
+                
                 WMPLib.IWMPMedia media = this.Media.newMedia(info.FullName);
                 so.setSing_time((int)media.duration);
                 so.setSing_singer("Đang cập nhật");
@@ -92,10 +94,18 @@ namespace ZingMP3_buildproject.View
                 so.setSing_category_id(13);
                 
                 so.setSing_created_date(info.CreationTime.ToString().Split(' ')[0]);
+                
                 so_template = sc.getSing(so.getSing_name());
                 if (so_template == null)
                 {
-                    sc.addSing(so);
+                    try
+                    {
+                        sc.addSing(so);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(so.getSing_path_mp3()+"\n" + so.getSing_id());
+                    }
                     mes += so.getSing_name() + " --- Đã được thêm.\n";
                 }
                 else

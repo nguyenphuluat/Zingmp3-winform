@@ -30,17 +30,20 @@ namespace ZingMP3_buildproject.View
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SingView));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.wrapper = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblUserName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnActive = new System.Windows.Forms.Button();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.btnAddAll = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblCheckIn = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.MediaZing = new AxWMPLib.AxWindowsMediaPlayer();
             this.btnUserManagerment = new System.Windows.Forms.Button();
@@ -61,9 +64,6 @@ namespace ZingMP3_buildproject.View
             this.clRun = new System.Windows.Forms.DataGridViewImageColumn();
             this.clEdit = new System.Windows.Forms.DataGridViewImageColumn();
             this.clDel = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnDel = new System.Windows.Forms.Button();
-            this.lblCheckIn = new System.Windows.Forms.Label();
             this.wrapper.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -165,6 +165,23 @@ namespace ZingMP3_buildproject.View
             this.btnActive.UseVisualStyleBackColor = false;
             this.btnActive.Click += new System.EventHandler(this.btnActive_Click);
             // 
+            // btnAddAll
+            // 
+            this.btnAddAll.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnAddAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(128)))));
+            this.btnAddAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAddAll.FlatAppearance.BorderSize = 0;
+            this.btnAddAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAll.ForeColor = System.Drawing.Color.White;
+            this.btnAddAll.Location = new System.Drawing.Point(358, 4);
+            this.btnAddAll.Name = "btnAddAll";
+            this.btnAddAll.Size = new System.Drawing.Size(161, 30);
+            this.btnAddAll.TabIndex = 2;
+            this.btnAddAll.Text = "Thêm danh sách bài hát";
+            this.btnAddAll.UseVisualStyleBackColor = false;
+            this.btnAddAll.Click += new System.EventHandler(this.btnAddAll_Click);
+            // 
             // btnLogout
             // 
             this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -184,22 +201,41 @@ namespace ZingMP3_buildproject.View
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnAddAll
+            // btnEdit
             // 
-            this.btnAddAll.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnAddAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(128)))));
-            this.btnAddAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAddAll.FlatAppearance.BorderSize = 0;
-            this.btnAddAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddAll.ForeColor = System.Drawing.Color.White;
-            this.btnAddAll.Location = new System.Drawing.Point(358, 4);
-            this.btnAddAll.Name = "btnAddAll";
-            this.btnAddAll.Size = new System.Drawing.Size(161, 30);
-            this.btnAddAll.TabIndex = 2;
-            this.btnAddAll.Text = "Thêm danh sách bài hát";
-            this.btnAddAll.UseVisualStyleBackColor = false;
-            this.btnAddAll.Click += new System.EventHandler(this.btnAddAll_Click);
+            this.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnEdit.BackColor = System.Drawing.Color.Blue;
+            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(679, 4);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(74, 30);
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "Sửa";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Visible = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnDel.BackColor = System.Drawing.Color.IndianRed;
+            this.btnDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDel.FlatAppearance.BorderSize = 0;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.ForeColor = System.Drawing.Color.White;
+            this.btnDel.Location = new System.Drawing.Point(762, 4);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(67, 30);
+            this.btnDel.TabIndex = 2;
+            this.btnDel.Text = "Xóa";
+            this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.Visible = false;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -229,6 +265,15 @@ namespace ZingMP3_buildproject.View
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(144, 401);
             this.panel2.TabIndex = 0;
+            // 
+            // lblCheckIn
+            // 
+            this.lblCheckIn.AutoSize = true;
+            this.lblCheckIn.Location = new System.Drawing.Point(19, 360);
+            this.lblCheckIn.Name = "lblCheckIn";
+            this.lblCheckIn.Size = new System.Drawing.Size(0, 13);
+            this.lblCheckIn.TabIndex = 3;
+            this.lblCheckIn.Visible = false;
             // 
             // txtSearch
             // 
@@ -354,14 +399,14 @@ namespace ZingMP3_buildproject.View
             this.dtgSing.Location = new System.Drawing.Point(0, 0);
             this.dtgSing.Name = "dtgSing";
             this.dtgSing.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgSing.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgSing.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgSing.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgSing.Size = new System.Drawing.Size(820, 401);
             this.dtgSing.TabIndex = 2;
@@ -448,51 +493,6 @@ namespace ZingMP3_buildproject.View
             this.clDel.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.clDel.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // btnEdit
-            // 
-            this.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnEdit.BackColor = System.Drawing.Color.Blue;
-            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEdit.FlatAppearance.BorderSize = 0;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(679, 4);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(74, 30);
-            this.btnEdit.TabIndex = 2;
-            this.btnEdit.Text = "Sửa";
-            this.btnEdit.UseVisualStyleBackColor = false;
-            this.btnEdit.Visible = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnDel
-            // 
-            this.btnDel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnDel.BackColor = System.Drawing.Color.IndianRed;
-            this.btnDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDel.FlatAppearance.BorderSize = 0;
-            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.ForeColor = System.Drawing.Color.White;
-            this.btnDel.Location = new System.Drawing.Point(762, 4);
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(67, 30);
-            this.btnDel.TabIndex = 2;
-            this.btnDel.Text = "Xóa";
-            this.btnDel.UseVisualStyleBackColor = false;
-            this.btnDel.Visible = false;
-            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
-            // 
-            // lblCheckIn
-            // 
-            this.lblCheckIn.AutoSize = true;
-            this.lblCheckIn.Location = new System.Drawing.Point(19, 360);
-            this.lblCheckIn.Name = "lblCheckIn";
-            this.lblCheckIn.Size = new System.Drawing.Size(0, 13);
-            this.lblCheckIn.TabIndex = 3;
-            this.lblCheckIn.Visible = false;
-            // 
             // SingView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -505,6 +505,7 @@ namespace ZingMP3_buildproject.View
             this.MinimumSize = new System.Drawing.Size(1000, 500);
             this.Name = "SingView";
             this.Text = "SingView";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SingView_FormClosed);
             this.Load += new System.EventHandler(this.SingView_Load);
             this.wrapper.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

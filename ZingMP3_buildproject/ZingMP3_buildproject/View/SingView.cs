@@ -153,6 +153,7 @@ namespace ZingMP3_buildproject.View
             {
                 txtSearch.Text = "Tìm kiếm...";
                 txtSearch.ForeColor = System.Drawing.Color.DarkGray;
+                
             }
         }
 
@@ -231,7 +232,7 @@ namespace ZingMP3_buildproject.View
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            if(!txtSearch.Text.Equals("") && !txtSearch.Text.Equals("Tìm kiếm...")){
+            if(!txtSearch.Text.Equals("Tìm kiếm...")){
                 SingControl sc = new SingControl();
                 dtgSing.Rows.Clear();
                 List<SingObject> sings = sc.getSearchSings(txtSearch.Text);
@@ -480,6 +481,11 @@ namespace ZingMP3_buildproject.View
                 }
                 
             }
+        }
+
+        private void SingView_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MediaZing.URL = "";
         }
 
         

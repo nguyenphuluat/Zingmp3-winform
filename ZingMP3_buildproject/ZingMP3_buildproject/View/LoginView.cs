@@ -21,7 +21,7 @@ namespace ZingMP3_buildproject.View
         private void txtUserName_Enter(object sender, EventArgs e)
 
         {
-            if (txtUserName.Text == "user name")
+            if (txtUserName.Text.Equals("user name"))
             {
                 txtUserName.Text = "";
                 txtUserName.ForeColor = Color.Gray;
@@ -39,15 +39,12 @@ namespace ZingMP3_buildproject.View
 
         private void txtUserPass_Enter(object sender, EventArgs e)
         {
-            if (txtUserPass.Text == "user pass")
+            if (txtUserPass.Text.Equals("user pass"))
             {
                 txtUserPass.Text = "";
-
                 txtUserPass.ForeColor = Color.Gray;
-            }
-            
+            }   
         }
-
         private void txtUserPass_Leave(object sender, EventArgs e)
         {
             if (txtUserPass.Text == "")
@@ -91,5 +88,7 @@ namespace ZingMP3_buildproject.View
                 
             }
         }
+
+        
     }
 }
