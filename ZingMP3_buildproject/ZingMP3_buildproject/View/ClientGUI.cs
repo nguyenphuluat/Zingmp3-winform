@@ -117,19 +117,18 @@ namespace ZingMP3_buildproject.View
                     }
                 }
             }
-
-            String[] singName = { xuLyTenBaiHat(singsearch1.Text), xuLyTenBaiHat(singsearch2.Text), xuLyTenBaiHat(singsearch3.Text), xuLyTenBaiHat(singsearch4.Text), xuLyTenBaiHat(singsearch5.Text), };
+            int[] idi = { Convert.ToInt32(labelSearch1.Text), Convert.ToInt32(labelSearch2.Text), Convert.ToInt32(labelSearch3.Text), Convert.ToInt32(labelSearch4.Text), Convert.ToInt32(labelSearch5.Text)};
             //hàm xem đã tải chưa nếu tải rồi thì đổi màu
-            xuLyTaiRoi(singName);
+            xuLyTaiRoi(idi);
         }
 
-        public void xuLyTaiRoi(string[] singName)
+        public void xuLyTaiRoi(int[] idi)
         {
             PictureBox[] pb = { download1, download2, download3, download4, download5 };
             SingObject SingObject = new SingObject();
-            for (int i = 0; i < singName.Length; i++)
+            for (int i = 0; i < idi.Length; i++)
             {
-                SingObject = singControl.getSing(singName[i]);
+                SingObject = singControl.getSing(idi[i]);
                 if (SingObject != null)
                 {
                     if (SingObject.getSing_dowloaded() == true)
@@ -278,13 +277,7 @@ namespace ZingMP3_buildproject.View
             }
         }
 
-        public string xuLyTenBaiHat(string s)
-        {
-            string[] a = s.Split('*');
-            a[0] = a[0].Substring(0, a[0].Length - 1);
-            return a[0];
-        }
-        private void playMusic(string name, PictureBox pb,Label la)
+        private void playMusic(PictureBox pb,Label la)
         {
             SingObject singObject = new SingObject();
             //singObject = singControl.getSing(name);
@@ -321,7 +314,7 @@ namespace ZingMP3_buildproject.View
                         PictureBox.Image = Image.FromFile(@"..\..\..\..\Img\Run.png");
                         running = false;
 
-                        playMusic(name, pb,la);
+                        playMusic( pb,la);
                     }
                     else
                     {
@@ -357,16 +350,16 @@ namespace ZingMP3_buildproject.View
             }
         }
 
-        private void xuLyDownload(string name)
+        private void xuLyDownload(int idi)
         {
             SingObject singObject = new SingObject();
-            singObject = singControl.getSing(name);
+            singObject = singControl.getSing(idi);
 
             singObject.setSing_dowloaded(true);
             singControl.editSing(singObject);
-            String[] singName = { xuLyTenBaiHat(singsearch1.Text), xuLyTenBaiHat(singsearch2.Text), xuLyTenBaiHat(singsearch3.Text), xuLyTenBaiHat(singsearch4.Text), xuLyTenBaiHat(singsearch5.Text), };
+            int[] idi2 = { Convert.ToInt32(labelSearch1.Text), Convert.ToInt32(labelSearch2.Text), Convert.ToInt32(labelSearch3.Text), Convert.ToInt32(labelSearch4.Text), Convert.ToInt32(labelSearch5.Text) };
             //hàm xem đã tải chưa nếu tải rồi thì đổi màu
-            xuLyTaiRoi(singName);
+            xuLyTaiRoi(idi2);
             MessageBox.Show("đã tải bài hát thành công !");
         }
         private void xuLyHienThiCaNhan()
@@ -377,20 +370,20 @@ namespace ZingMP3_buildproject.View
             hideDownload(0);
         }
 
-        private void xuLyXoa(string name)
+        private void xuLyXoa(int idi)
         {
             SingObject singObject = new SingObject();
-            singObject = singControl.getSing(name);
+            singObject = singControl.getSing(idi);
 
             singObject.setSing_dowloaded(false);
             singControl.editSing(singObject);
 
             caNhan_Click_1(new object(), new EventArgs());
         }
-        private void xuLyChonHeart(string name)
+        private void xuLyChonHeart(int idi)
         {
             SingObject singObject = new SingObject();
-            singObject = singControl.getSing(name);
+            singObject = singControl.getSing(idi);
 
             if (singObject.getSing_focus() == true)
             {
@@ -462,16 +455,16 @@ namespace ZingMP3_buildproject.View
         public void hienThiHeart()
         {
             SingObject singObject = new SingObject();
-            SubHeart(like1, singObject, singsearch1);
-            SubHeart(like2, singObject, singsearch2);
-            SubHeart(like3, singObject, singsearch3);
-            SubHeart(like4, singObject, singsearch4);
-            SubHeart(like5, singObject, singsearch5);
+            SubHeart(like1, singObject, labelSearch1);
+            SubHeart(like2, singObject, labelSearch2);
+            SubHeart(like3, singObject, labelSearch3);
+            SubHeart(like4, singObject, labelSearch4);
+            SubHeart(like5, singObject, labelSearch5);
         }
         //luat subHeart để hiển thị xem một item nào đó có trong yêu thích hay không
         private void SubHeart(PictureBox pictureBox, SingObject singObject, Label label)
         {
-            singObject = singControl.getSing(xuLyTenBaiHat(label.Text));
+            singObject = singControl.getSing(Convert.ToInt32(label.Text));
             if (singObject != null && singObject.getSing_focus() == true)
             {
                 pictureBox.Image = Image.FromFile(@"..\..\..\..\Img\heart.png");
@@ -719,25 +712,25 @@ namespace ZingMP3_buildproject.View
 
         private void like1_Click_1(object sender, EventArgs e)
         {
-            xuLyChonHeart(xuLyTenBaiHat(singsearch1.Text));
+            xuLyChonHeart(Convert.ToInt32(labelSearch1.Text));
         }
         private void like2_Click(object sender, EventArgs e)
         {
-            xuLyChonHeart(xuLyTenBaiHat(singsearch2.Text));
+            xuLyChonHeart(Convert.ToInt32(labelSearch2.Text));
         }
         private void like3_Click_1(object sender, EventArgs e)
         {
-            xuLyChonHeart(xuLyTenBaiHat(singsearch3.Text));
+            xuLyChonHeart(Convert.ToInt32(labelSearch3.Text));
         }
 
         private void like4_Click_1(object sender, EventArgs e)
         {
-            xuLyChonHeart(xuLyTenBaiHat(singsearch4.Text));
+            xuLyChonHeart(Convert.ToInt32(labelSearch4.Text));
         }
 
         private void like5_Click_1(object sender, EventArgs e)
         {
-            xuLyChonHeart(xuLyTenBaiHat(singsearch5.Text));
+            xuLyChonHeart(Convert.ToInt32(labelSearch5.Text));
         }
 
 
@@ -771,47 +764,47 @@ namespace ZingMP3_buildproject.View
         //4 nút phát nhạc ở phần nhạc hot
         private void playpictureBox1_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singtrend1.Text), playpictureBox1,labelTrend1);
+            playMusic(playpictureBox1,labelTrend1);
         }
 
         private void playpictureBox2_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singtrend2.Text), playpictureBox2,labelTrend2);
+            playMusic(playpictureBox2,labelTrend2);
         }
 
         private void playpictureBox3_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singtrend3.Text), playpictureBox3, labelTrend3);
+            playMusic(playpictureBox3, labelTrend3);
         }
 
         private void playpictureBox4_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singtrend4.Text), playpictureBox4, labelTrend4);
+            playMusic(playpictureBox4, labelTrend4);
         }
         //8 nút download khi click
         private void download5_Click_1(object sender, EventArgs e)
         {
-            xuLyDownload(xuLyTenBaiHat(singsearch5.Text));
+            xuLyDownload(Convert.ToInt32(labelSearch5.Text));
         }
 
         private void download2_Click_1(object sender, EventArgs e)
         {
-            xuLyDownload(xuLyTenBaiHat(singsearch2.Text));
+            xuLyDownload(Convert.ToInt32(labelSearch2.Text));
         }
 
         private void download3_Click_1(object sender, EventArgs e)
         {
-            xuLyDownload(xuLyTenBaiHat(singsearch3.Text));
+            xuLyDownload(Convert.ToInt32(labelSearch3.Text));
         }
 
         private void download4_Click_1(object sender, EventArgs e)
         {
-            xuLyDownload(xuLyTenBaiHat(singsearch4.Text));
+            xuLyDownload(Convert.ToInt32(labelSearch4.Text));
         }
 
         private void download1_Click_1(object sender, EventArgs e)
         {
-            xuLyDownload(xuLyTenBaiHat(singsearch1.Text));
+            xuLyDownload(Convert.ToInt32(labelSearch1.Text));
         }
 
 
@@ -819,28 +812,28 @@ namespace ZingMP3_buildproject.View
         //5 nút play lúc tìm kiếm cá nhân yêu thích
         private void playImg1_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singsearch1.Text), playImg1,labelSearch1);
+            playMusic( playImg1,labelSearch1);
         }
 
         private void playImg2_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singsearch2.Text), playImg2,labelSearch2);
+            playMusic(playImg2,labelSearch2);
         }
 
         private void playImg3_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singsearch3.Text), playImg3, labelSearch3);
+            playMusic( playImg3, labelSearch3);
 
         }
 
         private void playImg4_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singsearch4.Text), playImg4, labelSearch4);
+            playMusic(playImg4, labelSearch4);
         }
 
         private void playImg5_Click_1(object sender, EventArgs e)
         {
-            playMusic(xuLyTenBaiHat(singsearch5.Text), playImg5, labelSearch5);
+            playMusic(playImg5, labelSearch5);
         }
 
 
@@ -849,27 +842,27 @@ namespace ZingMP3_buildproject.View
 
         private void delete2_Click_1(object sender, EventArgs e)
         {
-            xuLyXoa(xuLyTenBaiHat(singsearch2.Text));
+            xuLyXoa(Convert.ToInt32(labelSearch2.Text));
         }
 
         private void delete3_Click_1(object sender, EventArgs e)
         {
-            xuLyXoa(xuLyTenBaiHat(singsearch3.Text));
+            xuLyXoa(Convert.ToInt32(labelSearch3.Text));
         }
 
         private void delete4_Click_1(object sender, EventArgs e)
         {
-            xuLyXoa(xuLyTenBaiHat(singsearch4.Text));
+            xuLyXoa(Convert.ToInt32(labelSearch4.Text));
         }
 
         private void delete5_Click_1(object sender, EventArgs e)
         {
-            xuLyXoa(xuLyTenBaiHat(singsearch5.Text));
+            xuLyXoa(Convert.ToInt32(labelSearch5.Text));
         }
 
         private void delete1_Click_1(object sender, EventArgs e)
         {
-            xuLyXoa(xuLyTenBaiHat(singsearch1.Text));
+            xuLyXoa(Convert.ToInt32(labelSearch1.Text));
         }
 
 
@@ -1175,5 +1168,7 @@ namespace ZingMP3_buildproject.View
             }
             return -1;
         }
+
+
     }
 }
