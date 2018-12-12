@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientGUI));
-            this.MediaZing = new AxWMPLib.AxWindowsMediaPlayer();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.imgTheGioiVPop = new System.Windows.Forms.PictureBox();
             this.ImgNhacHot = new System.Windows.Forms.PictureBox();
@@ -106,7 +105,7 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtSingContent = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).BeginInit();
+            this.MediaZing = new AxWMPLib.AxWindowsMediaPlayer();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgTheGioiVPop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgNhacHot)).BeginInit();
@@ -151,17 +150,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.myIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).BeginInit();
             this.SuspendLayout();
-            // 
-            // MediaZing
-            // 
-            this.MediaZing.Enabled = true;
-            this.MediaZing.Location = new System.Drawing.Point(24, 419);
-            this.MediaZing.Name = "MediaZing";
-            this.MediaZing.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MediaZing.OcxState")));
-            this.MediaZing.Size = new System.Drawing.Size(706, 212);
-            this.MediaZing.TabIndex = 0;
-            this.MediaZing.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.MediaZing_PlayStateChange);
             // 
             // groupBox8
             // 
@@ -951,10 +941,10 @@
             // myIcon
             // 
             this.myIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.myIcon.Image = ((System.Drawing.Image)(resources.GetObject("myIcon.Image")));
-            this.myIcon.Location = new System.Drawing.Point(177, -1);
+            this.myIcon.Image = global::ZingMP3_buildproject.Properties.Resources.mp3;
+            this.myIcon.Location = new System.Drawing.Point(209, 0);
             this.myIcon.Name = "myIcon";
-            this.myIcon.Size = new System.Drawing.Size(53, 45);
+            this.myIcon.Size = new System.Drawing.Size(45, 37);
             this.myIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.myIcon.TabIndex = 0;
             this.myIcon.TabStop = false;
@@ -1002,6 +992,16 @@
             this.txtSingContent.Text = ".";
             this.txtSingContent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // MediaZing
+            // 
+            this.MediaZing.Enabled = true;
+            this.MediaZing.Location = new System.Drawing.Point(24, 419);
+            this.MediaZing.Name = "MediaZing";
+            this.MediaZing.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MediaZing.OcxState")));
+            this.MediaZing.Size = new System.Drawing.Size(706, 212);
+            this.MediaZing.TabIndex = 0;
+            this.MediaZing.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.MediaZing_PlayStateChange);
+            // 
             // ClientGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1016,12 +1016,12 @@
             this.Controls.Add(this.title);
             this.Controls.Add(this.grbBaiHatNoiBat);
             this.Controls.Add(this.groupBox8);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1163, 678);
             this.MinimumSize = new System.Drawing.Size(1163, 678);
             this.Name = "ClientGUI";
             this.Text = "ClientGUI";
             this.Load += new System.EventHandler(this.ClientGUI_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).EndInit();
             this.groupBox8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgTheGioiVPop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgNhacHot)).EndInit();
@@ -1078,6 +1078,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.myIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MediaZing)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

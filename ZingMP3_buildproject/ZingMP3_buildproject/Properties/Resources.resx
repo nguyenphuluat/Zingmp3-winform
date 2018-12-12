@@ -142,10 +142,13 @@
   <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Mau-Gradient-hop-ly-va-khong-hop-ly - Sao chép (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mau-Gradient-hop-ly-va-khong-hop-ly - Sao chép (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Mau-Gradient-hop-ly-va-khong-hop-ly - Sao chép (2) - Sao chép" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mau-Gradient-hop-ly-va-khong-hop-ly - Sao chép (2) - Sao chép.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mau-Gradient-hop-ly-va-khong-hop-ly - Sao chép (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mau-Gradient-hop-ly-va-khong-hop-ly - Sao chép (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mp3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mp31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
