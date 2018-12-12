@@ -488,7 +488,7 @@ namespace ZingMP3_buildproject.View
 
             for (int i = 0; i < SingObjects.Count; i++)
             {
-                s[i] = SingObjects[i].getSing_name() + " *----* "+ SingObjects[i].getSing_singer();
+                s[i] = SingObjects[i].getSing_name() + " ---- "+ SingObjects[i].getSing_singer();
                 a[i] = SingObjects[i].getSing_listened();
                 id[i] = SingObjects[i].getSing_id();
             }
@@ -576,7 +576,7 @@ namespace ZingMP3_buildproject.View
             {
                 if (singObjects[i].getSing_national() == true)
                 {
-                    a[d] = singObjects[i].getSing_name() + " *-----* " + singObjects[i].getSing_singer();
+                    a[d] = singObjects[i].getSing_name() + " ----- " + singObjects[i].getSing_singer();
                     d++;
                     id[i] = singObjects[i].getSing_id();
                 }
@@ -687,7 +687,7 @@ namespace ZingMP3_buildproject.View
             {
                 if (singObjects1[i].getSing_national() == false)
                 {
-                    a[d] = singObjects1[i].getSing_name() + " *-----* " + singObjects1[i].getSing_singer();
+                    a[d] = singObjects1[i].getSing_name() + " ----- " + singObjects1[i].getSing_singer();
                     d++;
                     id[i] = singObjects1[i].getSing_id();
                 }
@@ -883,7 +883,7 @@ namespace ZingMP3_buildproject.View
             id = new int[objects.Count];
             for (int i = 0; i < objects.Count; i++)
             {
-                a[d] = objects[i].getSing_name() + " *-----* " + objects[i].getSing_singer();
+                a[d] = objects[i].getSing_name() + " ----- " + objects[i].getSing_singer();
                 d++;
                 id[i] = objects[i].getSing_id();
             }
@@ -924,7 +924,7 @@ namespace ZingMP3_buildproject.View
             id = new int[objects.Count];
             for (int i = 0; i < objects.Count; i++)
             {
-                a[d] = objects[i].getSing_name() + " *-----* " + objects[i].getSing_singer();
+                a[d] = objects[i].getSing_name() + " ----- " + objects[i].getSing_singer();
                 id[i] = objects[i].getSing_id();
                 d++;
             }
@@ -953,7 +953,7 @@ namespace ZingMP3_buildproject.View
             id = new int[objects.Count];
             for (int i = 0; i < objects.Count; i++)
             {
-                a[d] = objects[i].getSing_name() + " *-----* " + objects[i].getSing_singer();
+                a[d] = objects[i].getSing_name() + " ----- " + objects[i].getSing_singer();
                 d++;
                 id[i] = objects[i].getSing_id();
             }
