@@ -243,9 +243,9 @@
             this.labelTrend4.AutoSize = true;
             this.labelTrend4.Location = new System.Drawing.Point(741, 20);
             this.labelTrend4.Name = "labelTrend4";
-            this.labelTrend4.Size = new System.Drawing.Size(10, 13);
+            this.labelTrend4.Size = new System.Drawing.Size(13, 13);
             this.labelTrend4.TabIndex = 2;
-            this.labelTrend4.Text = ".";
+            this.labelTrend4.Text = "0";
             // 
             // playpictureBox4
             // 
@@ -286,9 +286,9 @@
             this.labelTrend1.AutoSize = true;
             this.labelTrend1.Location = new System.Drawing.Point(742, 16);
             this.labelTrend1.Name = "labelTrend1";
-            this.labelTrend1.Size = new System.Drawing.Size(10, 13);
+            this.labelTrend1.Size = new System.Drawing.Size(13, 13);
             this.labelTrend1.TabIndex = 2;
-            this.labelTrend1.Text = ".";
+            this.labelTrend1.Text = "0";
             // 
             // playpictureBox1
             // 
@@ -329,9 +329,9 @@
             this.labelTrend2.AutoSize = true;
             this.labelTrend2.Location = new System.Drawing.Point(742, 20);
             this.labelTrend2.Name = "labelTrend2";
-            this.labelTrend2.Size = new System.Drawing.Size(10, 13);
+            this.labelTrend2.Size = new System.Drawing.Size(13, 13);
             this.labelTrend2.TabIndex = 2;
-            this.labelTrend2.Text = ".";
+            this.labelTrend2.Text = "0";
             // 
             // playpictureBox2
             // 
@@ -372,9 +372,9 @@
             this.labelTrend3.AutoSize = true;
             this.labelTrend3.Location = new System.Drawing.Point(741, 19);
             this.labelTrend3.Name = "labelTrend3";
-            this.labelTrend3.Size = new System.Drawing.Size(10, 13);
+            this.labelTrend3.Size = new System.Drawing.Size(13, 13);
             this.labelTrend3.TabIndex = 2;
-            this.labelTrend3.Text = ".";
+            this.labelTrend3.Text = "0";
             // 
             // playpictureBox3
             // 
@@ -513,9 +513,9 @@
             this.labelSearch4.AutoSize = true;
             this.labelSearch4.Location = new System.Drawing.Point(682, 24);
             this.labelSearch4.Name = "labelSearch4";
-            this.labelSearch4.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch4.Size = new System.Drawing.Size(13, 13);
             this.labelSearch4.TabIndex = 2;
-            this.labelSearch4.Text = ".";
+            this.labelSearch4.Text = "0";
             // 
             // like4
             // 
@@ -588,9 +588,9 @@
             this.labelSearch2.AutoSize = true;
             this.labelSearch2.Location = new System.Drawing.Point(682, 23);
             this.labelSearch2.Name = "labelSearch2";
-            this.labelSearch2.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch2.Size = new System.Drawing.Size(13, 13);
             this.labelSearch2.TabIndex = 2;
-            this.labelSearch2.Text = ".";
+            this.labelSearch2.Text = "0";
             // 
             // like2
             // 
@@ -663,9 +663,9 @@
             this.labelSearch3.AutoSize = true;
             this.labelSearch3.Location = new System.Drawing.Point(682, 22);
             this.labelSearch3.Name = "labelSearch3";
-            this.labelSearch3.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch3.Size = new System.Drawing.Size(13, 13);
             this.labelSearch3.TabIndex = 2;
-            this.labelSearch3.Text = ".";
+            this.labelSearch3.Text = "0";
             // 
             // like3
             // 
@@ -738,9 +738,9 @@
             this.labelSearch5.AutoSize = true;
             this.labelSearch5.Location = new System.Drawing.Point(682, 23);
             this.labelSearch5.Name = "labelSearch5";
-            this.labelSearch5.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch5.Size = new System.Drawing.Size(13, 13);
             this.labelSearch5.TabIndex = 2;
-            this.labelSearch5.Text = ".";
+            this.labelSearch5.Text = "0";
             // 
             // like5
             // 
@@ -813,9 +813,9 @@
             this.labelSearch1.AutoSize = true;
             this.labelSearch1.Location = new System.Drawing.Point(682, 23);
             this.labelSearch1.Name = "labelSearch1";
-            this.labelSearch1.Size = new System.Drawing.Size(10, 13);
+            this.labelSearch1.Size = new System.Drawing.Size(13, 13);
             this.labelSearch1.TabIndex = 2;
-            this.labelSearch1.Text = ".";
+            this.labelSearch1.Text = "0";
             // 
             // like1
             // 

@@ -11,7 +11,7 @@ namespace ZingMP3_buildproject.Model
     {
         public static SqlConnection getConnect()
         {
-            return new SqlConnection(@"Data Source=DESKTOP-TKMNHTF\SQLEXPRESS;Initial Catalog=zingmp3_data;Integrated Security=True");
+            return new SqlConnection(@"Data Source=DESKTOP-23MKI1L\SQLEXPRESS;Initial Catalog=ZingMp3;Integrated Security=True");
         }
         //lệnh trả về 1 bảng 
         public static DataTable getTable(string sql)
