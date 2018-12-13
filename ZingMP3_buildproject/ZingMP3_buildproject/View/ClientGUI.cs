@@ -598,6 +598,7 @@ namespace ZingMP3_buildproject.View
         private void ImgNhacHot_Click(object sender, EventArgs e)
         {
             ClientGUI_Load(sender, e);
+            title.Text = "Nhạc hot";
         }
 
         private void MediaZing_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
@@ -908,6 +909,7 @@ namespace ZingMP3_buildproject.View
         private void trangChu_Click(object sender, EventArgs e)
         {
             ClientGUI_Load(sender, e);
+            title.Text = "Trang chủ";
         }
 
         private void caNhan_Click_1(object sender, EventArgs e)
@@ -1135,6 +1137,12 @@ namespace ZingMP3_buildproject.View
                                     labelTrang3.Text = page[viTri - 2].ToString();
                                     labelTrang4.Text = page[viTri - 1].ToString();
                                     labelTrang5.Text = page[viTri].ToString();
+                                }
+                                else
+                                {
+                                    labelTrang2.Text = page[viTri - 1].ToString();
+                                    labelTrang3.Text = page[viTri ].ToString();
+                                    labelTrang4.Text = page[viTri + 1].ToString();
                                 }
                             }
                         }
