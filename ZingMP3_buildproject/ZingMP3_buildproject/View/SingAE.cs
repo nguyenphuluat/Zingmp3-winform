@@ -144,8 +144,10 @@ namespace ZingMP3_buildproject.View
             string file_mp3_temp = txtFileMp3.Text;
             string[] temp = file_mp3_temp.Split('\\');
             string file_name = temp[temp.Length - 1];
+            file_name = file_name.Trim();
             file_name = file_name.Substring(0, file_name.Length - 4);
-            string file_mp3 = @"C:\Csharp\ZingMp3\Path_mp3\"+ file_name +".mp3";
+            string file_mp3 = @"C:\Csharp\ZingMp3\Path_mp3\" + file_name + ".mp3";
+            
             //Copy file
             file_mp3 = Library.File_Me.CoppyFile(file_mp3_temp, file_mp3);
             
