@@ -1136,6 +1136,12 @@ namespace ZingMP3_buildproject.View
                                     labelTrang4.Text = page[viTri - 1].ToString();
                                     labelTrang5.Text = page[viTri].ToString();
                                 }
+                                else
+                                {
+                                    labelTrang2.Text = page[viTri - 1].ToString();
+                                    labelTrang3.Text = page[viTri ].ToString();
+                                    labelTrang4.Text = page[viTri + 1].ToString();
+                                }
                             }
                         }
 
