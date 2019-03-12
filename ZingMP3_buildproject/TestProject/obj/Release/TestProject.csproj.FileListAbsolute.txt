@@ -1,0 +1,14 @@
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\bin\Release\TestProject.dll
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\bin\Release\TestProject.pdb
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\bin\Release\AxInterop.WMPLib.dll
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\bin\Release\nunit.framework.dll
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\bin\Release\NUnitForms.dll
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\bin\Release\ZingMP3_buildproject.exe
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\bin\Release\ZingMP3_buildproject.pdb
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\bin\Release\nunit.framework.xml
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\bin\Release\NUnitForms.xml
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\obj\Release\TestProject.csprojResolveAssemblyReference.cache
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\obj\Release\TestProject.dll
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\obj\Release\TestProject.pdb
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\bin\Release\ZingMP3_buildproject_Accessor.exe
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject\bin\Release\ZingMP3_buildproject_Accessor.pdb

@@ -38,3 +38,7 @@ D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debu
 D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.AddUser.resources
 C:\Users\onglu\Downloads\github\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.AddCategory.resources
 C:\Users\onglu\Downloads\github\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Debug\ZingMP3_buildproject.View.AddUser.resources
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\nunit.framework.dll
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\NUnitForms.dll
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\nunit.framework.xml
+D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Debug\NUnitForms.xml

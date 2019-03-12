@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace ZingMP3_buildproject.Control
 {
-    class CategoryControl
+    public class CategoryControl
     {
         CategoryModel cm = new CategoryModel();
         public void addCategory(CategoryObject item)

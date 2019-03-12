@@ -8,7 +8,7 @@ using ZingMP3_buildproject.Model.sql;
 
 namespace ZingMP3_buildproject.Model
 {
-    class SingModel
+    public class SingModel
     {
         public void addSing(SingObject item)
         {

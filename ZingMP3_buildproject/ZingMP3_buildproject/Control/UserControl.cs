@@ -7,7 +7,7 @@ using ZingMP3_buildproject.Model.Object;
 
 namespace ZingMP3_buildproject.Control
 {
-    class UserControl
+    public class UserControl
     {
         UserModel cm = new UserModel();
         public void addUser(UserObject item)

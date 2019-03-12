@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7720efd9-27dc-4b30-8e02-4638cba77bce" name="Good_Boy@DESKTOP-TKMNHTF 2019-03-12 20:39:40" runUser="DESKTOP-TKMNHTF\Good_Boy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="a5e52112-a395-4692-8525-c02b67b17e4a">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Good_Boy_DESKTOP-TKMNHTF 2019-03-12 20_39_40">
+      <DeploymentItem filename="D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\bin\Release\ZingMP3_buildproject.exe" />
+      <DeploymentItem filename="D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\ZingMP3_buildproject\obj\x86\Release\AxInterop.WMPLib.dll" />
+      <DeploymentItem filename="E:\Nunit_Test\NUnitForms-v1.3.1-bin\bin\NUnitForms.dll" />
+      <DeploymentItem filename="E:\Nunit_Test\Nunit_2.7.0\bin\framework\nunit.framework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2019-03-12T20:39:40.6824714+07:00" queuing="2019-03-12T20:39:41.3553617+07:00" start="2019-03-12T20:39:41.4004931+07:00" finish="2019-03-12T20:39:47.3237635+07:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="10" executed="10" error="0" failed="0" timeout="0" aborted="0" inconclusive="10" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LoginViewConstructorTest" storage="d:\csharp\zingmp3_winform\zingmp3_buildproject\testproject1\bin\release\testproject1.dll" id="dbe90402-af66-43a7-0e47-2465c0ffbcf9">
+      <Execution id="c3d57016-9b9e-4da8-893c-287924ffd115" />
+      <TestMethod codeBase="D:/Csharp/Zingmp3_winform/ZingMP3_buildproject/TestProject1/bin/Release/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LoginViewTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoginViewConstructorTest" />
+    </UnitTest>
+    <UnitTest name="DisposeTest" storage="d:\csharp\zingmp3_winform\zingmp3_buildproject\testproject1\bin\release\testproject1.dll" id="cb989c3a-bb15-60d9-ba0d-7f3f9169a3dc">
+      <DeploymentItems>
+        <DeploymentItem filename="ZingMP3_buildproject.exe" />
+      </DeploymentItems>
+      <Execution id="cf41b43d-21c0-49f9-907f-433dc6e6249a" />
+      <TestMethod codeBase="D:/Csharp/Zingmp3_winform/ZingMP3_buildproject/TestProject1/bin/Release/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LoginViewTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisposeTest" />
+    </UnitTest>
+    <UnitTest name="InitializeComponentTest" storage="d:\csharp\zingmp3_winform\zingmp3_buildproject\testproject1\bin\release\testproject1.dll" id="fc967dff-7ded-4d32-feef-9b3ad49e4fc6">
+      <DeploymentItems>
+        <DeploymentItem filename="ZingMP3_buildproject.exe" />
+      </DeploymentItems>
+      <Execution id="33b15220-611a-4b2c-a73c-34ffb6d4e8ea" />
+      <TestMethod codeBase="D:/Csharp/Zingmp3_winform/ZingMP3_buildproject/TestProject1/bin/Release/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LoginViewTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InitializeComponentTest" />
+    </UnitTest>
+    <UnitTest name="txtUserName_EnterTest" storage="d:\csharp\zingmp3_winform\zingmp3_buildproject\testproject1\bin\release\testproject1.dll" id="d097b411-a718-fda4-d5dd-5b6c7e193d2b">
+      <DeploymentItems>
+        <DeploymentItem filename="ZingMP3_buildproject.exe" />
+      </DeploymentItems>
+      <Execution id="4c033eaf-29eb-46db-bb51-6a85d2033883" />
+      <TestMethod codeBase="D:/Csharp/Zingmp3_winform/ZingMP3_buildproject/TestProject1/bin/Release/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LoginViewTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="txtUserName_EnterTest" />
+    </UnitTest>
+    <UnitTest name="txtUserPass_EnterTest" storage="d:\csharp\zingmp3_winform\zingmp3_buildproject\testproject1\bin\release\testproject1.dll" id="26931725-0123-bca7-d6a6-7dbf1f5b304a">
+      <DeploymentItems>
+        <DeploymentItem filename="ZingMP3_buildproject.exe" />
+      </DeploymentItems>
+      <Execution id="8f1f4d7c-96c9-46ff-9f33-656a5133a625" />
+      <TestMethod codeBase="D:/Csharp/Zingmp3_winform/ZingMP3_buildproject/TestProject1/bin/Release/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LoginViewTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="txtUserPass_EnterTest" />
+    </UnitTest>
+    <UnitTest name="btnLogin_ClickTest" storage="d:\csharp\zingmp3_winform\zingmp3_buildproject\testproject1\bin\release\testproject1.dll" id="87137acb-cfb2-3403-705e-45ac4ffab31b">
+      <DeploymentItems>
+        <DeploymentItem filename="ZingMP3_buildproject.exe" />
+      </DeploymentItems>
+      <Execution id="293a6639-9295-431f-b666-23e9d47d5d9e" />
+      <TestMethod codeBase="D:/Csharp/Zingmp3_winform/ZingMP3_buildproject/TestProject1/bin/Release/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LoginViewTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="btnLogin_ClickTest" />
+    </UnitTest>
+    <UnitTest name="txtUserName_LeaveTest" storage="d:\csharp\zingmp3_winform\zingmp3_buildproject\testproject1\bin\release\testproject1.dll" id="f39188c8-2147-25c7-10be-0d3b6c8abe4e">
+      <DeploymentItems>
+        <DeploymentItem filename="ZingMP3_buildproject.exe" />
+      </DeploymentItems>
+      <Execution id="436973e6-81ce-4164-8304-c4670d87375a" />
+      <TestMethod codeBase="D:/Csharp/Zingmp3_winform/ZingMP3_buildproject/TestProject1/bin/Release/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LoginViewTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="txtUserName_LeaveTest" />
+    </UnitTest>
+    <UnitTest name="txtUserPass_LeaveTest" storage="d:\csharp\zingmp3_winform\zingmp3_buildproject\testproject1\bin\release\testproject1.dll" id="4184605a-97a1-28f8-c3d6-ac90623e6b11">
+      <DeploymentItems>
+        <DeploymentItem filename="ZingMP3_buildproject.exe" />
+      </DeploymentItems>
+      <Execution id="d42f448b-ccfc-4eb1-b322-988f7845fb4f" />
+      <TestMethod codeBase="D:/Csharp/Zingmp3_winform/ZingMP3_buildproject/TestProject1/bin/Release/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LoginViewTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="txtUserPass_LeaveTest" />
+    </UnitTest>
+    <UnitTest name="Login_LoadTest" storage="d:\csharp\zingmp3_winform\zingmp3_buildproject\testproject1\bin\release\testproject1.dll" id="b0d44af5-79ab-8afe-923b-22a51cb7e0b0">
+      <DeploymentItems>
+        <DeploymentItem filename="ZingMP3_buildproject.exe" />
+      </DeploymentItems>
+      <Execution id="c76abfb8-2c7a-4311-b2da-6d6bdbe84f18" />
+      <TestMethod codeBase="D:/Csharp/Zingmp3_winform/ZingMP3_buildproject/TestProject1/bin/Release/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LoginViewTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Login_LoadTest" />
+    </UnitTest>
+    <UnitTest name="txtUserPass_TextChangedTest" storage="d:\csharp\zingmp3_winform\zingmp3_buildproject\testproject1\bin\release\testproject1.dll" id="526210b5-4206-0794-cdf2-a4eec4f2cfe6">
+      <DeploymentItems>
+        <DeploymentItem filename="ZingMP3_buildproject.exe" />
+      </DeploymentItems>
+      <Execution id="58cb0e0f-827e-46a0-8cce-1ea5563ad5a0" />
+      <TestMethod codeBase="D:/Csharp/Zingmp3_winform/ZingMP3_buildproject/TestProject1/bin/Release/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LoginViewTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="txtUserPass_TextChangedTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="26931725-0123-bca7-d6a6-7dbf1f5b304a" executionId="8f1f4d7c-96c9-46ff-9f33-656a5133a625" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4184605a-97a1-28f8-c3d6-ac90623e6b11" executionId="d42f448b-ccfc-4eb1-b322-988f7845fb4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="526210b5-4206-0794-cdf2-a4eec4f2cfe6" executionId="58cb0e0f-827e-46a0-8cce-1ea5563ad5a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87137acb-cfb2-3403-705e-45ac4ffab31b" executionId="293a6639-9295-431f-b666-23e9d47d5d9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0d44af5-79ab-8afe-923b-22a51cb7e0b0" executionId="c76abfb8-2c7a-4311-b2da-6d6bdbe84f18" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb989c3a-bb15-60d9-ba0d-7f3f9169a3dc" executionId="cf41b43d-21c0-49f9-907f-433dc6e6249a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d097b411-a718-fda4-d5dd-5b6c7e193d2b" executionId="4c033eaf-29eb-46db-bb51-6a85d2033883" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dbe90402-af66-43a7-0e47-2465c0ffbcf9" executionId="c3d57016-9b9e-4da8-893c-287924ffd115" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f39188c8-2147-25c7-10be-0d3b6c8abe4e" executionId="436973e6-81ce-4164-8304-c4670d87375a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc967dff-7ded-4d32-feef-9b3ad49e4fc6" executionId="33b15220-611a-4b2c-a73c-34ffb6d4e8ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8f1f4d7c-96c9-46ff-9f33-656a5133a625" testId="26931725-0123-bca7-d6a6-7dbf1f5b304a" testName="txtUserPass_EnterTest" computerName="DESKTOP-TKMNHTF" duration="00:00:00.4040953" startTime="2019-03-12T20:39:41.4127883+07:00" endTime="2019-03-12T20:39:42.1821640+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8f1f4d7c-96c9-46ff-9f33-656a5133a625">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject1.LoginViewTest.txtUserPass_EnterTest() in D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject1\LoginViewTest.cs:line 169
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d42f448b-ccfc-4eb1-b322-988f7845fb4f" testId="4184605a-97a1-28f8-c3d6-ac90623e6b11" testName="txtUserPass_LeaveTest" computerName="DESKTOP-TKMNHTF" duration="00:00:00.0141883" startTime="2019-03-12T20:39:42.1983679+07:00" endTime="2019-03-12T20:39:42.2171559+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d42f448b-ccfc-4eb1-b322-988f7845fb4f">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject1.LoginViewTest.txtUserPass_LeaveTest() in D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject1\LoginViewTest.cs:line 183
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="58cb0e0f-827e-46a0-8cce-1ea5563ad5a0" testId="526210b5-4206-0794-cdf2-a4eec4f2cfe6" testName="txtUserPass_TextChangedTest" computerName="DESKTOP-TKMNHTF" duration="00:00:00.0138432" startTime="2019-03-12T20:39:42.2324562+07:00" endTime="2019-03-12T20:39:42.2510502+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="58cb0e0f-827e-46a0-8cce-1ea5563ad5a0">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject1.LoginViewTest.txtUserPass_TextChangedTest() in D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject1\LoginViewTest.cs:line 197
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="293a6639-9295-431f-b666-23e9d47d5d9e" testId="87137acb-cfb2-3403-705e-45ac4ffab31b" testName="btnLogin_ClickTest" computerName="DESKTOP-TKMNHTF" duration="00:00:03.3662583" startTime="2019-03-12T20:39:42.2657755+07:00" endTime="2019-03-12T20:39:45.6382299+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="293a6639-9295-431f-b666-23e9d47d5d9e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject1.LoginViewTest.btnLogin_ClickTest() in D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject1\LoginViewTest.cs:line 127
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c76abfb8-2c7a-4311-b2da-6d6bdbe84f18" testId="b0d44af5-79ab-8afe-923b-22a51cb7e0b0" testName="Login_LoadTest" computerName="DESKTOP-TKMNHTF" duration="00:00:00.0130695" startTime="2019-03-12T20:39:45.6549967+07:00" endTime="2019-03-12T20:39:45.6750919+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c76abfb8-2c7a-4311-b2da-6d6bdbe84f18">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject1.LoginViewTest.Login_LoadTest() in D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject1\LoginViewTest.cs:line 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cf41b43d-21c0-49f9-907f-433dc6e6249a" testId="cb989c3a-bb15-60d9-ba0d-7f3f9169a3dc" testName="DisposeTest" computerName="DESKTOP-TKMNHTF" duration="00:00:00.0049296" startTime="2019-03-12T20:39:45.6813115+07:00" endTime="2019-03-12T20:39:45.6863518+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf41b43d-21c0-49f9-907f-433dc6e6249a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject1.LoginViewTest.DisposeTest() in D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject1\LoginViewTest.cs:line 87
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4c033eaf-29eb-46db-bb51-6a85d2033883" testId="d097b411-a718-fda4-d5dd-5b6c7e193d2b" testName="txtUserName_EnterTest" computerName="DESKTOP-TKMNHTF" duration="00:00:00.0056939" startTime="2019-03-12T20:39:45.6955991+07:00" endTime="2019-03-12T20:39:45.7004555+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c033eaf-29eb-46db-bb51-6a85d2033883">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject1.LoginViewTest.txtUserName_EnterTest() in D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject1\LoginViewTest.cs:line 141
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c3d57016-9b9e-4da8-893c-287924ffd115" testId="dbe90402-af66-43a7-0e47-2465c0ffbcf9" testName="LoginViewConstructorTest" computerName="DESKTOP-TKMNHTF" duration="00:00:00.0046431" startTime="2019-03-12T20:39:45.7097693+07:00" endTime="2019-03-12T20:39:45.7136780+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3d57016-9b9e-4da8-893c-287924ffd115">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at TestProject1.LoginViewTest.LoginViewConstructorTest() in D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject1\LoginViewTest.cs:line 74
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="436973e6-81ce-4164-8304-c4670d87375a" testId="f39188c8-2147-25c7-10be-0d3b6c8abe4e" testName="txtUserName_LeaveTest" computerName="DESKTOP-TKMNHTF" duration="00:00:00.0053465" startTime="2019-03-12T20:39:45.7231213+07:00" endTime="2019-03-12T20:39:45.7278237+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="436973e6-81ce-4164-8304-c4670d87375a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject1.LoginViewTest.txtUserName_LeaveTest() in D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject1\LoginViewTest.cs:line 155
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="33b15220-611a-4b2c-a73c-34ffb6d4e8ea" testId="fc967dff-7ded-4d32-feef-9b3ad49e4fc6" testName="InitializeComponentTest" computerName="DESKTOP-TKMNHTF" duration="00:00:00.0082010" startTime="2019-03-12T20:39:45.7387177+07:00" endTime="2019-03-12T20:39:45.7461073+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33b15220-611a-4b2c-a73c-34ffb6d4e8ea">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject1.LoginViewTest.InitializeComponentTest() in D:\Csharp\Zingmp3_winform\ZingMP3_buildproject\TestProject1\LoginViewTest.cs:line 99
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

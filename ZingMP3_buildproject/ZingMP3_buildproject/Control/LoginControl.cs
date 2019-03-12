@@ -8,7 +8,7 @@ using ZingMP3_buildproject.Model.Object;
 
 namespace ZingMP3_buildproject.Control
 {
-    class LoginControl
+    public class LoginControl
     {
         UserModel um = new UserModel();
         public UserObject Login(string user_name, string user_pass)

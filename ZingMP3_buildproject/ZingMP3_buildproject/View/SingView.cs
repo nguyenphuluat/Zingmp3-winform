@@ -22,11 +22,19 @@ namespace ZingMP3_buildproject.View
         bool running = false;
         Int32 rIndex = 0;
         public static SingView singview;
+        UserObject uo;
         public SingView()
         {
             InitializeComponent();
             singview = this;
             
+        }
+        public SingView(UserObject uo)
+        {
+            InitializeComponent();
+            singview = this;
+            this.uo = uo;
+
         }
        
         private void btnSingManagerment_Click(object sender, EventArgs e)
@@ -74,6 +82,7 @@ namespace ZingMP3_buildproject.View
         public void SingView_Load(object sender, EventArgs e)
         {
             SingControl sc = new SingControl();
+            lblUserName.Text = uo.getUser_fullname();
             dtgCategory.Visible = false;
             dtgUser.Visible = false;
             dtgSing.Visible = true;
@@ -120,6 +129,9 @@ namespace ZingMP3_buildproject.View
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            this.Close();
+            LoginView lv = new LoginView();
+            lv.Show();
             this.Close();
         }
 

@@ -34,6 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>E:\Nunit_Test\Nunit_2.7.0\bin\framework\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="NUnitForms">
+      <HintPath>E:\Nunit_Test\NUnitForms-v1.3.1-bin\bin\NUnitForms.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />

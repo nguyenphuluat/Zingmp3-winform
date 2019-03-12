@@ -10,7 +10,7 @@ using System.Data;
 
 namespace ZingMP3_buildproject.Control
 {
-    class SingControl
+    public class SingControl
     {
         SingModel sm = new SingModel();
         public void addSing(SingObject item)
@@ -28,11 +28,8 @@ namespace ZingMP3_buildproject.Control
 
         public SingObject getSing(int sing_id) 
         {
-            
             SingObject item = null;
-
             DataTableReader dt = sm.getSing(sing_id).CreateDataReader();
-
             if (dt.Read())
             {
                 item = new SingObject();
@@ -59,7 +56,6 @@ namespace ZingMP3_buildproject.Control
                     item.setCategory_name("");
                 }
             }
-
             return item;
         }
 

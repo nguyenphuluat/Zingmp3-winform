@@ -7,7 +7,7 @@ using System.Data;
 
 namespace ZingMP3_buildproject.Model
 {
-    class CategoryModel
+    public class CategoryModel
     {
         public void addCategory(CategoryObject item)
         {

@@ -76,7 +76,7 @@ namespace ZingMP3_buildproject.View
                 UserObject user = lc.Login(user_name, user_pass);
                 if (user != null)
                 {
-                    SingView SingView = new SingView();
+                    SingView SingView = new SingView(user);
                     SingView.ShowDialog();
                     this.Close();
                     
